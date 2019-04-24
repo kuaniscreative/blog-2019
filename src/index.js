@@ -1,3 +1,3 @@
 import './css/style.scss';
 
-import './js/toggleNav';
+import './js/components/nav';
