@@ -1,4 +1,4 @@
-const nav = $('#navContainer');
+const nav = $('#nav_container');
 
 function toggleNav() {
     
