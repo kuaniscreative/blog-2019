@@ -9,15 +9,34 @@
     left: 0; 
     z-index: -10;
     background: $gray-0;
-
+    li {
+        margin-bottom: 1.2rem;
+    }
     .nav_item {
         display: flex;
         flex-direction: row;
+        flex-wrap: nowrap;
     }
     .nav_contentNumbering {
+        flex: 0 0 2em;
+        padding-top: 0.65em;
         font-family: customSet--serif;
         font-size: 0.85rem;
         color: $gray-5;
     }
+    .nav_itemTitle {
+        display: inline-block;
+        // padding-bottom: 0.4em;
+        font-family: customSet--sans;
+        font-size: 1.5rem;
+        line-height: 1.4em;
+    }
+    .nav_itemPreview {
+        display: inline-block;
+        font-family: customSet--sans;
+        line-height: 1.4em;
+        color: $gray-5;
+    }
+
 }
 
