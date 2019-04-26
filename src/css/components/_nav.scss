@@ -1,8 +1,8 @@
-#nav_container {
+.nav {
     display: block;
     width: 384px;
     height: 100%;
-    padding: 0 32px 0 32px;
+    padding: 0 2rem 0 2rem;
 
     position: fixed;
     top: 0;
@@ -10,8 +10,14 @@
     z-index: -10;
     background: $gray-0;
 
+    .nav_item {
+        display: flex;
+        flex-direction: row;
+    }
     .nav_contentNumbering {
         font-family: customSet--serif;
+        font-size: 0.85rem;
+        color: $gray-5;
     }
 }
 
