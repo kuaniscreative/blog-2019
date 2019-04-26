@@ -13,6 +13,16 @@ $gray-0: #f2f2f2;
  *
  */
 
-$font-ch:  "PingFangTC", "微軟正黑體", "Microsoft JhengHei", sans-serif;
-$font-en: "EB Garamond", "PT Serif", serif;
 $base-font-size: 16px;
+
+@font-face {
+    font-family: "customSet--sans";
+    src: local("PingFangTC"), local("微軟正黑體"), local("Microsoft JhengHei");
+    unicode-range: U+4E00-9FFF;
+}
+
+@font-face {
+    font-family: "customSet--serif";
+    src: url('https://fonts.googleapis.com/css?family=EB+Garamond'), local("PT Serif");
+    unicode-range: U+00-024F;
+}
