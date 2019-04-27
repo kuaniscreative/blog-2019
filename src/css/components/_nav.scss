@@ -3,39 +3,40 @@
     width: 384px;
     height: 100%;
     padding: 0 2rem 0 2rem;
-
     position: fixed;
     top: 0;
     left: 0; 
     z-index: -10;
     background: $gray-0;
-    li {
-        margin-bottom: 1.2rem;
-    }
+    
     .nav_item {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        margin-bottom: 1.4rem;
+        position: relative;
+        top: 300px;
     }
     .nav_contentNumbering {
-        flex: 0 0 2em;
+        flex: 0 0 2rem;
         padding-top: 0.65em;
         font-family: customSet--serif;
         font-size: 0.85rem;
-        color: $gray-5;
+        color: $gray-3;
     }
     .nav_itemTitle {
         display: inline-block;
-        // padding-bottom: 0.4em;
         font-family: customSet--sans;
         font-size: 1.5rem;
+        letter-spacing: 1px;
         line-height: 1.4em;
+        margin-bottom: 0.25em;
     }
     .nav_itemPreview {
-        display: inline-block;
+        display: none;
         font-family: customSet--sans;
         line-height: 1.4em;
-        color: $gray-5;
+        color: $gray-4;
     }
 
 }
