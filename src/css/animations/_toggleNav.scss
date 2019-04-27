@@ -1,0 +1,5 @@
+.ani-toggleNav_content--open {
+    transition: $transition;
+    transform: translate($nav-width, 0);
+}
+
