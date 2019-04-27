@@ -1,9 +1,16 @@
 const nav = $('#nav_container');
+const toggleNavBtn = $('.sideMenu_button');
+const content = $('.content');
 
-function toggleNav() {
-    
-}
+$(toggleNavBtn).click((e) => {
+    e.stopPropagation();
+    $(content).addClass('ani-toggleNav_content--open');
+});
 
-$('button').click(() => {
-    console.log('ff');
+
+$(content).click((e) => {
+    e.stopPropagation();
+    if ($(content).hasClass('ani-toggleNav_content--open')) {
+        $(content).removeClass('ani-toggleNav_content--open');
+    }
 })

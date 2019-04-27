@@ -1,12 +1,13 @@
 .sideMenu {
-    display: block;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .sideMenu_button {
+  & p {
     writing-mode: vertical-lr;
+  }
 }
