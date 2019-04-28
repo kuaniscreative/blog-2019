@@ -1,13 +1,13 @@
 export const requestArticle = (param) => {
     $.ajax({
-        url: param,
-        type: "GET,
+        url: `pages/json/${param}.json`,
+        type: "GET",
         dataType: "json",
-        success: () => {
-            console.log('success');
+        success: (res) => {
+            console.log(res);
         },
-        error: () => {
-            console.log('error');
+        error: (err) => {
+            console.log(err);
         },
     });
 }

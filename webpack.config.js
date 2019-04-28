@@ -3,8 +3,8 @@ const fs = require("fs");
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const autoprefixer = require("autoprefixer");
+const CopyPlugin = require('copy-webpack-plugin');
 const port = 3070;
-
 
 // Custom Handlebars plugin for distributing HTML
 
@@ -27,12 +27,14 @@ function generateHtmlPlugins(templateDir) {
     return new HtmlWebPackPlugin({
       filename: `./${dirForChildPages}${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-      templateParameters: require(path.resolve(__dirname, `${templateDir}/json/${name}.json`))
+      templateParameters: require(path.resolve(
+        __dirname,
+        `${templateDir}/json/${name}.json`
+      ))
     });
   });
 }
 const htmlPlugins = generateHtmlPlugins("./src/pages");
-
 
 // webpack modules
 
@@ -86,46 +88,46 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-                sourceMap: true
+              sourceMap: true
             }
-        }
+          }
         ]
       },
       {
         test: /\.(jpg|png|gif)$/,
         use: [
-            {
-                loader: "file-loader",
-                options: {
-                    name: '[name].[ext]',
-                    outputPath: 'static/',
-                    useRelativePath: true,
-                }
-            },
-            {
-                loader: 'image-webpack-loader',
-                options: {
-                  mozjpeg: {
-                    progressive: true,
-                    quality: 65
-                  },
-                  optipng: {
-                    enabled: true,
-                  },
-                  pngquant: {
-                    quality: '65-90',
-                    speed: 4
-                  },
-                  gifsicle: {
-                    interlaced: false,
-                  },
-                  webp: {
-                    quality: 75
-                  }
-                }
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "static/",
+              useRelativePath: true
             }
+          },
+          {
+            loader: "image-webpack-loader",
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65
+              },
+              optipng: {
+                enabled: true
+              },
+              pngquant: {
+                quality: "65-90",
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              webp: {
+                quality: 75
+              }
+            }
+          }
         ]
-    }
+      }
     ]
   },
   plugins: [
@@ -134,12 +136,15 @@ module.exports = {
         handlebarsLoader: {}
       }
     }),
+    new CopyPlugin([
+      { from: 'src/pages/json', to: 'pages/json' }
+    ]),
     new HtmlWebPackPlugin({
       title: "My awesome service",
       template: "./src/index.hbs"
     }),
     new webpack.ProvidePlugin({
-      $: 'jquery'
+      $: "jquery"
     })
   ].concat(htmlPlugins)
 };
