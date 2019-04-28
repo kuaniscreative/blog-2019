@@ -18,11 +18,9 @@ $(content).click((e) => {
 
 // test
 
-$('.nav_itemTitle').eq(1).click(() => {
-    requestArticle('test');
-    window.history.pushState(
-    {}, 
-    'pathName',
-    window.location.origin + '/pathName'
-  );
+$('.nav_itemTitle').click((e) => {
+    const url = $(e.target).data('url');
+    requestArticle(url);
 })
+
+console.log(window.location.pathname);
