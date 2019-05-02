@@ -1,4 +1,5 @@
-const nav = $('#nav_container');
+import { requestArticle } from '../functions/spa';
+
 const toggleNavBtn = $('.sideMenu_button');
 const content = $('.content');
 
@@ -14,3 +15,12 @@ $(content).click((e) => {
         $(content).removeClass('ani-toggleNav_content--open');
     }
 })
+
+// test
+
+$('.nav_itemTitle').click((e) => {
+    const url = $(e.target).data('url');
+    requestArticle(url);
+})
+
+console.log(window.location.pathname);
