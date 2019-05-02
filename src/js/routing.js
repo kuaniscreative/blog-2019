@@ -1,5 +1,7 @@
 import { requestArticle } from './functions/spa';
 
-const url = window.location.pathname;
+const hash = window.location.hash.split("").slice(1).join("");
 
-window.onload = requestArticle(url);
+if (hash.length !== 0 ) {
+    requestArticle(hash);
+}
