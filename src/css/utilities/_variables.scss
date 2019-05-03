@@ -22,15 +22,21 @@ $base-font-size: 16px;
 
 @font-face {
   font-family: "customSet--sans";
-  src: local("PingFang TC"), local("微軟正黑體"), local("Microsoft JhengHei");
+  src: local("PingFang TC"), local("Microsoft JhengHei");
   unicode-range: U+4E00-9FFF;
 }
 
 @font-face {
   font-family: "customSet--serif";
-  src: url("https://fonts.googleapis.com/css?family=EB+Garamond"),
-    local("PT Serif");
+  src: local("PT Serif");
   unicode-range: U+00-024F;
+}
+
+@font-face {
+  font-family: "customSet--sans";
+  font-weight: 200;
+  src: local("PingFangTC-light"), local("Microsoft JhengHei");
+  unicode-range: U+4E00-9FFF;
 }
 
 

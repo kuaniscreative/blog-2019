@@ -1,0 +1,15 @@
+.selectionItem {
+  &_index {
+    font-family: customSet--serif;
+    font-size: 0.8rem;
+  }
+  &_title {
+      font-size: 3rem;
+      font-weight: 200;
+      color: $gray-6;
+  }
+  &_line {
+    width: 4rem;
+    border-bottom: 2px solid $black;
+  }
+}

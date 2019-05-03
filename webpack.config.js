@@ -3,7 +3,7 @@ const fs = require("fs");
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
 const autoprefixer = require("autoprefixer");
-const CopyPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require("copy-webpack-plugin");
 const port = 3070;
 
 // Custom Handlebars plugin for distributing HTML
@@ -63,7 +63,11 @@ module.exports = {
       },
       {
         test: /\.(handlebars|hbs)$/,
-        loader: "handlebars-loader"
+        loader: "handlebars-loader",
+        options: {
+          knownHelpersOnly: false,
+          helperDirs: "./src/pages/helpers"
+        }
       },
       {
         test: /\.scss$/,
@@ -131,17 +135,15 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.LoaderOptionsPlugin({
-      options: {
-        handlebarsLoader: {}
-      }
-    }),
-    new CopyPlugin([
-      { from: 'src/pages/json', to: 'pages/json' }
-    ]),
+    // new webpack.LoaderOptionsPlugin({
+    //   options: {
+    //     handlebarsLoader: {}
+    //   }
+    // }),
+    new CopyPlugin([{ from: "src/pages/json", to: "pages/json" }]),
     new HtmlWebPackPlugin({
-      title: "My awesome service",
-      template: "./src/index.hbs"
+      template: "./src/index.hbs",
+      templateParameters: require('./src/pages/json/index.json')
     }),
     new webpack.ProvidePlugin({
       $: "jquery"
