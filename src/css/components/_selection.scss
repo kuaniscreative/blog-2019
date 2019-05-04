@@ -1,13 +1,17 @@
 $item-spacing: 24px;
 
-#indexSeleciton {
-  overflow: scroll;
+#indexSelection {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.indexSelection_scrollWrapper{
 }
 
 .indexSelection_row {
   width: max-content;
   white-space: nowrap;
-  margin-bottom: $item-spacing * 2;
+  margin-bottom: $item-spacing;
 }
 
 .selectionItem {

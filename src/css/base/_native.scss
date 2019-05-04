@@ -3,7 +3,10 @@ html {
     font-family: customSet--sans;
     font-size: $base-font-size;
     color: $black;
-    
+}
+
+body {
+    position: fixed;
 }
 
 h1 {

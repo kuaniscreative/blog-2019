@@ -2,17 +2,28 @@
 
 $(function() {
   const targets = $(".ani-infiniteScroll_target");
-  console.log($(targets[0]).innerWidth())
+  const parent = $(".ani-infiniteScroll_wrapper");
+  const testWidth = $(parent)
+    .eq(0)
+    .width();
+
+  // Clone the contents
   for (let item of targets) {
     $(item)
       .children()
       .clone()
       .appendTo(item);
   }
-  $(window).on('wheel', () => {
-      console.log('ddd');
-  })
-  $(window).on('touchmove', () => {
-    $(window).trigger('wheel')
-})
+  // Wheel event
+  $(window).on("wheel", e => {
+    e.preventDefault();
+    let pos = $(parent)
+      .eq(0)
+      .scrollLeft();
+    pos += e.originalEvent.deltaY;
+
+    $(parent)
+      .eq(0)
+      .scrollLeft(pos);
+  });
 });
