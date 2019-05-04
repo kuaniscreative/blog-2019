@@ -5,6 +5,7 @@ $item-spacing: 24px;
 }
 
 .indexSelection_row {
+  width: max-content;
   white-space: nowrap;
   margin-bottom: $item-spacing * 2;
 }

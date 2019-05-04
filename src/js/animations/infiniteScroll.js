@@ -2,7 +2,7 @@
 
 $(function() {
   const targets = $(".ani-infiniteScroll_target");
-  console.log($(targets[1]).innerWidth())
+  console.log($(targets[0]).innerWidth())
   for (let item of targets) {
     $(item)
       .children()
