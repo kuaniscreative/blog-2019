@@ -45,4 +45,30 @@ $(function() {
       }
     }
   });
+
+  // hover effect
+  const selectionItem = $(".selectionItem");
+  let mouseEventStash = [];
+
+  function selectionMouseEnter(e) {
+    mouseEventStash.push($(selectionItem).not(e.currentTarget).children().css('color'));
+    mouseEventStash.push($(selectionItem).not(e.currentTarget).children('.selectionItem_line').css('border-bottom'));
+    $(selectionItem).not(e.currentTarget).children().css({
+        'color': '#d6d6d6'
+    });
+    $(selectionItem).not(e.currentTarget).children('.selectionItem_line').css({
+        'border-bottom': '2px solid #d6d6d6'
+    });
+  }
+
+  function selectionMouseLeave(e) {
+    $(selectionItem).not(e.currentTarget).children().css({
+        'color': mouseEventStash[0]
+    });
+    $(selectionItem).not(e.currentTarget).children('.selectionItem_line').css({
+        'border-bottom': mouseEventStash[1]
+    });
+  }
+
+  $(selectionItem).hover(selectionMouseEnter, selectionMouseLeave);
 });
