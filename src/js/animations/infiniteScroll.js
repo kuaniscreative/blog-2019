@@ -5,57 +5,7 @@ $(function() {
   const parents = $(".ani-infiniteScroll_wrapper");
   const targetList = [];
 
-  // init the targets
-  for (var i = 0; i < targets.length; i++) {
-    targetList.push(initInfiniteScroll(targets[i], parents[i]));
-  }
-  // Wheel event
-  $(window).on("wheel", e => {
-    e.preventDefault();
-    // $(targets).each(i => {
-    //   console.log(this)
-    //   if (i % 2 === 0) {
-    //     let curPos = $(this.parent).scrollLeft();
-    //     curPos -= e.originalEvent.deltaY;
-    //     $(this.parent).scrollLeft(curPos);
-    //     scrollUpdate(this);
-    //   } else {
-    //     let curPos = $(this.parent).scrollLeft();
-    //     curPos -= e.originalEvent.deltaY;
-    //     $(this.parent).scrollLeft(curPos);
-    //     scrollUpdate(this);
-    //   }
-    // });
-    for (let [index, item] of $(targetList)
-      .toArray()
-      .entries()) {
-      if (index % 2 === 0) {
-        let curPos = $(item.parent).scrollLeft();
-        curPos -= e.originalEvent.deltaY;
-        $(item.parent).scrollLeft(curPos);
-        scrollUpdate(item);
-      } else {
-        let curPos = $(item.parent).scrollLeft();
-        curPos += e.originalEvent.deltaY;
-        $(item.parent).scrollLeft(curPos);
-        scrollUpdate(item);
-      }
-    }
-  });
-
-  // function getScrollLeft(target) {
-  //   $(target).scrollLeft();
-  // }
-
-  // function scrollUpdate(target) {
-  //   const scrollLeft = getScrollLeft();
-  //   const cloneWidth =
-  //     $(".ani-infiniteScroll_target")
-  //       .eq(0)
-  //       .width() - originWidth;
-  //   let scrollWidth = $(target).scrollWidth;
-  // }
-
+  // scroll loop functions
   function setScrollPos(target, pos) {
     $(target).scrollLeft(pos);
   }
@@ -69,8 +19,6 @@ $(function() {
       setScrollPos(target.parent, 1);
     } else if (scrollLeft <= 0) {
       setScrollPos(target.parent, scrollWidth - cloneWidth);
-    } else {
-      console.log(scrollWidth, cloneWidth, scrollLeft);
     }
   }
 
@@ -88,4 +36,29 @@ $(function() {
       cloneWidth: scrollWidth - originWidth
     };
   }
+
+  // init the targets
+  for (var i = 0; i < targets.length; i++) {
+    targetList.push(initInfiniteScroll(targets[i], parents[i]));
+  }
+
+  // Wheel event
+  $(window).on("wheel", e => {
+    e.preventDefault();
+    for (let [index, item] of $(targetList)
+      .toArray()
+      .entries()) {
+      if (index % 2 === 0) {
+        let curPos = $(item.parent).scrollLeft();
+        curPos -= e.originalEvent.deltaY;
+        $(item.parent).scrollLeft(curPos);
+        scrollUpdate(item);
+      } else {
+        let curPos = $(item.parent).scrollLeft();
+        curPos += e.originalEvent.deltaY;
+        $(item.parent).scrollLeft(curPos);
+        scrollUpdate(item);
+      }
+    }
+  });
 });
