@@ -1,62 +1,61 @@
-$(function() {
-  const targets = $(".ani-infiniteScroll_target");
-  const parents = $(".ani-infiniteScroll_wrapper");
-  const targetList = [];
+export function h_initInfiniteScroll(target, parent) {
+  const originWidth = $(target).width();
+  $(target)
+    .children()
+    .clone()
+    .appendTo(target);
+  const scrollWidth = $(target).width();
+  return {
+    parent: $(parent),
+    originWidth: originWidth,
+    scrollWidth: scrollWidth,
+    cloneWidth: scrollWidth - originWidth
+  };
+}
 
-  // scroll loop functions
-  function setScrollPos(target, pos) {
-    $(target).scrollLeft(pos);
+export function h_setScrollPos(target, pos) {
+  $(target).scrollLeft(pos);
+}
+
+export function h_scrollUpdate(target) {
+  const originWidth = target.originWidth;
+  const scrollWidth = target.scrollWidth;
+  const cloneWidth = target.cloneWidth;
+  let scrollLeft = $(target.parent).scrollLeft();
+  if (cloneWidth + scrollLeft >= scrollWidth) {
+    $(target.parent).scrollLeft(1);
+  } else if (scrollLeft <= 0) {
+    $(target.parent).scrollLeft(scrollWidth - cloneWidth);
   }
+}
 
-  function scrollUpdate(target) {
-    const originWidth = target.originWidth;
-    const scrollWidth = target.scrollWidth;
-    const cloneWidth = target.cloneWidth;
-    let scrollLeft = $(target.parent).scrollLeft();
-    if (cloneWidth + scrollLeft >= scrollWidth) {
-      setScrollPos(target.parent, 1);
-    } else if (scrollLeft <= 0) {
-      setScrollPos(target.parent, scrollWidth - cloneWidth);
-    }
+export function v_initInfiniteScroll(target, parent) {
+  const originHeight = $(target).height();
+  $(target)
+    .children()
+    .clone()
+    .appendTo(target);
+  const scrollHeight = $(target).height();
+  return {
+    parent: $(parent),
+    originHeight: originHeight,
+    scrollHeight: scrollHeight,
+    cloneHeight: scrollHeight - originHeight
+  };
+}
+
+export function v_setScrollPos(target, pos) {
+  $(target).scrollTop(pos);
+}
+
+export function v_scrollUpdate(target) {
+  const originHeight = target.originHeight;
+  const scrollHeight = target.scrollHeight;
+  const cloneHeight = target.cloneHeight;
+  let scrollTop = $(target.parent).scrollTop();
+  if (cloneHeight + scrollTop >= scrollHeight) {
+    $(target.parent).scrollTop(1);
+  } else if (scrollTop <= 0) {
+    $(target.parent).scrollTop(scrollWidth - cloneWidth);
   }
-
-  function initInfiniteScroll(target, parent) {
-    const originWidth = $(target).width();
-    $(target)
-      .children()
-      .clone()
-      .appendTo(target);
-    const scrollWidth = $(target).width();
-    return {
-      parent: $(parent),
-      originWidth: originWidth,
-      scrollWidth: scrollWidth,
-      cloneWidth: scrollWidth - originWidth
-    };
-  }
-
-  // init the targets
-  for (var i = 0; i < targets.length; i++) {
-    targetList.push(initInfiniteScroll(targets[i], parents[i]));
-  }
-
-  // Wheel event
-  $(window).on("wheel", e => {
-    e.preventDefault();
-    for (let [index, item] of $(targetList)
-      .toArray()
-      .entries()) {
-      if (index % 2 === 0) {
-        let curPos = $(item.parent).scrollLeft();
-        curPos -= e.originalEvent.deltaY;
-        $(item.parent).scrollLeft(curPos);
-        scrollUpdate(item);
-      } else {
-        let curPos = $(item.parent).scrollLeft();
-        curPos += e.originalEvent.deltaY;
-        $(item.parent).scrollLeft(curPos);
-        scrollUpdate(item);
-      }
-    }
-  });
-});
+}
