@@ -1,5 +1,3 @@
-// First clone the content of target
-
 $(function() {
   const targets = $(".ani-infiniteScroll_target");
   const parents = $(".ani-infiniteScroll_wrapper");
