@@ -6,6 +6,7 @@ export function h_initInfiniteScroll(target, parent) {
     .appendTo(target);
   const scrollWidth = $(target).width();
   return {
+    self: $(target),
     parent: $(parent),
     originWidth: originWidth,
     scrollWidth: scrollWidth,
