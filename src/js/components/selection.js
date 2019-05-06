@@ -24,6 +24,7 @@ $(function() {
   for (var i = 0; i < targets.length; i++) {
     targetList.push(initInfiniteScroll(targets[i], parents[i]));
   }
+  console.log(targetList);
 
   // Wheel event
   $(window).on("wheel", e => {
