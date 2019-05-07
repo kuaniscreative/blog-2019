@@ -6,6 +6,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div>this is a1</div>
+    {{> partials/header }}
+    <div class="articles_title">{{ title }}</div>
+    <div class="articles_content">
+        {{{ content }}}
+    </div>
 </body>
 </html>

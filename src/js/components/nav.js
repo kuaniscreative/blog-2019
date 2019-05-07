@@ -3,7 +3,7 @@ import { requestArticle } from "../functions/spa";
 const openNavBtn = $(".header_navIcon");
 const closeNavBtn = $('.nav_closeBtn');
 const content = $(".content");
-const nav = $(".nav")[0];
+const nav = $(".nav");
 console.log(nav)
 
 $(openNavBtn).click(e => {

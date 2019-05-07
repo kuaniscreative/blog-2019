@@ -1,0 +1,17 @@
+.articles_title {
+    @include heroFont;
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 2rem;
+    color: $gray-1;
+    z-index: 1;
+}
+
+.articles_content {
+    @include articleContentFont;
+    padding-right: 16rem;
+    margin-left: 8rem;
+    position: relative;
+    z-index: 7;
+}

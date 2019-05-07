@@ -8,7 +8,7 @@ const port = 3070;
 
 // Custom Handlebars plugin for distributing HTML
 
-const dirForChildPages = "pages/";
+const dirForChildPages = "pages";
 function generateHtmlPlugins(templateDir) {
   // Read files in template directory
   const templateFiles = fs.readdirSync(path.resolve(__dirname, templateDir), {
@@ -25,7 +25,7 @@ function generateHtmlPlugins(templateDir) {
     const extension = parts[1];
     // Create new HTMLWebpackPlugin with options
     return new HtmlWebPackPlugin({
-      filename: `./${dirForChildPages}${name}.html`,
+      filename: `./${dirForChildPages}/${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
       templateParameters: require(path.resolve(
         __dirname,
