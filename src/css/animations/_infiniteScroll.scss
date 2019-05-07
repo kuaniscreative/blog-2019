@@ -3,8 +3,5 @@
     height: max-content;
     transition: 0.1s ease;
     overflow-x: scroll;
-    &::-webkit-scrollbar {
-        opacity: 0;
-    }
-    scrollbar-width: none;
+    @include hideScrollBar;
 }

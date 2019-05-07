@@ -4,14 +4,28 @@
     position: fixed;
     top: 50%;
     left: 2rem;
-    color: $gray-1;
+    font-size: 3.6rem;
+    color: $gray-0;
     z-index: 1;
+}
+
+.articles_titleClickArea{
+    width: 6rem;
+    height: 100%;
+    position: absolute;
 }
 
 .articles_content {
     @include articleContentFont;
-    padding-right: 16rem;
-    margin-left: 8rem;
-    position: relative;
+    display: block;
+    width: 75%;
+    height: 100%;
+    padding-top: 16rem;
+    padding-right: 10%;
+    margin-left: 12rem;
+    position: absolute;
+    top: 0;
+    overflow-y: scroll;
     z-index: 7;
+    @include hideScrollBar;
 }

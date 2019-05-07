@@ -14,5 +14,21 @@
     font-size: 2rem;
     font-weight: 200;
     line-height: 2em;
+    letter-spacing: 1px;
     color: $gray-6;
 }
+
+
+/**
+ *
+ * MISC
+ *
+ */
+
+ @mixin hideScrollBar {
+    &::-webkit-scrollbar {
+        opacity: 0;
+    }
+    scrollbar-width: none;
+ }
+
