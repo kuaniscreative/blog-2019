@@ -24,26 +24,25 @@ $(function() {
   }
 
   // Wheel event
-  if (window.location.href + "/" === window.location.origin) {
-    $(window).on("wheel", e => {
-      e.preventDefault();
-      for (let [index, item] of $(targetList)
-        .toArray()
-        .entries()) {
-        if (index % 2 === 0) {
-          let curPos = $(item.parent).scrollLeft();
-          curPos -= e.originalEvent.deltaY;
-          $(item.parent).scrollLeft(curPos);
-          scrollUpdate(item);
-        } else {
-          let curPos = $(item.parent).scrollLeft();
-          curPos += e.originalEvent.deltaY;
-          $(item.parent).scrollLeft(curPos);
-          scrollUpdate(item);
-        }
+  $(window).on("wheel", e => {
+    for (let [index, item] of $(targetList)
+      .toArray()
+      .entries()) {
+      if (index % 2 === 0) {
+        e.preventDefault();
+        let curPos = $(item.parent).scrollLeft();
+        curPos -= e.originalEvent.deltaY;
+        $(item.parent).scrollLeft(curPos);
+        scrollUpdate(item);
+      } else {
+        e.preventDefault();
+        let curPos = $(item.parent).scrollLeft();
+        curPos += e.originalEvent.deltaY;
+        $(item.parent).scrollLeft(curPos);
+        scrollUpdate(item);
       }
-    });
-  }
+    }
+  });
 
   // hover effect
   const selectionItem = $(".selectionItem");
