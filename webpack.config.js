@@ -27,10 +27,15 @@ function generateHtmlPlugins(templateDir) {
     return new HtmlWebPackPlugin({
       filename: `./${dirForChildPages}/${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
-      templateParameters: require(path.resolve(
-        __dirname,
-        `${templateDir}/json/${name}.json`
-      ))
+      templateParameters: {
+        local: require(path.resolve(
+          __dirname,
+          `${templateDir}/json/${name}.json`
+        )),
+        global: {
+          titleList: require('./src/pages/json/global/titleList.json')
+        }
+      }
     });
   });
 }
@@ -143,7 +148,7 @@ module.exports = {
     new CopyPlugin([{ from: "src/pages/json", to: "pages/json" }]),
     new HtmlWebPackPlugin({
       template: "./src/index.hbs",
-      templateParameters: require('./src/pages/json/index.json')
+      templateParameters: require("./src/pages/json/index.json")
     }),
     new webpack.ProvidePlugin({
       $: "jquery"
