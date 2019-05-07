@@ -1,44 +1,19 @@
 <nav class='nav'>
+    <div class='nav_closeBtn'>close</div>
     <ul class='nav_wrapper'>
+        {{#each titleList }}
         <li>
             <div class='nav_item'>
-                <span class='nav_contentNumbering'>01.</span>
+                <span class='nav_contentNumbering'>{{ this.index }}</span>
                 <div class='nav_content'>
-                    <span class='nav_itemTitle' data-url='test'>如果你害怕，描繪出你的恐懼</span>
-                    </br>
-                    <span class='nav_itemPreview'>沒有人會理我，我的月收入將只能維持一兩個月的生活</span>
+                    <a href="{{ this.url }}">
+                        <span class='nav_itemTitle' data-url='test'>{{ this.title }}</span>
+                        </br>
+                        <span class='nav_itemPreview'>沒有人會理我，我的月收入將只能維持一兩個月的生活</span>
+                    </a>
                 </div>
             </div>
         </li>
-        <li>
-            <div class='nav_item'>
-                <span class='nav_contentNumbering'>02.</span>
-                <div class='nav_content'>
-                    <span class='nav_itemTitle' data-url='test'>我承認，我並不快樂</span>
-                    </br>
-                    <span class='nav_itemPreview'>沒有人會理我，我的月收入將只能維持一兩個月的生活</span>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class='nav_item'>
-                <span class='nav_contentNumbering'>03.</span>
-                <div class='nav_content'>
-                    <span class='nav_itemTitle' data-url='test'>停止追求幸福美滿的結局</span>
-                    </br>
-                    <span class='nav_itemPreview'>沒有人會理我，我的月收入將只能維持一兩個月的生活</span>
-                </div>
-            </div>
-        </li>
-        <li>
-            <div class='nav_item'>
-                <span class='nav_contentNumbering'>04.</span>
-                <div class='nav_content'>
-                    <span class='nav_itemTitle' data-url='test'>當我看著他的照片，完全感受不到他的存在</span>
-                    </br>
-                    <span class='nav_itemPreview'>沒有人會理我，我的月收入將只能維持一兩個月的生活</span>
-                </div>
-            </div>
-        </li>
+        {{/each}}
     </ul>
 </nav>

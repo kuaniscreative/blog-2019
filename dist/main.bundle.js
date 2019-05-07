@@ -95,7 +95,7 @@
 
 exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
 // Module
-exports.push([module.i, "@charset \"UTF-8\";\n/**\n *\n * Color\n *\n */\n/**\n *\n * font\n *\n */\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"微軟正黑體\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: url(\"https://fonts.googleapis.com/css?family=EB+Garamond\"), local(\"PT Serif\");\n  unicode-range: U+00-024F; }\n\n/**\n *\n * reusable property\n *\n */\n/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0; }\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol,\nul {\n  list-style: none; }\n\nblockquote,\nq {\n  quotes: none; }\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box; }\n\na:focus {\n  outline: none; }\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box; }\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0; }\n\nselect {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none; }\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset; }\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer; }\n\nhtml {\n  overflow-x: hidden;\n  font-family: customSet--sans;\n  font-size: 16px;\n  color: #202020; }\n\nh1 {\n  font-size: 2.5rem;\n  line-height: 1.5em;\n  letter-spacing: 0.1em; }\n\np {\n  font-size: 1.2rem;\n  line-height: 1.5em; }\n\n.nav {\n  display: block;\n  width: 384px;\n  height: 100%;\n  padding: 0 2rem 0 2rem;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 0;\n  background: #f2f2f2; }\n  .nav .nav_item {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    margin-bottom: 1.4rem;\n    position: relative;\n    top: 300px; }\n  .nav .nav_contentNumbering {\n    flex: 0 0 2rem;\n    padding-top: 0.65em;\n    font-family: customSet--serif;\n    font-size: 0.85rem;\n    color: #adadad; }\n  .nav .nav_itemTitle {\n    display: inline-block;\n    font-family: customSet--sans;\n    font-size: 1.5rem;\n    letter-spacing: 1px;\n    line-height: 1.4em;\n    margin-bottom: 0.25em; }\n  .nav .nav_itemPreview {\n    display: none;\n    font-family: customSet--sans;\n    line-height: 1.4em;\n    color: #858585; }\n  .nav .nav_itemTitle:hover {\n    color: greenyellow; }\n\n.content {\n  display: block;\n  width: 100%;\n  height: 100%;\n  padding: 8em 4em;\n  position: relative;\n  background: white;\n  transition: 1s ease;\n  z-index: 1; }\n\n.sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.sideMenu_button p {\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr; }\n\n.ani-toggleNav_content--open {\n  transition: 1s ease;\n  -webkit-transform: translate(384px, 0);\n          transform: translate(384px, 0); }\n", "",{"version":3,"sources":["style.scss","/Users/KUAN/Desktop/blog2019/src/css/utilities/_variables.scss","/Users/KUAN/Desktop/blog2019/src/css/base/_reset.scss","/Users/KUAN/Desktop/blog2019/src/css/base/_native.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_nav.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_main.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_l-side.scss","/Users/KUAN/Desktop/blog2019/src/css/animations/_toggleNav.scss"],"names":[],"mappings":"AAAA,gBAAgB;ACAhB;;;;EDKE;ACSF;;;;EDJE;ACYF;EACE,8BAA8B;EAC9B,sEAAgD;EAChD,0BAA0B,EAAA;;AAG5B;EACE,+BAA+B;EAC/B,kFACmB;EACnB,wBAAwB,EAAA;;AAI1B;;;;EDXE;AEzBF,sDAAA;AACA;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;EAiFE,SAAS;EACT,eAAe;EACf,aAAa;EACb,wBAAwB;EACxB,SAAS;EACT,UAAU,EAAA;;AAEZ;;;;;;;;;;;;EAYE,cAAc,EAAA;;AAEhB;EACE,cAAc,EAAA;;AAEhB;;EAEE,gBAAgB,EAAA;;AAElB;;EAEE,YAAY,EAAA;;AAEd;;;;EAIE,aAAa,EAAA;;AAEf;EACE,yBAAyB;EACzB,iBAAiB,EAAA;;AAGnB;;;EAGE,sBAAsB,EAAA;;AAGxB;EACE,aAAa,EAAA;;AAGf,aAAA;AACA;;;;;EAKE,SAAS;EACT,SAAS;EACT,UAAU;EACV,qBAAqB;EACrB,sBAAsB;EACtB,mBAAmB;EACnB,gBAAgB;EAChB,cAAc;EACd,gBAAgB;EAChB,kBAAkB;EAClB,oBAAoB;EACpB,cAAc;EACd,sBAAsB,EAAA;;AAGxB;;;;EAIE,UAAU,EAAA;;AAGZ;EACE,wBAAgB;KAAhB,qBAAgB;UAAhB,gBAAgB,EAAA;;AAGlB;EACE,2CAA2C,EAAA;;AAG7C;;;;EAIE,eAAe,EAAA;;AC/KjB;EACI,kBAAkB;EAClB,4BAA4B;EAC5B,eFiBiB;EEhBjB,cFCW,EAAA;;AEGf;EACI,iBAAiB;EACjB,kBAAkB;EAClB,qBAAqB,EAAA;;AAGzB;EACI,iBAAiB;EACjB,kBAAkB,EAAA;;AChBtB;EACI,cAAc;EACd,YHwCa;EGvCb,YAAY;EACZ,sBAAsB;EACtB,eAAe;EACf,MAAM;EACN,OAAO;EACP,UAAU;EACV,mBHGY,EAAA;EGZhB;IAYQ,aAAa;IACb,mBAAmB;IACnB,iBAAiB;IACjB,qBAAqB;IACrB,kBAAkB;IAClB,UAAU,EAAA;EAjBlB;IAoBQ,cAAc;IACd,mBAAmB;IACnB,6BAA6B;IAC7B,kBAAkB;IAClB,cHfQ,EAAA;EGThB;IA2BQ,qBAAqB;IACrB,4BAA4B;IAC5B,iBAAiB;IACjB,mBAAmB;IACnB,kBAAkB;IAClB,qBAAqB,EAAA;EAhC7B;IAmCQ,aAAa;IACb,4BAA4B;IAC5B,kBAAkB;IAClB,cH9BQ,EAAA;EGRhB;IAyCQ,kBAAkB,EAAA;;ACzC1B;EACI,cAAc;EACd,WAAW;EACX,YAAY;EACZ,gBAAgB;EAChB,kBAAkB;EAClB,iBAAiB;EACjB,mBJoCgB;EInChB,UAAU,EAAA;;ACRd;EACE,cAAc;EACd,YAAY;EACZ,kBAAkB;EAClB,MAAM;EACN,OAAO,EAAA;;AAGT;EAEI,iCAAyB;MAAzB,uBAAyB;UAAzB,yBAAyB,EAAA;;ACV7B;EACI,mBN0CgB;EMzChB,sCAAmC;UAAnC,8BAAmC,EAAA","file":"style.scss","sourcesContent":["@charset \"UTF-8\";\n/**\n *\n * Color\n *\n */\n/**\n *\n * font\n *\n */\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"微軟正黑體\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: url(\"https://fonts.googleapis.com/css?family=EB+Garamond\"), local(\"PT Serif\");\n  unicode-range: U+00-024F; }\n\n/**\n *\n * reusable property\n *\n */\n/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0; }\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol,\nul {\n  list-style: none; }\n\nblockquote,\nq {\n  quotes: none; }\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box; }\n\na:focus {\n  outline: none; }\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box; }\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0; }\n\nselect {\n  appearance: none; }\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset; }\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer; }\n\nhtml {\n  overflow-x: hidden;\n  font-family: customSet--sans;\n  font-size: 16px;\n  color: #202020; }\n\nh1 {\n  font-size: 2.5rem;\n  line-height: 1.5em;\n  letter-spacing: 0.1em; }\n\np {\n  font-size: 1.2rem;\n  line-height: 1.5em; }\n\n.nav {\n  display: block;\n  width: 384px;\n  height: 100%;\n  padding: 0 2rem 0 2rem;\n  position: fixed;\n  top: 0;\n  left: 0;\n  z-index: 0;\n  background: #f2f2f2; }\n  .nav .nav_item {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    margin-bottom: 1.4rem;\n    position: relative;\n    top: 300px; }\n  .nav .nav_contentNumbering {\n    flex: 0 0 2rem;\n    padding-top: 0.65em;\n    font-family: customSet--serif;\n    font-size: 0.85rem;\n    color: #adadad; }\n  .nav .nav_itemTitle {\n    display: inline-block;\n    font-family: customSet--sans;\n    font-size: 1.5rem;\n    letter-spacing: 1px;\n    line-height: 1.4em;\n    margin-bottom: 0.25em; }\n  .nav .nav_itemPreview {\n    display: none;\n    font-family: customSet--sans;\n    line-height: 1.4em;\n    color: #858585; }\n  .nav .nav_itemTitle:hover {\n    color: greenyellow; }\n\n.content {\n  display: block;\n  width: 100%;\n  height: 100%;\n  padding: 8em 4em;\n  position: relative;\n  background: white;\n  transition: 1s ease;\n  z-index: 1; }\n\n.sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.sideMenu_button p {\n  writing-mode: vertical-lr; }\n\n.ani-toggleNav_content--open {\n  transition: 1s ease;\n  transform: translate(384px, 0); }\n","/**\n *\n * Color\n *\n */\n$black: #202020;\n$gray-6: #484848;\n$gray-5: #717171;\n$gray-4: #858585;\n$gray-3: #adadad;\n$gray-2: #d6d6d6;\n$gray-1: #eaeaea;\n$gray-0: #f2f2f2;\n\n/**\n *\n * font\n *\n */\n\n$base-font-size: 16px;\n\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"微軟正黑體\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF;\n}\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: url(\"https://fonts.googleapis.com/css?family=EB+Garamond\"),\n    local(\"PT Serif\");\n  unicode-range: U+00-024F;\n}\n\n\n/**\n *\n * reusable property\n *\n */\n\n$nav-width: 384px;\n$transition: 1s ease;","/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol,\nul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\na:focus {\n  outline: none;\n}\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box;\n}\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0;\n}\n\nselect {\n  appearance: none;\n}\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset;\n}\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer;\n}\n","html {\n    overflow-x: hidden;\n    font-family: customSet--sans;\n    font-size: $base-font-size;\n    color: $black;\n    \n}\n\nh1 {\n    font-size: 2.5rem;\n    line-height: 1.5em;\n    letter-spacing: 0.1em;\n}\n\np {\n    font-size: 1.2rem;\n    line-height: 1.5em;\n}",".nav {\n    display: block;\n    width: $nav-width;\n    height: 100%;\n    padding: 0 2rem 0 2rem;\n    position: fixed;\n    top: 0;\n    left: 0; \n    z-index: 0;\n    background: $gray-0;\n    \n    .nav_item {\n        display: flex;\n        flex-direction: row;\n        flex-wrap: nowrap;\n        margin-bottom: 1.4rem;\n        position: relative;\n        top: 300px;\n    }\n    .nav_contentNumbering {\n        flex: 0 0 2rem;\n        padding-top: 0.65em;\n        font-family: customSet--serif;\n        font-size: 0.85rem;\n        color: $gray-3;\n    }\n    .nav_itemTitle {\n        display: inline-block;\n        font-family: customSet--sans;\n        font-size: 1.5rem;\n        letter-spacing: 1px;\n        line-height: 1.4em;\n        margin-bottom: 0.25em;\n    }\n    .nav_itemPreview {\n        display: none;\n        font-family: customSet--sans;\n        line-height: 1.4em;\n        color: $gray-4;\n    }\n    .nav_itemTitle:hover {\n        color: greenyellow;\n    }\n}\n\n",".content {\n    display: block;\n    width: 100%;\n    height: 100%;\n    padding: 8em 4em;\n    position: relative;\n    background: white;\n    transition: $transition;\n    z-index: 1;\n}",".sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.sideMenu_button {\n  & p {\n    writing-mode: vertical-lr;\n  }\n}\n",".ani-toggleNav_content--open {\n    transition: $transition;\n    transform: translate($nav-width, 0);\n}\n\n"]}]);
+exports.push([module.i, "/**\n *\n * Color\n *\n */\n/**\n *\n * font\n *\n */\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: local(\"PT Serif\");\n  unicode-range: U+00-024F; }\n\n@font-face {\n  font-family: \"customSet--sans\";\n  font-weight: 200;\n  src: local(\"PingFangTC-light\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n/**\n *\n * cubic-bezier\n *\n */\n/**\n *\n * reusable property\n *\n */\n/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0; }\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol,\nul {\n  list-style: none; }\n\nblockquote,\nq {\n  quotes: none; }\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box; }\n\na:focus {\n  outline: none; }\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box; }\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0; }\n\nselect {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none; }\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset; }\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer; }\n\nhtml {\n  overflow-x: hidden;\n  font-family: customSet--sans;\n  font-size: 16px;\n  color: #202020; }\n\nbody {\n  position: fixed; }\n\nh1 {\n  font-size: 2.5rem;\n  line-height: 1.5em;\n  letter-spacing: 0.1em; }\n\np {\n  font-size: 1.2rem;\n  line-height: 1.5em; }\n\n.nav {\n  display: block;\n  width: 384px;\n  height: 100%;\n  padding: 0 2rem 0 2rem;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background: #f2f2f2;\n  visibility: hidden; }\n  .nav .nav_item {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    margin-bottom: 1.4rem;\n    position: relative;\n    top: 300px; }\n  .nav .nav_contentNumbering {\n    flex: 0 0 2rem;\n    padding-top: 0.65em;\n    font-family: customSet--serif;\n    font-size: 0.85rem;\n    color: #adadad; }\n  .nav .nav_itemTitle {\n    display: inline-block;\n    font-family: customSet--sans;\n    font-size: 1.5rem;\n    letter-spacing: 1px;\n    line-height: 1.4em;\n    margin-bottom: 0.25em; }\n  .nav .nav_itemPreview {\n    display: none;\n    font-family: customSet--sans;\n    line-height: 1.4em;\n    color: #858585; }\n  .nav .nav_itemTitle:hover {\n    color: greenyellow; }\n\n.content {\n  display: block;\n  width: 100%;\n  height: 100%;\n  padding: 8em 4em;\n  position: relative;\n  background: white;\n  transition: 1s ease;\n  z-index: 1; }\n\n.header {\n  display: block;\n  width: 100%;\n  height: 33vh;\n  position: relative; }\n\n.header_navIcon {\n  position: absolute;\n  top: 33%;\n  left: 4rem;\n  -webkit-transform: translate(0, -100%);\n          transform: translate(0, -100%);\n  cursor: pointer; }\n\n.navIcon_line:nth-child(1) {\n  width: 2rem;\n  padding-bottom: 1rem;\n  border-bottom: 2px solid black; }\n\n.navIcon_line:nth-child(2) {\n  width: 1.2rem;\n  padding-bottom: 1rem;\n  border-bottom: 2px solid black; }\n\n.sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.sideMenu_button p {\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr; }\n\n#indexSelection {\n  width: 100vw;\n  overflow: hidden; }\n\n.indexSelection_row {\n  width: -webkit-max-content;\n  width: -moz-max-content;\n  width: max-content;\n  white-space: nowrap;\n  margin-bottom: 24px; }\n\n.selectionItem {\n  display: inline-block;\n  margin-left: 24px;\n  margin-right: 1rem; }\n  .selectionItem_index {\n    display: inline-block;\n    padding: 0 0.6em 0.8em 0;\n    font-family: customSet--serif;\n    font-size: 0.6rem;\n    line-height: 100%;\n    letter-spacing: 1px;\n    vertical-align: text-top;\n    transition: all 0.5s ease; }\n  .selectionItem_title {\n    display: inline-block;\n    font-size: 2.8rem;\n    font-weight: 200;\n    color: #484848;\n    vertical-align: text-top;\n    transition: all 0.5s ease; }\n  .selectionItem_line {\n    display: inline-block;\n    width: 4rem;\n    height: 1.5rem;\n    margin-left: 24px;\n    border-bottom: 2px solid #202020;\n    vertical-align: text-top;\n    transition: all 0.5s ease; }\n\n.ani-toggleNav_content--open {\n  transition: 1s ease;\n  -webkit-transform: translate(384px, 0);\n          transform: translate(384px, 0); }\n\n.ani-infiniteScroll_wrapper {\n  width: 100%;\n  height: -webkit-max-content;\n  height: -moz-max-content;\n  height: max-content;\n  transition: 0.1s ease;\n  overflow-x: scroll;\n  scrollbar-width: none; }\n  .ani-infiniteScroll_wrapper::-webkit-scrollbar {\n    opacity: 0; }\n", "",{"version":3,"sources":["/Users/KUAN/Desktop/blog2019/src/css/utilities/_variables.scss","style.scss","/Users/KUAN/Desktop/blog2019/src/css/base/_reset.scss","/Users/KUAN/Desktop/blog2019/src/css/base/_native.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_nav.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_main.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_header.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_l-side.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_selection.scss","/Users/KUAN/Desktop/blog2019/src/css/animations/_toggleNav.scss","/Users/KUAN/Desktop/blog2019/src/css/animations/_infiniteScroll.scss"],"names":[],"mappings":"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","file":"style.scss","sourcesContent":["/**\n *\n * Color\n *\n */\n$black: #202020;\n$gray-6: #484848;\n$gray-5: #717171;\n$gray-4: #858585;\n$gray-3: #adadad;\n$gray-2: #d6d6d6;\n$gray-1: #eaeaea;\n$gray-0: #f2f2f2;\n\n/**\n *\n * font\n *\n */\n\n$base-font-size: 16px;\n\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF;\n}\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: local(\"PT Serif\");\n  unicode-range: U+00-024F;\n}\n\n@font-face {\n  font-family: \"customSet--sans\";\n  font-weight: 200;\n  src: local(\"PingFangTC-light\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF;\n}\n\n\n/**\n *\n * cubic-bezier\n *\n */\n\n$cubic_progressive: cubic-bezier(.09,1.01,.53,.94);\n\n/**\n *\n * reusable property\n *\n */\n\n$nav-width: 384px;\n$transition: 1s ease;","/**\n *\n * Color\n *\n */\n/**\n *\n * font\n *\n */\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: local(\"PT Serif\");\n  unicode-range: U+00-024F; }\n\n@font-face {\n  font-family: \"customSet--sans\";\n  font-weight: 200;\n  src: local(\"PingFangTC-light\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n/**\n *\n * cubic-bezier\n *\n */\n/**\n *\n * reusable property\n *\n */\n/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0; }\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol,\nul {\n  list-style: none; }\n\nblockquote,\nq {\n  quotes: none; }\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box; }\n\na:focus {\n  outline: none; }\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box; }\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0; }\n\nselect {\n  appearance: none; }\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset; }\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer; }\n\nhtml {\n  overflow-x: hidden;\n  font-family: customSet--sans;\n  font-size: 16px;\n  color: #202020; }\n\nbody {\n  position: fixed; }\n\nh1 {\n  font-size: 2.5rem;\n  line-height: 1.5em;\n  letter-spacing: 0.1em; }\n\np {\n  font-size: 1.2rem;\n  line-height: 1.5em; }\n\n.nav {\n  display: block;\n  width: 384px;\n  height: 100%;\n  padding: 0 2rem 0 2rem;\n  position: fixed;\n  top: 0;\n  left: 0;\n  background: #f2f2f2;\n  visibility: hidden; }\n  .nav .nav_item {\n    display: flex;\n    flex-direction: row;\n    flex-wrap: nowrap;\n    margin-bottom: 1.4rem;\n    position: relative;\n    top: 300px; }\n  .nav .nav_contentNumbering {\n    flex: 0 0 2rem;\n    padding-top: 0.65em;\n    font-family: customSet--serif;\n    font-size: 0.85rem;\n    color: #adadad; }\n  .nav .nav_itemTitle {\n    display: inline-block;\n    font-family: customSet--sans;\n    font-size: 1.5rem;\n    letter-spacing: 1px;\n    line-height: 1.4em;\n    margin-bottom: 0.25em; }\n  .nav .nav_itemPreview {\n    display: none;\n    font-family: customSet--sans;\n    line-height: 1.4em;\n    color: #858585; }\n  .nav .nav_itemTitle:hover {\n    color: greenyellow; }\n\n.content {\n  display: block;\n  width: 100%;\n  height: 100%;\n  padding: 8em 4em;\n  position: relative;\n  background: white;\n  transition: 1s ease;\n  z-index: 1; }\n\n.header {\n  display: block;\n  width: 100%;\n  height: 33vh;\n  position: relative; }\n\n.header_navIcon {\n  position: absolute;\n  top: 33%;\n  left: 4rem;\n  transform: translate(0, -100%);\n  cursor: pointer; }\n\n.navIcon_line:nth-child(1) {\n  width: 2rem;\n  padding-bottom: 1rem;\n  border-bottom: 2px solid black; }\n\n.navIcon_line:nth-child(2) {\n  width: 1.2rem;\n  padding-bottom: 1rem;\n  border-bottom: 2px solid black; }\n\n.sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.sideMenu_button p {\n  writing-mode: vertical-lr; }\n\n#indexSelection {\n  width: 100vw;\n  overflow: hidden; }\n\n.indexSelection_row {\n  width: max-content;\n  white-space: nowrap;\n  margin-bottom: 24px; }\n\n.selectionItem {\n  display: inline-block;\n  margin-left: 24px;\n  margin-right: 1rem; }\n  .selectionItem_index {\n    display: inline-block;\n    padding: 0 0.6em 0.8em 0;\n    font-family: customSet--serif;\n    font-size: 0.6rem;\n    line-height: 100%;\n    letter-spacing: 1px;\n    vertical-align: text-top;\n    transition: all 0.5s ease; }\n  .selectionItem_title {\n    display: inline-block;\n    font-size: 2.8rem;\n    font-weight: 200;\n    color: #484848;\n    vertical-align: text-top;\n    transition: all 0.5s ease; }\n  .selectionItem_line {\n    display: inline-block;\n    width: 4rem;\n    height: 1.5rem;\n    margin-left: 24px;\n    border-bottom: 2px solid #202020;\n    vertical-align: text-top;\n    transition: all 0.5s ease; }\n\n.ani-toggleNav_content--open {\n  transition: 1s ease;\n  transform: translate(384px, 0); }\n\n.ani-infiniteScroll_wrapper {\n  width: 100%;\n  height: max-content;\n  transition: 0.1s ease;\n  overflow-x: scroll;\n  scrollbar-width: none; }\n  .ani-infiniteScroll_wrapper::-webkit-scrollbar {\n    opacity: 0; }\n","/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol,\nul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\na:focus {\n  outline: none;\n}\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box;\n}\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0;\n}\n\nselect {\n  appearance: none;\n}\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset;\n}\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer;\n}\n","html {\n    overflow-x: hidden;\n    font-family: customSet--sans;\n    font-size: $base-font-size;\n    color: $black;\n}\n\nbody {\n    position: fixed;\n}\n\nh1 {\n    font-size: 2.5rem;\n    line-height: 1.5em;\n    letter-spacing: 0.1em;\n}\n\np {\n    font-size: 1.2rem;\n    line-height: 1.5em;\n}",".nav {\n    display: block;\n    width: $nav-width;\n    height: 100%;\n    padding: 0 2rem 0 2rem;\n    position: fixed;\n    top: 0;\n    left: 0; \n    background: $gray-0;\n\n    //test\n    visibility: hidden;\n\n    .nav_item {\n        display: flex;\n        flex-direction: row;\n        flex-wrap: nowrap;\n        margin-bottom: 1.4rem;\n        position: relative;\n        top: 300px;\n    }\n    .nav_contentNumbering {\n        flex: 0 0 2rem;\n        padding-top: 0.65em;\n        font-family: customSet--serif;\n        font-size: 0.85rem;\n        color: $gray-3;\n    }\n    .nav_itemTitle {\n        display: inline-block;\n        font-family: customSet--sans;\n        font-size: 1.5rem;\n        letter-spacing: 1px;\n        line-height: 1.4em;\n        margin-bottom: 0.25em;\n    }\n    .nav_itemPreview {\n        display: none;\n        font-family: customSet--sans;\n        line-height: 1.4em;\n        color: $gray-4;\n    }\n    .nav_itemTitle:hover {\n        color: greenyellow;\n    }\n}\n\n",".content {\n    display: block;\n    width: 100%;\n    height: 100%;\n    padding: 8em 4em;\n    position: relative;\n    background: white;\n    transition: $transition;\n    z-index: 1;\n}",".header {\n    display: block;\n    width: 100%;\n    height: 33vh;\n    position: relative;\n}\n\n.header_navIcon {\n    position: absolute;\n    top: 33%;\n    left: 4rem;\n    transform: translate(0, -100%);\n    cursor: pointer;\n}\n\n.navIcon_line:nth-child(1) {\n    width: 2rem;\n    padding-bottom: 1rem;\n    border-bottom: 2px solid black;\n}\n.navIcon_line:nth-child(2) {\n    width: 1.2rem;\n    padding-bottom: 1rem;\n    border-bottom: 2px solid black;\n}",".sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.sideMenu_button {\n  & p {\n    writing-mode: vertical-lr;\n  }\n}\n","$item-spacing: 24px;\n\n#indexSelection {\n  width: 100vw;\n  overflow: hidden;\n}\n\n.indexSelection_scrollWrapper{\n}\n\n.indexSelection_row {\n  width: max-content;\n  white-space: nowrap;\n  margin-bottom: $item-spacing;\n}\n\n.selectionItem {\n  display: inline-block;\n  margin-left: $item-spacing;\n  margin-right: 1rem;\n\n  &_index {\n    display: inline-block;\n    padding: 0 0.6em 0.8em 0;\n    font-family: customSet--serif;\n    font-size: 0.6rem;\n    line-height: 100%;\n    letter-spacing: 1px;\n    vertical-align: text-top;\n    transition: all 0.5s ease;\n  }\n  &_title {\n    display: inline-block;\n    font-size: 2.8rem;\n    font-weight: 200;\n    color: $gray-6;\n    vertical-align: text-top;\n    transition: all 0.5s ease;\n  }\n  &_line {\n    display: inline-block;\n    width: 4rem;\n    height: 1.5rem;\n    margin-left: $item-spacing;\n    border-bottom: 2px solid $black;\n    vertical-align: text-top;\n    transition: all 0.5s ease;\n  }\n}\n",".ani-toggleNav_content--open {\n    transition: $transition;\n    transform: translate($nav-width, 0);\n}\n\n",".ani-infiniteScroll_wrapper {\n    width: 100%;\n    height: max-content;\n    transition: 0.1s ease;\n    overflow-x: scroll;\n    &::-webkit-scrollbar {\n        opacity: 0;\n    }\n    scrollbar-width: none;\n}"]}]);
 
 
 
@@ -11347,9 +11347,113 @@ if(false) {}
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./css/style.scss */ "./src/css/style.scss");
 /* harmony import */ var _css_style_scss__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_style_scss__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _js_components_nav__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/components/nav */ "./src/js/components/nav.js");
+/* harmony import */ var _js_routing__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./js/routing */ "./src/js/routing.js");
+/* harmony import */ var _js_components_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/components/nav */ "./src/js/components/nav.js");
+/* harmony import */ var _js_components_selection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/components/selection */ "./src/js/components/selection.js");
 
 
+
+
+
+/***/ }),
+
+/***/ "./src/js/animations/infiniteScroll.js":
+/*!*********************************************!*\
+  !*** ./src/js/animations/infiniteScroll.js ***!
+  \*********************************************/
+/*! exports provided: h_initInfiniteScroll, h_setScrollPos, h_scrollUpdate, v_initInfiniteScroll, v_setScrollPos, v_scrollUpdate */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h_initInfiniteScroll", function() { return h_initInfiniteScroll; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h_setScrollPos", function() { return h_setScrollPos; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "h_scrollUpdate", function() { return h_scrollUpdate; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v_initInfiniteScroll", function() { return v_initInfiniteScroll; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v_setScrollPos", function() { return v_setScrollPos; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v_scrollUpdate", function() { return v_scrollUpdate; });
+function h_initInfiniteScroll(target, parent) {
+  var originWidth = $(target).width();
+  $(target).children().clone().appendTo(target);
+  var scrollWidth = $(target).width();
+  return {
+    self: $(target),
+    parent: $(parent),
+    originWidth: originWidth,
+    scrollWidth: scrollWidth,
+    cloneWidth: scrollWidth - originWidth
+  };
+}
+function h_setScrollPos(target, pos) {
+  $(target).scrollLeft(pos);
+}
+function h_scrollUpdate(target) {
+  var originWidth = target.originWidth;
+  var scrollWidth = target.scrollWidth;
+  var cloneWidth = target.cloneWidth;
+  var scrollLeft = $(target.parent).scrollLeft();
+
+  if (cloneWidth + scrollLeft >= scrollWidth) {
+    $(target.parent).scrollLeft(1);
+  } else if (scrollLeft <= 0) {
+    $(target.parent).scrollLeft(scrollWidth - cloneWidth);
+  }
+}
+function v_initInfiniteScroll(target, parent) {
+  var originHeight = $(target).height();
+  $(target).children().clone().appendTo(target);
+  var scrollHeight = $(target).height();
+  return {
+    parent: $(parent),
+    originHeight: originHeight,
+    scrollHeight: scrollHeight,
+    cloneHeight: scrollHeight - originHeight
+  };
+}
+function v_setScrollPos(target, pos) {
+  $(target).scrollTop(pos);
+}
+function v_scrollUpdate(target) {
+  var originHeight = target.originHeight;
+  var scrollHeight = target.scrollHeight;
+  var cloneHeight = target.cloneHeight;
+  var scrollTop = $(target.parent).scrollTop();
+
+  if (cloneHeight + scrollTop >= scrollHeight) {
+    $(target.parent).scrollTop(1);
+  } else if (scrollTop <= 0) {
+    $(target.parent).scrollTop(scrollWidth - cloneWidth);
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/animations/skew.js":
+/*!***********************************!*\
+  !*** ./src/js/animations/skew.js ***!
+  \***********************************/
+/*! exports provided: mapInput, skew */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapInput", function() { return mapInput; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skew", function() { return skew; });
+function mapInput(input) {
+  var minIn = 0;
+  var maxIn = 300;
+  var minOut = 10;
+  var maxOut = 300;
+  return (input - minIn) * (maxOut - minOut) / (maxIn - minIn) + minOut;
+}
+function skew(target, input) {
+  $(target).css({
+    'transform': "skewX(".concat(input, "deg)")
+  });
+  requestAnimationFrame(skew);
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
 
@@ -11364,22 +11468,143 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _functions_spa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/spa */ "./src/js/functions/spa.js");
 
-var toggleNavBtn = $('.sideMenu_button');
-var content = $('.content');
-$(toggleNavBtn).click(function (e) {
-  e.stopPropagation();
-  $(content).addClass('ani-toggleNav_content--open');
+var openNavBtn = $(".header_navIcon");
+var closeNavBtn = $('.nav_closeBtn');
+var content = $(".content");
+var nav = $(".nav")[0];
+console.log(nav);
+$(openNavBtn).click(function (e) {
+  $(nav).css({
+    'visibility': 'visible'
+  });
 });
-$(content).click(function (e) {
-  e.stopPropagation();
+$(closeNavBtn).click(function () {
+  $(nav).css({
+    'visibility': 'hidden'
+  });
+}); // $(content).click((e) => {
+//     e.stopPropagation();
+//     if ($(content).hasClass('ani-toggleNav_content--open')) {
+//         $(content).removeClass('ani-toggleNav_content--open');
+//     }
+// })
+// test
+// $('.nav_itemTitle').click((e) => {
+//     const url = $(e.target).data('url');
+//     requestArticle(url);
+// })
+// console.log(window.location.pathname);
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
-  if ($(content).hasClass('ani-toggleNav_content--open')) {
-    $(content).removeClass('ani-toggleNav_content--open');
+/***/ }),
+
+/***/ "./src/js/components/selection.js":
+/*!****************************************!*\
+  !*** ./src/js/components/selection.js ***!
+  \****************************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _animations_infiniteScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../animations/infiniteScroll */ "./src/js/animations/infiniteScroll.js");
+/* harmony import */ var _animations_skew__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../animations/skew */ "./src/js/animations/skew.js");
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+$(function () {
+  // requestAnimationFrame setup
+  (function () {
+    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    window.requestAnimationFrame = requestAnimationFrame;
+  })(); // scroll loop variables
+
+
+  var targets = $(".ani-infiniteScroll_target");
+  var parents = $(".ani-infiniteScroll_wrapper");
+  var targetList = [];
+  var delta; // init the targets
+
+  for (var i = 0; i < targets.length; i++) {
+    targetList.push(Object(_animations_infiniteScroll__WEBPACK_IMPORTED_MODULE_0__["h_initInfiniteScroll"])(targets[i], parents[i]));
   }
-}); // test
 
-$('.nav_itemTitle').eq(1).click(function () {
-  Object(_functions_spa__WEBPACK_IMPORTED_MODULE_0__["requestArticle"])('test');
+  console.log(targetList); // Wheel event
+
+  $(window).on("wheel", function (e) {
+    delta = e.originalEvent.deltaY;
+    e.preventDefault();
+    var _iteratorNormalCompletion = true;
+    var _didIteratorError = false;
+    var _iteratorError = undefined;
+
+    try {
+      for (var _iterator = $(targetList).toArray().entries()[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+        var _step$value = _slicedToArray(_step.value, 2),
+            index = _step$value[0],
+            item = _step$value[1];
+
+        if (index % 2 === 0) {
+          var curPos = $(item.parent).scrollLeft();
+          curPos -= e.originalEvent.deltaY;
+          $(item.parent).scrollLeft(curPos);
+          Object(_animations_infiniteScroll__WEBPACK_IMPORTED_MODULE_0__["h_scrollUpdate"])(item);
+        } else {
+          var _curPos = $(item.parent).scrollLeft();
+
+          _curPos += e.originalEvent.deltaY;
+          $(item.parent).scrollLeft(_curPos);
+          Object(_animations_infiniteScroll__WEBPACK_IMPORTED_MODULE_0__["h_scrollUpdate"])(item);
+        }
+      }
+    } catch (err) {
+      _didIteratorError = true;
+      _iteratorError = err;
+    } finally {
+      try {
+        if (!_iteratorNormalCompletion && _iterator["return"] != null) {
+          _iterator["return"]();
+        }
+      } finally {
+        if (_didIteratorError) {
+          throw _iteratorError;
+        }
+      }
+    }
+  }); // hover effect
+
+  var selectionItem = $(".selectionItem");
+  var mouseEventStash = [];
+
+  function selectionMouseEnter(e) {
+    mouseEventStash.push($(selectionItem).not(e.currentTarget).children().css('color'));
+    mouseEventStash.push($(selectionItem).not(e.currentTarget).children('.selectionItem_line').css('border-bottom'));
+    $(selectionItem).not(e.currentTarget).children().css({
+      'color': '#d6d6d6'
+    });
+    $(selectionItem).not(e.currentTarget).children('.selectionItem_line').css({
+      'border-bottom': '2px solid #d6d6d6'
+    });
+  }
+
+  function selectionMouseLeave(e) {
+    $(selectionItem).not(e.currentTarget).children().css({
+      'color': mouseEventStash[0]
+    });
+    $(selectionItem).not(e.currentTarget).children('.selectionItem_line').css({
+      'border-bottom': mouseEventStash[1]
+    });
+  }
+
+  $(selectionItem).hover(selectionMouseEnter, selectionMouseLeave);
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
@@ -11397,11 +11622,13 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "requestArticle", function() { return requestArticle; });
 var requestArticle = function requestArticle(param) {
   $.ajax({
-    url: "pages/".concat(param, ".html"),
+    url: "pages/json/".concat(param, ".json"),
     type: "GET",
-    dataType: "text",
+    dataType: "json",
     success: function success(res) {
-      console.log(res);
+      //   window.history.pushState({}, param, window.location.origin + "/" + param);
+      window.location.hash = param;
+      $("body").html(res.t);
     },
     error: function error(err) {
       console.log(err);
@@ -11409,6 +11636,25 @@ var requestArticle = function requestArticle(param) {
   });
 };
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+
+/***/ }),
+
+/***/ "./src/js/routing.js":
+/*!***************************!*\
+  !*** ./src/js/routing.js ***!
+  \***************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _functions_spa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./functions/spa */ "./src/js/functions/spa.js");
+
+var hash = window.location.hash.split("").slice(1).join("");
+
+if (hash.length !== 0) {
+  Object(_functions_spa__WEBPACK_IMPORTED_MODULE_0__["requestArticle"])(hash);
+}
 
 /***/ })
 

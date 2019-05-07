@@ -1,26 +1,36 @@
-import { requestArticle } from '../functions/spa';
+import { requestArticle } from "../functions/spa";
 
-const toggleNavBtn = $('.sideMenu_button');
-const content = $('.content');
+const openNavBtn = $(".header_navIcon");
+const closeNavBtn = $('.nav_closeBtn');
+const content = $(".content");
+const nav = $(".nav")[0];
+console.log(nav)
 
-$(toggleNavBtn).click((e) => {
-    e.stopPropagation();
-    $(content).addClass('ani-toggleNav_content--open');
+$(openNavBtn).click(e => {
+
+    $(nav).css({
+        'visibility': 'visible'
+    })
 });
 
-
-$(content).click((e) => {
-    e.stopPropagation();
-    if ($(content).hasClass('ani-toggleNav_content--open')) {
-        $(content).removeClass('ani-toggleNav_content--open');
-    }
+$(closeNavBtn).click(() => {
+    $(nav).css({
+        'visibility': 'hidden'
+    })
 })
+
+// $(content).click((e) => {
+//     e.stopPropagation();
+//     if ($(content).hasClass('ani-toggleNav_content--open')) {
+//         $(content).removeClass('ani-toggleNav_content--open');
+//     }
+// })
 
 // test
 
-$('.nav_itemTitle').click((e) => {
-    const url = $(e.target).data('url');
-    requestArticle(url);
-})
+// $('.nav_itemTitle').click((e) => {
+//     const url = $(e.target).data('url');
+//     requestArticle(url);
+// })
 
-console.log(window.location.pathname);
+// console.log(window.location.pathname);

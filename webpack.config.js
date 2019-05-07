@@ -135,11 +135,11 @@ module.exports = {
     ]
   },
   plugins: [
-    // new webpack.LoaderOptionsPlugin({
-    //   options: {
-    //     handlebarsLoader: {}
-    //   }
-    // }),
+    new webpack.LoaderOptionsPlugin({
+      options: {
+        handlebarsLoader: {}
+      }
+    }),
     new CopyPlugin([{ from: "src/pages/json", to: "pages/json" }]),
     new HtmlWebPackPlugin({
       template: "./src/index.hbs",
