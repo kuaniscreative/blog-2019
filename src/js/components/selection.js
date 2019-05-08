@@ -65,13 +65,14 @@ $(function() {
       .not(e.currentTarget)
       .children()
       .css({
-        color: "#d6d6d6"
+        'transition': '0.5s ease',
+        "color": "#eaeaea"
       });
     $(selectionItem)
       .not(e.currentTarget)
       .children(".selectionItem_line")
       .css({
-        "border-bottom": "2px solid #d6d6d6"
+        "border-bottom": "2px solid #eaeaea"
       });
   }
 
@@ -80,7 +81,7 @@ $(function() {
       .not(e.currentTarget)
       .children()
       .css({
-        color: mouseEventStash[0]
+        "color": mouseEventStash[0]
       });
     $(selectionItem)
       .not(e.currentTarget)
