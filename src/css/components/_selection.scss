@@ -12,25 +12,15 @@ $item-spacing: 24px;
 }
 
 .selectionItem {
-  display: inline-block;
+  @include titleLayout_wrapper;
   padding-left: $item-spacing;
   padding-right: 1rem;
-  user-select: none;
-  cursor: pointer;
 
   &_index {
-    display: inline-block;
-    padding: 0 0.6em 0.8em 0;
-    font-family: customSet--serif;
-    font-size: 0.6rem;
-    line-height: 100%;
-    letter-spacing: 1px;
-    vertical-align: text-top;
+    @include titleLayout_index;
   }
   &_title {
-    @include heroFont;
-    display: inline-block;
-    vertical-align: text-top;
+    @include titleLayout_title;
   }
   &_line {
     display: inline-block;

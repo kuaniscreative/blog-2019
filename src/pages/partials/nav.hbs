@@ -1,4 +1,49 @@
 <nav class='nav'>
+    <div class="nav_about">
+        <div class="navAbout_wrapper">
+            <div class='navAbout_title'>冠決定開始寫部落格</div>
+            <div class='navAbout_description'>
+                真足的的是名，格視最你小母？商覺爸日家少變一唱行。於指通二自……速裡入。想動風格該來性不一，可不風別平每行兩要陸木著法手開孩年座念創你爾可樓起使眾何心打民此巴竟子人變別文……來不呢為或正年軍家亞該亞備得流及邊。
+            </div>
+            <div class="navAbout_contact">
+            <div class="contact_email">kuan.thisis@gmail.com</div>
+            <div class="contact_phone">+886 921908739</div>
+        </div>
+        </div>
+        
+    </div>
+    <div class="nav_contentList">
+        <div class='navContentList_wrapper'>
+            {{#each titleList }}
+            <li>
+                <div class='nav_item'>
+                    <span class='nav_contentNumbering'>{{ this.index }}</span>
+                    <div class='nav_content'>
+                        <a href="{{ this.url }}">
+                            <span class='nav_itemTitle' data-url='test'>{{ this.title }}</span>
+                        </a>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </div>
+    </div>
+    <div class='nav_closeIcon'>
+        <div class='closeIcon_line'></div>
+        <div class='closeIcon_line'></div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+{{!-- <nav class='nav'>
     <div class='nav_closeBtn'>close</div>
     <ul class='nav_wrapper'>
         {{#each titleList }}
@@ -7,13 +52,11 @@
                 <span class='nav_contentNumbering'>{{ this.index }}</span>
                 <div class='nav_content'>
                     <a href="{{ this.url }}">
-                        <span class='nav_itemTitle' data-url='test'>{{ this.title }}</span>
-                        </br>
-                        <span class='nav_itemPreview'>沒有人會理我，我的月收入將只能維持一兩個月的生活</span>
+                        <span class='nav_itemTitle' data-url='test'>{{ this.title }}</span>                       
                     </a>
                 </div>
             </div>
         </li>
         {{/each}}
     </ul>
-</nav>
+</nav> --}}

@@ -21,6 +21,36 @@
 
 /**
  *
+ * layout
+ *
+ */
+
+ @mixin  titleLayout_wrapper {
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+ }
+
+ @mixin titleLayout_index {
+    display: inline-block;
+    padding: 0 0.6em 0.8em 0;
+    font-family: customSet--serif;
+    font-size: 0.6rem;
+    line-height: 100%;
+    letter-spacing: 1px;
+    vertical-align: text-top;
+ }
+
+ @mixin titleLayout_title {
+    @include heroFont;
+    display: inline-block;
+    vertical-align: text-top;
+ }
+
+
+
+/**
+ *
  * MISC
  *
  */
