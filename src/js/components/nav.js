@@ -1,7 +1,7 @@
 import { requestArticle } from "../functions/spa";
 
 const openNavBtn = $(".header_navIcon");
-const closeNavBtn = $('.nav_closeBtn');
+const closeNavBtn = $('.nav_closeIcon');
 const content = $(".content");
 const nav = $(".nav");
 console.log(nav)
