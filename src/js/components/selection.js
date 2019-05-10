@@ -26,18 +26,22 @@ $(function() {
 
   // Wheel event
   $(window).on("wheel", e => {
-    if (window.shouldPreventWheel){
-      e.preventDefault();
-    }
+    
     for (let [index, item] of $(targetList)
       .toArray()
       .entries()) {
       if (index % 2 === 0) {
+        if (window.shouldPreventWheel){
+          e.preventDefault();
+        }
         let curPos = $(item.parent).scrollLeft();
         curPos -= e.originalEvent.deltaY;
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       } else {
+        if (window.shouldPreventWheel){
+          e.preventDefault();
+        }
         let curPos = $(item.parent).scrollLeft();
         curPos += e.originalEvent.deltaY;
         $(item.parent).scrollLeft(curPos);

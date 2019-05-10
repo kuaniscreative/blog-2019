@@ -20,6 +20,14 @@ $(closeNavBtn).click(() => {
     })
 })
 
+$('.nav_content a').click(() => {
+    window.shouldPreventWheel = false;
+})
+
+$('.nav_ToIndex a').click(() => {
+    window.shouldPreventWheel = true;
+})
+
 // $(content).click((e) => {
 //     e.stopPropagation();
 //     if ($(content).hasClass('ani-toggleNav_content--open')) {
