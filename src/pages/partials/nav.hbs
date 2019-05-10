@@ -11,7 +11,7 @@
             </div>
             <div class='nav_area'>
                 <div class='navArea_itemWrapper'>
-                    {{#each titleList }}
+                    {{#each global.titleList.titleList }}
                     {{#if this.left}}
                     <div class='nav_item'>
                         <span class='nav_contentNumbering'>{{ this.index }}</span>
@@ -27,7 +27,7 @@
             </div>
             <div class='nav_area'>
                 <div class='navArea_itemWrapper'>
-                    {{#each titleList }}
+                    {{#each global.titleList.titleList }}
                     {{#if this.right}}
                     <div class='nav_item'>
                         <span class='nav_contentNumbering'>{{ this.index }}</span>

@@ -148,7 +148,12 @@ module.exports = {
     new CopyPlugin([{ from: "src/pages/json", to: "pages/json" }]),
     new HtmlWebPackPlugin({
       template: "./src/index.hbs",
-      templateParameters: require("./src/pages/json/index.json")
+      templateParameters: {
+        local: require("./src/pages/json/index.json"),
+        global: {
+          titleList: require('./src/pages/json/global/titleList.json')
+        }
+      }
     }),
     new webpack.ProvidePlugin({
       $: "jquery"

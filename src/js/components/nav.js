@@ -7,13 +7,14 @@ const nav = $(".nav");
 console.log(nav)
 
 $(openNavBtn).click(e => {
-
+    window.shouldPreventWheel = false;
     $(nav).css({
         'visibility': 'visible'
     })
 });
 
 $(closeNavBtn).click(() => {
+    window.shouldPreventWheel = true;
     $(nav).css({
         'visibility': 'hidden'
     })

@@ -8,6 +8,8 @@ $gutter: 32px;
   left: 0;
   overflow: hidden;
   background: white;
+  visibility: hidden;
+  z-index: 11;
 }
 
 .nav_wrapper {
@@ -70,7 +72,7 @@ $gutter: 32px;
   width: 2rem;
   height: 2rem;
   position: absolute;
-  top: 8%;
+  top: 7.6%;
   left: 4rem;
   cursor: pointer;
 }

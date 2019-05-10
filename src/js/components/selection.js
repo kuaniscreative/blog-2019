@@ -3,6 +3,7 @@ import { h_scrollUpdate as scrollUpdate } from "../animations/infiniteScroll";
 import { mapInput, skew } from "../animations/skew";
 
 $(function() {
+  window.shouldPreventWheel = true;
   // requestAnimationFrame setup
   (function() {
     var requestAnimationFrame =
@@ -25,6 +26,9 @@ $(function() {
 
   // Wheel event
   $(window).on("wheel", e => {
+    if (window.shouldPreventWheel){
+      e.preventDefault();
+    }
     for (let [index, item] of $(targetList)
       .toArray()
       .entries()) {
