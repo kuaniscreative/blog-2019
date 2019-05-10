@@ -94,6 +94,25 @@ $gutter: 32px;
   }
 }
 
+.nav_ToIndex {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 7.6%;
+  right: 4rem;
+  cursor: pointer;
+
+  a {
+    font-size: 0.8rem;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
 // .nav {
 //   display: block;
 //   width: 100vw;
