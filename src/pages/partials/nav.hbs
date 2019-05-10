@@ -1,4 +1,53 @@
 <nav class='nav'>
+    <div class='nav_closeIcon'>
+        <div class='closeIcon_line'></div>
+        <div class='closeIcon_line'></div>
+    </div>
+    <div class='nav_wrapper'>
+        <div class='nav_title'>冠決定開始寫部落格</div>
+        <div class='nav_flexWrapper'>
+            <div class='nav_area'>
+                <div class='navArea_description'>我要變聰明，要讓別人因為我聰明的腦袋覺得我性感。雖然很羞恥，但不寫就記不起來事情，不說就會悶到生病。</div>
+            </div>
+            <div class='nav_area'>
+                <div class='navArea_itemWrapper'>
+                    {{#each titleList }}
+                    {{#if this.left}}
+                    <div class='nav_item'>
+                        <span class='nav_contentNumbering'>{{ this.index }}</span>
+                        <div class='nav_content'>
+                            <a href="{{ this.url }}">
+                                <span class='nav_itemTitle' data-url="{{ this.url }}">{{ this.title }}</span>
+                            </a>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+            <div class='nav_area'>
+                <div class='navArea_itemWrapper'>
+                    {{#each titleList }}
+                    {{#if this.right}}
+                    <div class='nav_item'>
+                        <span class='nav_contentNumbering'>{{ this.index }}</span>
+                        <div class='nav_content'>
+                            <a href="{{ this.url }}">
+                                <span class='nav_itemTitle' data-url="{{ this.url }}">{{ this.title }}</span>
+                            </a>
+                        </div>
+                    </div>
+                    {{/if}}
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+{{!-- <nav class='nav'>
     <div class="nav_about">
         <div class="navAbout_wrapper">
             <div class='navAbout_title'>冠決定開始寫部落格</div>
@@ -32,7 +81,7 @@
         <div class='closeIcon_line'></div>
         <div class='closeIcon_line'></div>
     </div>
-</nav>
+</nav> --}}
 
 
 

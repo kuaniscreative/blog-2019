@@ -29,18 +29,19 @@ $(function() {
       .toArray()
       .entries()) {
       if (index % 2 === 0) {
-        e.preventDefault();
         let curPos = $(item.parent).scrollLeft();
         curPos -= e.originalEvent.deltaY;
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       } else {
-        e.preventDefault();
         let curPos = $(item.parent).scrollLeft();
         curPos += e.originalEvent.deltaY;
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       }
+      $(item.parent).scroll(() => {
+        e.preventDefault();
+      });
     }
   });
 
