@@ -19,6 +19,7 @@
 }
 
 
+
 /**
  *
  * layout
@@ -39,12 +40,33 @@
     line-height: 100%;
     letter-spacing: 1px;
     vertical-align: text-top;
+    @include media('below-mobile') {
+       font-size: 0.4rem;
+    }
  }
 
  @mixin titleLayout_title {
     @include heroFont;
     display: inline-block;
     vertical-align: text-top;
+    @include media('below-mobile') {
+      font-size: 1.6rem;
+   }
+ }
+
+ @mixin titleLayout_line {
+   display: inline-block;
+   width: 4rem;
+   height: 1.5rem;
+   margin-left: 24px;
+   border-bottom: 2px solid $black;
+   vertical-align: text-top;
+   @include media('below-mobile') {
+      width: 2rem;
+      height: 0.8rem;
+      margin-left: 12px;
+      border-bottom: 1px solid $black;
+   }
  }
 
 

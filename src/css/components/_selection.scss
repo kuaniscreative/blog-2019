@@ -17,6 +17,10 @@ $item-spacing: 24px;
   padding-left: $item-spacing;
   padding-right: 1rem;
   user-select: none;
+  @include media('below-mobile') {
+    padding-left: 12px;
+    padding-right: 0.5rem;
+  }
 
   &_index {
     @include titleLayout_index;
@@ -25,11 +29,6 @@ $item-spacing: 24px;
     @include titleLayout_title;
   }
   &_line {
-    display: inline-block;
-    width: 4rem;
-    height: 1.5rem;
-    margin-left: $item-spacing;
-    border-bottom: 2px solid $black;
-    vertical-align: text-top;
+    @include titleLayout_line;
   }
 }
