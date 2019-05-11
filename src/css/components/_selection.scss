@@ -9,12 +9,14 @@ $item-spacing: 24px;
   width: max-content;
   white-space: nowrap;
   margin-bottom: $item-spacing;
+  user-select: none;
 }
 
 .selectionItem {
   @include titleLayout_wrapper;
   padding-left: $item-spacing;
   padding-right: 1rem;
+  user-select: none;
 
   &_index {
     @include titleLayout_index;
