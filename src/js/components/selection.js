@@ -4,15 +4,6 @@ import { mapInput, skew } from "../animations/skew";
 
 $(function() {
   window.shouldPreventWheel = true;
-  // requestAnimationFrame setup
-  (function() {
-    var requestAnimationFrame =
-      window.requestAnimationFrame ||
-      window.mozRequestAnimationFrame ||
-      window.webkitRequestAnimationFrame ||
-      window.msRequestAnimationFrame;
-    window.requestAnimationFrame = requestAnimationFrame;
-  })();
 
   // scroll loop variables
   const targets = $(".ani-infiniteScroll_target");
@@ -23,6 +14,13 @@ $(function() {
   for (var i = 0; i < targets.length; i++) {
     targetList.push(initInfiniteScroll(targets[i], parents[i]));
   }
+
+  // reCal if size change
+  $(window).resize(() => {
+    for (var i = 0; i < targets.length; i++) {
+      targetList[i] = initInfiniteScroll(targets[i], parents[i])
+    } 
+  })
 
   // Wheel event
   $(window).on("wheel", e => {
