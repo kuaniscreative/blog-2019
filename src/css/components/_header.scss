@@ -11,15 +11,24 @@
     left: 4rem;
     transform: translate(0, -100%);
     cursor: pointer;
+
+    @include media('below-mobile') {
+        top: 29%;
+        left: 1.5rem;
+    }
 }
 
 .navIcon_line:nth-child(1) {
     width: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid black;
 }
 .navIcon_line:nth-child(2) {
     width: 1.2rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid black;
+}
+.navIcon_line {
+    border-bottom: 2px solid $black;
+    @include media('below-mobile') {
+        border-bottom: 1px solid $black;
+    }
 }
