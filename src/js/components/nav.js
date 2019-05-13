@@ -7,23 +7,72 @@ const nav = $(".nav");
 
 $(openNavBtn).click(e => {
   window.shouldPreventWheel = false;
-  $("#indexSelection")
-    .removeClass("ani_innerFlyCard--left")
-    .addClass("ani_innerFlyCard--left")
-    .one("animationend", e => {
-      e.stopPropagation();
-      $("#indexSelection").css('opacity', 0);
-      $("body").removeClass("ani_outerFlyCard--bottom").addClass("ani_outerFlyCard--bottom");
-      $(nav).css({
-        display: "block"
+  // index
+  if ($("#indexSelection") !== undefined) {
+    $("#indexSelection")
+      .removeClass("ani_innerFlyCard--left")
+      .addClass("ani_innerFlyCard--left")
+      .one("animationend", e => {
+        e.stopPropagation();
+        $("#indexSelection").css("opacity", 0);
+        $("body")
+          .removeClass("ani_outerFlyCard--bottom")
+          .addClass("ani_outerFlyCard--bottom");
+        $(nav).css({
+          display: "block"
+        });
+        $(".ani_outerFlyCard--bottom")
+          .eq(0)
+          .one("animationend", () => {
+            $("#indexSelection").css("opacity", 1);
+            $("#indexSelection").toggleClass("ani_innerFlyCard--left");
+            $("body").toggleClass("ani_outerFlyCard--bottom");
+          });
       });
-      $(".ani_outerFlyCard--bottom").eq(0).one("animationend", () => {
-        $('#indexSelection').css('opacity', 1);
-        $("#indexSelection").toggleClass("ani_innerFlyCard--left");
-        $("body").toggleClass("ani_outerFlyCard--bottom");
+  }
+  // articles
+  if ($("#article") !== undefined) {
+    $(".articles_title")
+      .eq(0)
+      .removeClass("ani_innerFlyCard--left")
+      .addClass("ani_innerFlyCard--left");
+    $(".articles_content")
+      .eq(0)
+      .removeClass("ani_innerFlyCard--left")
+      .addClass("ani_innerFlyCard--left")
+      .one("animationend", e => {
+        e.stopPropagation();
+        $(".articles_title")
+          .eq(0)
+          .css("opacity", 0);
+        $(".articles_content")
+          .eq(0)
+          .css("opacity", 0);
+        $("body")
+          .removeClass("ani_outerFlyCard--bottom")
+          .addClass("ani_outerFlyCard--bottom");
+        $(nav).css({
+          display: "block"
+        });
+        $(".ani_outerFlyCard--bottom")
+          .eq(0)
+          .one("animationend", () => {
+            $(".articles_title")
+              .eq(0)
+              .css("opacity", 1);
+            $(".articles_content")
+              .eq(0)
+              .css("opacity", 1);
+            $(".articles_title")
+              .eq(0)
+              .toggleClass("ani_innerFlyCard--left");
+            $(".articles_content")
+              .eq(0)
+              .toggleClass("ani_innerFlyCard--left");
+            $("body").toggleClass("ani_outerFlyCard--bottom");
+          });
       });
-    });
-  
+  }
 });
 
 $(closeNavBtn).click(() => {

@@ -1,4 +1,5 @@
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,18 @@
 <body>
     {{> partials/header}}
     {{> partials/nav titleList=global.titleList.titleList }}
-    <div class="articles_title">
-        <div class='articles_titleClickArea'></div>
-        <span>{{ local.title }}</span>
-    </div>
-    <div class="articles_title--mobile">
-        <span>{{ local.title }}</span>
-    </div>
-    <div class="articles_content">
-        {{{ local.content }}}
-    </div>
+    <main id="article">
+        <div class="articles_title">
+            <div class='articles_titleClickArea'></div>
+            <span>{{ local.title }}</span>
+        </div>
+        <div class="articles_title--mobile">
+            <span>{{ local.title }}</span>
+        </div>
+        <div class="articles_content">
+            {{{ local.content }}}
+        </div>
+    </main>
 </body>
+
 </html>

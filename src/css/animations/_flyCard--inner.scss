@@ -13,13 +13,13 @@
 }
 
 .ani_innerFlyCard--left {
-    overflow: hidden;
+    // overflow: hidden;
     &::after {
         content:'';
         display: block;
         width: 100%;
         height: 100%;
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -100%;
         background: white;

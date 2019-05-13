@@ -4,4 +4,6 @@ import './js/routing';
 
 import './js/components/nav';
 
-import './js/components/selection'
+import './js/components/selection';
+
+import './js/components/articles';
