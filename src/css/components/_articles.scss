@@ -6,9 +6,15 @@
     left: 2rem;
     font-size: 3.6rem;
     line-height: 1.6em;
-    color: $gray-0;
+    color: $black;
     z-index: 1;
-
+    overflow: hidden;
+    & > span {
+        display: inline-block;
+        transform: translate(0, -100%);
+        user-select: none;
+        @include titleAnimation;
+    }
     @include media('below-mobile') {
         font-size: 1.6rem;
         left: 1rem;
@@ -17,6 +23,7 @@
 .articles_title--mobile {
     display: none;
 
+    @include titleAnimation;
     @include media('below-small') {
         display: block;
         position: absolute;
@@ -48,8 +55,10 @@
     top: 0;
     overflow-y: scroll;
     z-index: 7;
-    @include hideScrollBar;
+    transform: translate(0, 100%);
 
+    @include hideScrollBar;
+    @include contentAnimation;
     @include media('below-desktop') {
         font-size: 1.6rem;
     }

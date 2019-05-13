@@ -1,0 +1,41 @@
+@mixin titleAnimation {
+    animation: titleShow--slide 0.7s ease-in-out forwards, titleShow--color 0.7s ease-in-out 1.4s forwards;
+}
+
+@mixin contentAnimation {
+    animation: contentFlyIn 1s ease 1.5s forwards;
+}
+
+@keyframes titleShow--slide {
+    0% {
+        transform: translate(0, 100%);
+        color: $black;
+    }
+    75% {
+        color: $black;
+    }
+    100% {
+        transform: translate(0, 0);
+        color: $black;
+    }
+}
+
+@keyframes titleShow--color {
+    from {
+        color: $black;
+    }
+    to {
+        color: $gray-0;
+    }
+}
+
+@keyframes contentFlyIn {
+    0% {
+        transform: translate(0, 100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
