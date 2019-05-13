@@ -1,9 +1,21 @@
+// .ani-articleHover--title {
+//     color: $black;
+//     z-index: 7;
+// }  
+
+// .ani-articleHover--content {
+//     transition: 0.5s ease-out;
+//     transform: translate(-8rem, 0);
+//     color: $gray-0;
+//     z-index: 1;
+// }
+
 @mixin titleAnimation {
-    animation: titleShow--slide 0.7s ease-in-out forwards, titleShow--color 0.7s ease-in-out 1.4s forwards;
+    animation: titleShow--slide 0.7s ease-in-out, titleShow--color 0.7s ease-in-out 1.4s;
 }
 
 @mixin contentAnimation {
-    animation: contentFlyIn 1s ease 1.5s forwards;
+    animation: contentFlyIn 1s ease 1.5s;
 }
 
 @keyframes titleShow--slide {
