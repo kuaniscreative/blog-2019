@@ -1,0 +1,43 @@
+.ani_outerFlyCard--bottom {
+    overflow: hidden;
+    &::before {
+        content: '';
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: white;
+        animation: fadeIn 0.7s ease-in-out 0.2s forwards;
+        z-index: 75;
+    }
+
+    &::after {
+        content: '';
+        display: block;
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        top: 101%;
+        left: 0;
+        background: $black;
+        animation: ani_outerFlyCard--bottom 0.7s ease 0.2s forwards;
+        z-index: 77;
+    }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 1 }
+    65% { opacity: 1 }
+    100% {opacity: 0 }
+}
+
+@keyframes ani_outerFlyCard--bottom {
+    from {
+        top: 101%;
+    }
+    to {
+        top: -101%;
+    }
+}
