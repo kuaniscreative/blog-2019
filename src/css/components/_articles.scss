@@ -23,8 +23,14 @@
 }
 .articles_title--mobile {
     display: none;
-
-    @include titleAnimation;
+    & > span {
+        display: inline-block;
+        position: relative;
+        user-select: none;
+        color: $black;
+        opacity: 0;
+        @include titleAnimation--mobile;
+    }
     @include media('below-small') {
         display: block;
         position: absolute;
