@@ -45,7 +45,7 @@ $base-font-size: 16px;
  * cubic-bezier
  *
  */
-
+$cubic_fastIn: cubic-bezier(.14,.88,.86,1.01);
 $cubic_progressive: cubic-bezier(.09,1.01,.53,.94);
 
 /**
