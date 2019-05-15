@@ -25,7 +25,7 @@ function generateHtmlPlugins(templateDir) {
     const extension = parts[1];
     // Create new HTMLWebpackPlugin with options
     return new HtmlWebPackPlugin({
-      filename: `./${dirForChildPages}/${name}.html`,
+      filename: `./${name}.html`,
       template: path.resolve(__dirname, `${templateDir}/${name}.${extension}`),
       templateParameters: {
         local: require(path.resolve(

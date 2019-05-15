@@ -8,7 +8,7 @@ const nav = $(".nav");
 function navContentToggle() {
   $(".nav_area").toggleClass("navContentShow");
 }
-
+// nav animation
 $(openNavBtn).click(e => {
   window.shouldPreventWheel = false;
   // index
@@ -38,14 +38,6 @@ $(openNavBtn).click(e => {
                 $(val).toggleClass("navContentShow");
               });
             });
-            // $(".mobileAbout").one("animationend", (e) => {
-            //   e.stopPropagation();
-            //   $('.mobileAbout').toggleClass("navContentShow");
-            // });
-            // $(".mobileTableContent").one("animationend", (e) => {
-            //   e.stopPropagation();
-            //   $('.mobileTableContent').toggleClass("navContentShow");
-            // });
           });
       });
   }
@@ -96,19 +88,12 @@ $(openNavBtn).click(e => {
                 $(val).toggleClass("navContentShow");
               });
             });
-            // $(".mobileAbout").one("animationend", (e) => {
-            //   e.stopPropagation();
-            //   $('.mobileAbout').toggleClass("navContentShow");
-            // });
-            // $(".mobileTableContent").one("animationend", (e) => {
-            //   e.stopPropagation();
-            //   $('.mobileTableContent').toggleClass("navContentShow");
-            // });
           });
       });
   }
 });
 
+// close nav 
 $(closeNavBtn).click(() => {
   window.shouldPreventWheel = true;
   $(nav).css({
@@ -137,3 +122,8 @@ $(".nav_ToAbout").click(() => {
   $(".mobileTableContent").hide();
   $(".mobileAbout").show();
 });
+
+// request articles
+$('.nav_content a').click(() => {
+  console.log($(this).data('url'));
+})

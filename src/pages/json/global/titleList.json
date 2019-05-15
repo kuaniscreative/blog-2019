@@ -3,61 +3,61 @@
         {
             "index": "00",
             "title": "我決定開始寫部落格",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "left": true
         },
         {
             "index": "01",
             "title": "如果你害怕，寫出你的恐懼",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "right": true
         },
         {
             "index": "02",
             "title": "我承認了，我不快樂",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "left": true
         },
         {
             "index": "03",
             "title": "沒有恐懼的話，你還會追求什麼",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "right": true
         },
         {
             "index": "04",
             "title": "儘管告訴別人真相，不必害怕他們向你丟酒瓶",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "left": true
         },
         {
             "index": "05",
             "title": "放輕鬆不是一件點單的事情",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "right": true
         },
         {
             "index": "06",
             "title": "很難啊很難啊",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "left": true
         },
         {
             "index": "07",
             "title": "我要創作",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "right": true
         },
         {
             "index": "08",
             "title": "平庸",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "left": true
         },
         {
             "index": "09",
             "title": "來吧",
-            "url": "./pages/a1.html",
+            "url": "./a1.html",
             "right": true
         }
     ]
