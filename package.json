@@ -12,6 +12,7 @@
   "author": "Kuan, a developer who makes arts",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.16.4",
     "jquery": "^3.4.0"
   },
   "devDependencies": {
