@@ -11846,7 +11846,7 @@ var requestArticle = function requestArticle(param) {
     type: "GET",
     dataType: "json",
     success: function success(res) {
-      window.history.pushState({}, param, window.location.origin + "/" + param + '.html'); //animation
+      window.history.pushState({}, param, window.location.origin + "/" + param); //animation
 
       $(".nav").css({
         display: "none"
