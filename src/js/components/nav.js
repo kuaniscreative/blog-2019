@@ -101,7 +101,7 @@ $(closeNavBtn).click(() => {
   });
 });
 
-$(".nav_content a").click(() => {
+$(".nav_content a").click((e) => {
   window.shouldPreventWheel = false;
 });
 
@@ -124,6 +124,8 @@ $(".nav_ToAbout").click(() => {
 });
 
 // request articles
-$('.nav_content a').click(() => {
-  console.log($(this).data('url'));
+$('.nav_content a').click((e) => {
+  console.log(e.target);
+  console.log($(e.target).data('id'));
+  requestArticle($(e.target).data('id'));
 })

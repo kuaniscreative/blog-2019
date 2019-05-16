@@ -11351,7 +11351,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _js_components_nav__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/components/nav */ "./src/js/components/nav.js");
 /* harmony import */ var _js_components_selection__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/components/selection */ "./src/js/components/selection.js");
 /* harmony import */ var _js_components_articles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./js/components/articles */ "./src/js/components/articles.js");
-/* harmony import */ var _js_components_articles__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_js_components_articles__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -11475,10 +11474,14 @@ function skew(target, input) {
 /*!***************************************!*\
   !*** ./src/js/components/articles.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function($) {var clickArea = $(".articles_titleClickArea")[0];
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _functions_spa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/spa */ "./src/js/functions/spa.js");
+
+var clickArea = $(".articles_titleClickArea")[0];
 var title = $(".articles_title span")[0];
 var content = $(".articles_content")[0];
 var black = "#202020";
@@ -11486,12 +11489,12 @@ var titleGray = "#f2f2f2";
 var cubicBezier = 'cubic-bezier(.14,.88,.86,1.01)'; // hover animation
 
 var mouseInHandler = function mouseInHandler() {
-  $(title).css({
+  $(".articles_title span").css({
     transition: "0.5s ".concat(cubicBezier),
     color: black,
     "z-index": "1"
   });
-  $(content).css({
+  $(".articles_content").css({
     transition: "0.5s ".concat(cubicBezier),
     transform: 'translate(8rem, 0)',
     color: titleGray,
@@ -11500,47 +11503,48 @@ var mouseInHandler = function mouseInHandler() {
 };
 
 var mouseOutHandler = function mouseOutHandler() {
-  $(title).css({
+  $(".articles_title span").css({
     color: "#f2f2f2",
     "z-index": "0"
   });
-  $(content).css({
+  $(".articles_content").css({
     transform: 'translate(0, 0)',
     color: black,
     "z-index": "1"
   });
 };
 
-$(clickArea).hover(mouseInHandler, mouseOutHandler); // part of show animation
+$(".articles_titleClickArea").hover(mouseInHandler, mouseOutHandler); // part of show animation
 // We have to manully write the style after animation end for hover animation
 // else the 'forwards' keyword in css animation will prevent js overiding the style
 
-$(title).on("animationend", function (e) {
+$(".articles_title span").on("animationend", function (e) {
   e.stopPropagation();
   var aniName = e.originalEvent.animationName;
 
   if (aniName === "titleShow--slide") {
-    $(title).css({
+    $(".articles_title span").css({
       color: black,
       transform: "translate(0, 0)"
     });
   } else if (aniName === "titleShow--color") {
-    $(title).css({
+    $(".articles_title span").css({
       color: titleGray
     });
   }
 });
-$(content).on("animationend", function (e) {
+$(".articles_content").on("animationend", function (e) {
   e.stopPropagation();
   var aniName = e.originalEvent.animationName;
 
   if (aniName === "contentFlyIn") {
-    $(content).css({
+    $(".articles_content").css({
       transform: "translate(0)",
       opacity: "1"
     });
   }
 });
+Object(_functions_spa__WEBPACK_IMPORTED_MODULE_0__["requestArticle"])('testing');
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
 /***/ }),
@@ -11555,8 +11559,6 @@ $(content).on("animationend", function (e) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _functions_spa__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../functions/spa */ "./src/js/functions/spa.js");
-var _this = undefined;
-
 
 var openNavBtn = $(".header_navIcon");
 var closeNavBtn = $(".nav_closeIcon");
@@ -11629,7 +11631,7 @@ $(closeNavBtn).click(function () {
     display: "none"
   });
 });
-$(".nav_content a").click(function () {
+$(".nav_content a").click(function (e) {
   window.shouldPreventWheel = false;
 });
 $(".nav_toIndex a").click(function () {
@@ -11648,8 +11650,10 @@ $(".nav_ToAbout").click(function () {
   $(".mobileAbout").show();
 }); // request articles
 
-$('.nav_content a').click(function () {
-  console.log($(_this).data('url'));
+$('.nav_content a').click(function (e) {
+  console.log(e.target);
+  console.log($(e.target).data('id'));
+  Object(_functions_spa__WEBPACK_IMPORTED_MODULE_0__["requestArticle"])($(e.target).data('id'));
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
@@ -11793,9 +11797,10 @@ var requestArticle = function requestArticle(param) {
     type: "GET",
     dataType: "json",
     success: function success(res) {
-      //   window.history.pushState({}, param, window.location.origin + "/" + param);
-      window.location.hash = param;
-      $("body").html(res.t);
+      // window.history.pushState({}, param, window.location.origin + "/" + param);
+      $('.nav').css({
+        display: "none"
+      });
     },
     error: function error(err) {
       console.log(err);
