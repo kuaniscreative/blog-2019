@@ -6,7 +6,7 @@ export const requestArticle = param => {
     type: "GET",
     dataType: "json",
     success: res => {
-      // window.history.pushState({}, param, window.location.origin + "/" + param);
+      window.history.pushState({}, param, window.location.origin + "/" + param + '.html');
 
       //animation
       $(".nav").css({

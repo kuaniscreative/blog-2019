@@ -132,7 +132,9 @@ $('.nav_content a').click((e) => {
 
 // nav to index
 $('.nav_toIndex').click(() => {
+  
   $('#article').hide();
   $('.nav').hide();
   $('#indexSelection').show();
+  window.history.pushState({}, 'index',window.location.origin);
 })
