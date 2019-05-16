@@ -8,6 +8,8 @@
 <body>
     {{> pages/partials/header }}
     {{> pages/partials/nav }}
-    {{> pages/partials/selection }}
+    
+    <section id='indexSelection'>{{> pages/partials/selection }}</section>
+    <main id="article" style='display: none'>{{> pages/partials/articles }}</main>
 </body>
 </html>

@@ -10,20 +10,9 @@
 <body>
     {{> partials/header}}
     {{> partials/nav titleList=global.titleList.titleList }}
-    <main id="article">
-        <div class="articles_title">
-            <div class='articles_titleClickArea'></div>
-            <span>{{ local.title }}</span>
-        </div>
-        <div class="articles_title--mobile">
-            <span>{{ local.title }}</span>
-        </div>
-        <div class="articles_content">
-            <div class="articles_content--scroll">
-                {{{ local.content }}}
-            </div>
-        </div>
-    </main>
+    <section id='indexSelection' style='display: none'>{{> partials/selection }}</section>
+    <main id="article">{{> partials/articles }}</main>
+    
 </body>
 
 </html>
