@@ -19,14 +19,6 @@ export const requestArticle = param => {
       $(".articles_title--mobile span").html(res.title);
       $(".articles_content--scroll").html(res.content);
       articleAnimationShow()
-      
-      // $(".articles_title span")
-      //   .hide()
-      //   .show();
-
-      // $(".articles_content")
-      //   .hide()
-      //   .show();
     },
     error: err => {
       console.log(err);

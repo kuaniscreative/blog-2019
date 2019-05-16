@@ -123,9 +123,14 @@ $(".nav_ToAbout").click(() => {
   $(".mobileAbout").show();
 });
 
-// request articles
+// nav to articles
 $('.nav_content a').click((e) => {
-  console.log(e.target);
-  console.log($(e.target).data('id'));
   requestArticle($(e.target).data('id'));
+})
+
+// nav to index
+$('.nav_toIndex').click(() => {
+  $('#article').hide();
+  $('.nav').hide();
+  $('#selection').show();
 })

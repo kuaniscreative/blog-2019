@@ -10,7 +10,9 @@
 <body>
     {{> partials/header}}
     {{> partials/nav titleList=global.titleList.titleList }}
-    {{> partials/articles }}
+    <section id='indexSelection' style='display: none'>{{> partials/selection }}</section>
+    <main id="article">{{> partials/articles }}</main>
+    
 </body>
 
 </html>

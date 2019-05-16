@@ -3,6 +3,12 @@ const black = "#202020";
 const titleGray = "#f2f2f2";
 const cubicBezier = "cubic-bezier(.14,.88,.86,1.01)";
 
+// toggle article area
+
+export function toggleArticleArea() {
+  const article = $('#article');
+  $(article).toggle();
+}
 
 // trigger article animation when show
 export function articleAnimationShow() {
