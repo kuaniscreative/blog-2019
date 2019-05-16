@@ -10,6 +10,13 @@
     animation: titleShow_mobile 0.5s ease 2.2s forwards; 
 }
 
+.ani-article_title {
+    @include titleAnimation
+}
+.ani-article_content {
+    @include contentAnimation
+}
+
 @keyframes titleShow--slide {
     0% {
         transform: translate(0, 100%);

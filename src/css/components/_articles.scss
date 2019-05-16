@@ -14,7 +14,7 @@
         position: relative;
         user-select: none;
         color: $black;
-        @include titleAnimation;
+        // @include titleAnimation;
         @include media('below-mobile') {
             max-width: 85%;
         }
@@ -32,7 +32,7 @@
         user-select: none;
         color: $black;
         opacity: 0;
-        @include titleAnimation--mobile;
+        // @include titleAnimation--mobile;
     }
     @include media('below-small') {
         display: block;
@@ -67,7 +67,7 @@
     z-index: 1;
     transform: translate(0, 100%);
 
-    @include contentAnimation;
+    // @include contentAnimation;
     @include media('below-desktop') {
         font-size: 1.6rem;
     }
