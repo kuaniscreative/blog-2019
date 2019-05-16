@@ -9,7 +9,6 @@ function navContentToggle() {
   $(".nav_area").toggleClass("navContentShow");
 }
 
-console.log($("#indexSelection").css("display"))
 // nav animation
 $(openNavBtn).click(e => {
   window.shouldPreventWheel = false;

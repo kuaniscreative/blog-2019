@@ -14,6 +14,13 @@ $(function() {
   for (var i = 0; i < targets.length; i++) {
     targetList.push(initInfiniteScroll(targets[i], parents[i]));
   }
+  
+  // init the targets if landing on article pages
+  $('.nav_toIndex').one('click', () => {
+    for (var i = 0; i < targets.length; i++) {
+      targetList[i] = initInfiniteScroll(targets[i], parents[i])
+    } 
+  })
 
   // reCal if size change
   $(window).resize(() => {
@@ -22,14 +29,14 @@ $(function() {
     } 
   })
 
+
   // Wheel event
   $(window).on("wheel", e => {
-    
     for (let [index, item] of $(targetList)
       .toArray()
       .entries()) {
       if (index % 2 === 0) {
-        if (window.shouldPreventWheel){
+        if ($("#indexSelection").css('display') !== 'none'){
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
@@ -37,7 +44,7 @@ $(function() {
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       } else {
-        if (window.shouldPreventWheel){
+        if ($("#indexSelection").css('display') !== 'none'){
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
@@ -45,9 +52,6 @@ $(function() {
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       }
-      $(item.parent).scroll(() => {
-        e.preventDefault();
-      });
     }
   });
 
