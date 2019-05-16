@@ -8,11 +8,13 @@ const nav = $(".nav");
 function navContentToggle() {
   $(".nav_area").toggleClass("navContentShow");
 }
+
+console.log($("#indexSelection").css("display"))
 // nav animation
 $(openNavBtn).click(e => {
   window.shouldPreventWheel = false;
   // index
-  if ($("#indexSelection") !== undefined) {
+  if ($("#indexSelection").css('display') !== 'none') {
     $("#indexSelection")
       .removeClass("ani_innerFlyCard--left")
       .addClass("ani_innerFlyCard--left")
@@ -42,7 +44,7 @@ $(openNavBtn).click(e => {
       });
   }
   // articles
-  if ($("#article") !== undefined) {
+  if ($("#article").css('display') !== 'none') {
     $(".articles_title")
       .eq(0)
       .removeClass("ani_innerFlyCard--left")
@@ -125,6 +127,7 @@ $(".nav_ToAbout").click(() => {
 
 // nav to articles
 $('.nav_content a').click((e) => {
+  $('#article').show();
   requestArticle($(e.target).data('id'));
 })
 
@@ -132,5 +135,5 @@ $('.nav_content a').click((e) => {
 $('.nav_toIndex').click(() => {
   $('#article').hide();
   $('.nav').hide();
-  $('#selection').show();
+  $('#indexSelection').show();
 })
