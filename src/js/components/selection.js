@@ -1,6 +1,6 @@
 import { h_initInfiniteScroll as initInfiniteScroll } from "../animations/infiniteScroll";
 import { h_scrollUpdate as scrollUpdate } from "../animations/infiniteScroll";
-import { mapInput, skew } from "../animations/skew";
+import { requestArticle } from '../functions/spa';
 
 $(function() {
   window.shouldPreventWheel = true;
@@ -103,4 +103,12 @@ $(function() {
   }
 
   $(selectionItem).hover(selectionMouseEnter, selectionMouseLeave);
+
+  // request article
+  $('.selectionItem').click((e) => {
+    const id = $('.selectionItem').data('id');
+    e.stopPropagation();
+    $('#article').show();
+    requestArticle(id);
+  })
 });
