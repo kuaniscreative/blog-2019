@@ -2,7 +2,7 @@
   "name": "blog2019",
   "version": "1.0.0",
   "description": "A blog, a tool for practicing being smarter, a process to know myself",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --mode development --open",
