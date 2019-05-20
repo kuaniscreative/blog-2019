@@ -1,10 +1,12 @@
 export function h_initInfiniteScroll(target, parent) {
   let originWidth = $(target).width();
+  console.log(originWidth)
   const clone = $(target)
     .children()
     .clone();
   $(clone).appendTo(target);
   let scrollWidth = $(target).width();
+  console.log(scrollWidth);
   if (originWidth < $(parent).width()) {
     originWidth = $(target).width();
     const clone = $(target)

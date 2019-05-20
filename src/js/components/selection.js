@@ -9,6 +9,7 @@ $(function() {
   const targets = $(".ani-infiniteScroll_target");
   const parents = $(".ani-infiniteScroll_wrapper");
   const targetList = [];
+  console.log(targets, targets[0].clientWidth);
 
   // init the targets
   for (var i = 0; i < targets.length; i++) {
@@ -16,18 +17,18 @@ $(function() {
   }
   
   // init the targets if landing on article pages
-  $('.nav_toIndex').one('click', () => {
-    for (var i = 0; i < targets.length; i++) {
-      targetList[i] = initInfiniteScroll(targets[i], parents[i])
-    } 
-  })
+  // $('.nav_toIndex').one('click', () => {
+  //   for (var i = 0; i < targets.length; i++) {
+  //     targetList[i] = initInfiniteScroll(targets[i], parents[i])
+  //   } 
+  // })
 
   // reCal if size change
-  $(window).resize(() => {
-    for (var i = 0; i < targets.length; i++) {
-      targetList[i] = initInfiniteScroll(targets[i], parents[i])
-    } 
-  })
+  // $(window).resize(() => {
+  //   for (var i = 0; i < targets.length; i++) {
+  //     targetList[i] = initInfiniteScroll(targets[i], parents[i])
+  //   } 
+  // })
 
 
   // Wheel event
