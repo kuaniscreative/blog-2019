@@ -1,6 +1,6 @@
 import { h_initInfiniteScroll as initInfiniteScroll } from "../animations/infiniteScroll";
 import { h_scrollUpdate as scrollUpdate } from "../animations/infiniteScroll";
-import { mapInput, skew } from "../animations/skew";
+import { requestArticle } from '../functions/spa';
 
 $(function() {
   window.shouldPreventWheel = true;
@@ -30,7 +30,7 @@ $(function() {
   })
 
 
-  // Wheel event
+  // Wheel event for index scroll
   $(window).on("wheel", e => {
     for (let [index, item] of $(targetList)
       .toArray()
@@ -54,6 +54,38 @@ $(function() {
       }
     }
   });
+
+  // Pan event for index scroll
+  const body = document.querySelector('body');
+  const mc = new Hammer.Manager(body, {
+    recognizers: [
+      [Hammer.Pan,{ direction: Hammer.DIRECTION_ALL }],
+    ]
+  });
+  
+  mc.on('pan', (e) => {
+    for (let [index, item] of $(targetList)
+      .toArray()
+      .entries()) {
+      if (index % 2 === 0) {
+        if ($("#indexSelection").css('display') !== 'none'){
+          e.preventDefault();
+        }
+        let curPos = $(item.parent).scrollLeft();
+        curPos -= e.deltaY * 0.8;
+        $(item.parent).scrollLeft(curPos);
+        scrollUpdate(item);
+      } else {
+        if ($("#indexSelection").css('display') !== 'none'){
+          e.preventDefault();
+        }
+        let curPos = $(item.parent).scrollLeft();
+        curPos += e.deltaY * 0.8;
+        $(item.parent).scrollLeft(curPos);
+        scrollUpdate(item);
+      }
+    }
+  })
 
   // hover effect
   const selectionItem = $(".selectionItem");
@@ -103,4 +135,12 @@ $(function() {
   }
 
   $(selectionItem).hover(selectionMouseEnter, selectionMouseLeave);
+
+  // request article
+  $('.selectionItem').click((e) => {
+    const id = $('.selectionItem').data('id');
+    e.stopPropagation();
+    $('#article').show();
+    requestArticle(id);
+  })
 });

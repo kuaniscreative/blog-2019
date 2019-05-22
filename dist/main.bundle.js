@@ -86,117 +86,6 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/css/style.scss":
-/*!***************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js??ref--6-1!./node_modules/postcss-loader/src??ref--6-2!./node_modules/sass-loader/lib/loader.js??ref--6-3!./src/css/style.scss ***!
-  \***************************************************************************************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-exports = module.exports = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js")(true);
-// Module
-exports.push([module.i, "/**\n *\n * Color\n *\n */\n/**\n *\n * font\n *\n */\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: local(\"PT Serif\");\n  unicode-range: U+00-024F; }\n\n@font-face {\n  font-family: \"customSet--sans\";\n  font-weight: 200;\n  src: local(\"PingFangTC-light\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n/**\n *\n * cubic-bezier\n *\n */\n/**\n *\n * reusable property\n *\n */\n/**\n *\n * font\n *\n */\n/**\n *\n * layout\n *\n */\n/**\n *\n * MISC\n *\n */\n/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0; }\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol,\nul {\n  list-style: none; }\n\nblockquote,\nq {\n  quotes: none; }\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box; }\n\na:focus {\n  outline: none; }\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box; }\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0; }\n\nselect {\n  -webkit-appearance: none;\n     -moz-appearance: none;\n          appearance: none; }\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset; }\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer; }\n\nhtml {\n  overflow-x: hidden;\n  font-family: customSet--sans;\n  font-size: 16px;\n  color: #202020; }\n\nbody {\n  position: relative;\n  overflow: hidden; }\n\nh1 {\n  font-size: 2.5rem;\n  line-height: 1.5em;\n  letter-spacing: 0.1em; }\n\np {\n  font-size: 1.2rem;\n  line-height: 1.5em; }\n\na {\n  text-decoration: none;\n  color: #202020;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n\n.navContentShow:nth-child(1) {\n  -webkit-animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.1s forwards;\n          animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.1s forwards; }\n\n.navContentShow:nth-child(2) {\n  -webkit-animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.2s forwards;\n          animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.2s forwards; }\n\n.navContentShow:nth-child(3) {\n  -webkit-animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.3s forwards;\n          animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.3s forwards; }\n\n@-webkit-keyframes navContentShow {\n  from {\n    -webkit-transform: translate(0, 100%);\n            transform: translate(0, 100%); }\n  to {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0); } }\n\n@keyframes navContentShow {\n  from {\n    -webkit-transform: translate(0, 100%);\n            transform: translate(0, 100%); }\n  to {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0); } }\n\n.ani-infiniteScroll_wrapper {\n  width: 100%;\n  height: -webkit-max-content;\n  height: -moz-max-content;\n  height: max-content;\n  transition: 0.1s ease;\n  overflow-x: scroll;\n  scrollbar-width: none; }\n  .ani-infiniteScroll_wrapper::-webkit-scrollbar {\n    opacity: 0; }\n\n.ani_innerFlyCard--left::after {\n  content: '';\n  display: block;\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: -100%;\n  background: white;\n  -webkit-animation: ani_innerFlyCard--left 0.4s ease-in 0.1s forwards;\n          animation: ani_innerFlyCard--left 0.4s ease-in 0.1s forwards; }\n\n@-webkit-keyframes ani_innerFlyCard--left {\n  from {\n    left: -101%; }\n  to {\n    left: 0; } }\n\n@keyframes ani_innerFlyCard--left {\n  from {\n    left: -101%; }\n  to {\n    left: 0; } }\n\n.ani_outerFlyCard--bottom {\n  overflow: hidden; }\n  .ani_outerFlyCard--bottom::before {\n    content: '';\n    display: block;\n    width: 100vw;\n    height: 100vh;\n    position: absolute;\n    top: 0;\n    left: 0;\n    background: white;\n    -webkit-animation: fadeIn 0.7s ease-in-out 0.2s forwards;\n            animation: fadeIn 0.7s ease-in-out 0.2s forwards;\n    z-index: 75; }\n  .ani_outerFlyCard--bottom::after {\n    content: '';\n    display: block;\n    width: 100vw;\n    height: 100vh;\n    position: absolute;\n    top: 101%;\n    left: 0;\n    background: #202020;\n    -webkit-animation: ani_outerFlyCard--bottom 0.7s ease 0.2s forwards;\n            animation: ani_outerFlyCard--bottom 0.7s ease 0.2s forwards;\n    z-index: 77; }\n\n@-webkit-keyframes fadeIn {\n  0% {\n    opacity: 1; }\n  65% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes fadeIn {\n  0% {\n    opacity: 1; }\n  65% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@-webkit-keyframes ani_outerFlyCard--bottom {\n  from {\n    top: 101%; }\n  to {\n    top: -101%; } }\n\n@keyframes ani_outerFlyCard--bottom {\n  from {\n    top: 101%; }\n  to {\n    top: -101%; } }\n\n.ani-article_title {\n  -webkit-animation: titleShow--slide 0.7s ease-in-out, titleShow--color 0.7s ease-in-out 1.1s;\n          animation: titleShow--slide 0.7s ease-in-out, titleShow--color 0.7s ease-in-out 1.1s; }\n\n.ani-article_content {\n  -webkit-animation: contentFlyIn 1s ease 1.5s;\n          animation: contentFlyIn 1s ease 1.5s; }\n\n@-webkit-keyframes titleShow--slide {\n  0% {\n    -webkit-transform: translate(0, 100%);\n            transform: translate(0, 100%);\n    color: #202020; }\n  75% {\n    color: #202020; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    color: #202020; } }\n\n@keyframes titleShow--slide {\n  0% {\n    -webkit-transform: translate(0, 100%);\n            transform: translate(0, 100%);\n    color: #202020; }\n  75% {\n    color: #202020; }\n  100% {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    color: #202020; } }\n\n@-webkit-keyframes titleShow--color {\n  from {\n    color: #202020; }\n  to {\n    color: #f2f2f2; } }\n\n@keyframes titleShow--color {\n  from {\n    color: #202020; }\n  to {\n    color: #f2f2f2; } }\n\n@-webkit-keyframes titleShow_mobile {\n  from {\n    -webkit-transform: translate(100%, 0);\n            transform: translate(100%, 0);\n    opacity: 0; }\n  to {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes titleShow_mobile {\n  from {\n    -webkit-transform: translate(100%, 0);\n            transform: translate(100%, 0);\n    opacity: 0; }\n  to {\n    -webkit-transform: translate(0, 0);\n            transform: translate(0, 0);\n    opacity: 1; } }\n\n@-webkit-keyframes contentFlyIn {\n  0% {\n    -webkit-transform: translate(0, 100%);\n            transform: translate(0, 100%);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0);\n            transform: translate(0);\n    opacity: 1; } }\n\n@keyframes contentFlyIn {\n  0% {\n    -webkit-transform: translate(0, 100%);\n            transform: translate(0, 100%);\n    opacity: 0; }\n  100% {\n    -webkit-transform: translate(0);\n            transform: translate(0);\n    opacity: 1; } }\n\n.nav {\n  display: none;\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  overflow: hidden;\n  background: white;\n  z-index: 11; }\n\n/**\n *\n * nav_contentWrapper\n *\n */\n.nav_contentWrapper {\n  width: 85%;\n  height: 67%;\n  position: absolute;\n  left: 128px;\n  bottom: 0; }\n  @media (max-width: 1024px) {\n    .nav_contentWrapper {\n      display: none; } }\n\n.nav_title {\n  height: 20%;\n  font-size: 1.8rem;\n  padding-bottom: 2rem; }\n\n.nav_flexWrapper {\n  width: 100%;\n  height: 80%;\n  display: flex; }\n  .nav_flexWrapper .nav_area {\n    flex: 0 0 33.3%;\n    padding-right: calc(8.3% + 32px);\n    padding-bottom: 1rem;\n    position: relative; }\n\n.navArea_description {\n  font-size: 0.8rem;\n  letter-spacing: 1px;\n  line-height: 1.6em;\n  color: #adadad; }\n\n.navArea_itemWrapper {\n  width: calc(100% + 12px);\n  height: 95%;\n  overflow: scroll;\n  scrollbar-width: none; }\n  .navArea_itemWrapper::-webkit-scrollbar {\n    opacity: 0; }\n\n.navArea_scrollHint {\n  position: absolute;\n  left: 75%;\n  bottom: 11%;\n  font-size: 0.8rem;\n  color: #d6d6d6; }\n\n.nav_item {\n  padding-bottom: 2.4rem; }\n\n.nav_contentNumbering {\n  font-family: customSet--serif;\n  font-size: 0.6rem;\n  letter-spacing: 1px;\n  line-height: 2.4rem; }\n\n.nav_content {\n  font-size: 1rem;\n  letter-spacing: 1px;\n  line-height: 1.2rem; }\n\n.navArea_contact {\n  position: absolute;\n  bottom: 7%;\n  font-family: customSet--serif;\n  font-weight: 200; }\n\n.contactItem {\n  font-size: 0.6rem;\n  color: #adadad;\n  line-height: 1.6em; }\n\na.contactItem {\n  padding-right: 1.2rem;\n  transition: color 0.3s ease; }\n  a.contactItem:hover {\n    color: #202020; }\n\n/**\n *\n * nav_contentWrapper--mobile\n *\n */\n@media (min-width: 1025px) {\n  .nav_contentWrapper--mobile {\n    display: none; } }\n\n.nav_mobileArea {\n  width: 100%;\n  height: 67%;\n  padding: 0 4rem 0 4rem;\n  position: absolute;\n  bottom: 0; }\n  @media (max-width: 550px) {\n    .nav_mobileArea {\n      padding: 0 1.5rem 0 1.5rem; } }\n\n.mobileAbout {\n  display: block; }\n\n.mobileTableContent {\n  display: none; }\n\n/**\n *\n * nav_header\n *\n */\n.navHeader_right {\n  display: flex;\n  height: 2.2rem;\n  align-items: center;\n  position: absolute;\n  top: 7.6%;\n  right: 4rem; }\n  @media (max-width: 550px) {\n    .navHeader_right {\n      top: 5%;\n      right: 1.5rem; } }\n\n.navHeaderRight_item {\n  display: inline-flex;\n  flex: 0 0 1fr;\n  width: 2rem;\n  height: 2rem;\n  margin-left: 1.6rem;\n  justify-content: center;\n  align-items: center;\n  font-size: 0.8rem;\n  cursor: pointer; }\n  .navHeaderRight_item:hover {\n    text-decoration: underline; }\n\n.nav_toTableContent,\n.nav_toAbout {\n  display: none; }\n  .nav_toTableContent--active,\n  .nav_toAbout--active {\n    text-decoration: underline; }\n  @media (max-width: 1024px) {\n    .nav_toTableContent,\n    .nav_toAbout {\n      display: inline-flex; } }\n\n.nav_closeIcon {\n  width: 2rem;\n  height: 2rem;\n  position: absolute;\n  top: 7.6%;\n  left: 4rem;\n  cursor: pointer; }\n  @media (max-width: 550px) {\n    .nav_closeIcon {\n      top: 5%;\n      left: 1.5rem; } }\n\n.closeIcon_line {\n  width: 2rem;\n  height: 1px;\n  border-bottom: 1px solid black;\n  position: absolute;\n  top: 50%;\n  -webkit-transform-origin: center;\n          transform-origin: center;\n  -webkit-transform: translate(0, -100%);\n          transform: translate(0, -100%); }\n  .closeIcon_line:nth-child(odd) {\n    -webkit-transform: rotate(45deg);\n            transform: rotate(45deg); }\n  .closeIcon_line:nth-child(even) {\n    -webkit-transform: rotate(-45deg);\n            transform: rotate(-45deg); }\n\n.content {\n  display: block;\n  width: 100%;\n  height: 100%;\n  padding: 8em 4em;\n  position: relative;\n  background: white;\n  transition: 1s ease;\n  z-index: 1; }\n\n.header {\n  display: block;\n  width: 100%;\n  height: 33vh;\n  position: relative; }\n\n.header_navIcon {\n  position: absolute;\n  top: 33%;\n  left: 4rem;\n  -webkit-transform: translate(0, -100%);\n          transform: translate(0, -100%);\n  cursor: pointer; }\n  @media (max-width: 550px) {\n    .header_navIcon {\n      top: 29%;\n      left: 1.5rem; } }\n\n.navIcon_line:nth-child(1) {\n  width: 2rem;\n  padding-bottom: 1rem; }\n\n.navIcon_line:nth-child(2) {\n  width: 1.2rem;\n  padding-bottom: 1rem; }\n\n.navIcon_line {\n  transition: 0.2s ease;\n  border-bottom: 2px solid #202020; }\n  @media (max-width: 550px) {\n    .navIcon_line {\n      border-bottom: 1px solid #202020; } }\n\n.header_navIcon:hover > .navIcon_line:nth-child(2) {\n  width: 1rem; }\n\n.header_navIcon:hover > .navIcon_line:nth-child(1) {\n  width: 2.2rem; }\n\n.sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.sideMenu_button p {\n  -webkit-writing-mode: vertical-lr;\n      -ms-writing-mode: tb-lr;\n          writing-mode: vertical-lr; }\n\n#indexSelection {\n  width: 100vw;\n  height: -webkit-max-content;\n  height: -moz-max-content;\n  height: max-content;\n  position: relative;\n  overflow: hidden; }\n\n.indexSelection_row {\n  width: -webkit-max-content;\n  width: -moz-max-content;\n  width: max-content;\n  white-space: nowrap;\n  margin-bottom: 24px;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none; }\n\n.selectionItem {\n  display: inline-block;\n  -webkit-user-select: none;\n     -moz-user-select: none;\n      -ms-user-select: none;\n          user-select: none;\n  cursor: pointer;\n  padding-left: 24px;\n  padding-right: 1rem;\n  user-select: none; }\n  @media (max-width: 550px) {\n    .selectionItem {\n      padding-left: 12px;\n      padding-right: 0.5rem; } }\n  .selectionItem_index {\n    display: inline-block;\n    padding: 0 0.6em 0.8em 0;\n    font-family: customSet--serif;\n    font-size: 0.6rem;\n    line-height: 100%;\n    letter-spacing: 1px;\n    vertical-align: text-top; }\n    @media (max-width: 550px) {\n      .selectionItem_index {\n        font-size: 0.4rem; } }\n  .selectionItem_title {\n    font-size: 2.8rem;\n    font-weight: 200;\n    color: #484848;\n    display: inline-block;\n    vertical-align: text-top; }\n    @media (max-width: 550px) {\n      .selectionItem_title {\n        font-size: 1.6rem; } }\n  .selectionItem_line {\n    display: inline-block;\n    width: 4rem;\n    height: 1.5rem;\n    margin-left: 24px;\n    border-bottom: 2px solid #202020;\n    vertical-align: text-top; }\n    @media (max-width: 550px) {\n      .selectionItem_line {\n        width: 2rem;\n        height: 0.8rem;\n        margin-left: 12px;\n        border-bottom: 1px solid #202020; } }\n\n.articles_title {\n  font-size: 2.8rem;\n  font-weight: 200;\n  color: #484848;\n  display: block;\n  position: fixed;\n  top: 50%;\n  left: 2rem;\n  font-size: 3.6rem;\n  line-height: 1.6em;\n  color: #202020;\n  z-index: 1;\n  overflow: hidden; }\n  .articles_title > span {\n    display: inline-block;\n    position: relative;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    color: #202020; }\n    @media (max-width: 550px) {\n      .articles_title > span {\n        max-width: 85%; } }\n  @media (max-width: 550px) {\n    .articles_title {\n      font-size: 1.6rem;\n      left: 1rem; } }\n\n.articles_title--mobile {\n  display: none; }\n  .articles_title--mobile > span {\n    display: inline-block;\n    position: relative;\n    -webkit-user-select: none;\n       -moz-user-select: none;\n        -ms-user-select: none;\n            user-select: none;\n    color: #202020;\n    opacity: 0; }\n  @media (max-width: 850px) {\n    .articles_title--mobile {\n      display: block;\n      position: absolute;\n      top: 8.7%;\n      right: 4rem; } }\n  @media (max-width: 550px) {\n    .articles_title--mobile {\n      font-size: 0.8rem;\n      top: 7%;\n      right: 1.5rem; } }\n\n.articles_titleClickArea {\n  width: 10rem;\n  height: 100%;\n  position: absolute;\n  z-index: 11; }\n\n.articles_content {\n  font-size: 2rem;\n  font-weight: 200;\n  line-height: 2em;\n  letter-spacing: 1px;\n  color: #484848;\n  display: block;\n  width: 75%;\n  height: 100%;\n  padding-right: 10%;\n  margin-left: 12rem;\n  position: absolute;\n  top: 0;\n  overflow-y: hidden;\n  z-index: 1;\n  -webkit-transform: translate(0, 100%);\n          transform: translate(0, 100%); }\n  @media (max-width: 1024px) {\n    .articles_content {\n      font-size: 1.6rem; } }\n  @media (max-width: 850px) {\n    .articles_content {\n      width: 100%;\n      height: 80vh;\n      padding-top: 0;\n      padding-left: 4rem;\n      padding-right: 4rem;\n      margin-left: 0;\n      top: auto;\n      bottom: 0; } }\n  @media (max-width: 550px) {\n    .articles_content {\n      font-size: 1.2rem;\n      padding-left: 1.5rem;\n      padding-right: 1.5rem; } }\n\n.articles_content--scroll {\n  display: block;\n  height: 100%;\n  padding-top: 12rem;\n  position: relative;\n  overflow: scroll;\n  scrollbar-width: none; }\n  .articles_content--scroll::-webkit-scrollbar {\n    opacity: 0; }\n  @media (max-width: 850px) {\n    .articles_content--scroll {\n      padding-top: 0; } }\n", "",{"version":3,"sources":["/Users/KUAN/Desktop/blog2019/src/css/utilities/_variables.scss","style.scss","/Users/KUAN/Desktop/blog2019/src/css/utilities/_mixins.scss","/Users/KUAN/Desktop/blog2019/src/css/base/_reset.scss","/Users/KUAN/Desktop/blog2019/src/css/base/_native.scss","/Users/KUAN/Desktop/blog2019/src/css/animations/_nav.scss","/Users/KUAN/Desktop/blog2019/src/css/animations/_infiniteScroll.scss","/Users/KUAN/Desktop/blog2019/src/css/animations/_flyCard--inner.scss","/Users/KUAN/Desktop/blog2019/src/css/animations/_flyCard--outer.scss","/Users/KUAN/Desktop/blog2019/src/css/animations/_articles.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_nav.scss","/Users/KUAN/Desktop/blog2019/src/css/utilities/_media-queries.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_main.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_header.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_l-side.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_selection.scss","/Users/KUAN/Desktop/blog2019/src/css/components/_articles.scss"],"names":[],"mappings":"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","file":"style.scss","sourcesContent":["/**\n *\n * Color\n *\n */\n$black: #202020;\n$gray-6: #484848;\n$gray-5: #717171;\n$gray-4: #858585;\n$gray-3: #adadad;\n$gray-2: #d6d6d6;\n$gray-1: #eaeaea;\n$gray-0: #f2f2f2;\n\n/**\n *\n * font\n *\n */\n\n$base-font-size: 16px;\n\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF;\n}\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: local(\"PT Serif\");\n  unicode-range: U+00-024F;\n}\n\n@font-face {\n  font-family: \"customSet--sans\";\n  font-weight: 200;\n  src: local(\"PingFangTC-light\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF;\n}\n\n\n/**\n *\n * cubic-bezier\n *\n */\n$cubic_fastIn: cubic-bezier(.14,.88,.86,1.01);\n$cubic_progressive: cubic-bezier(.09,1.01,.53,.94);\n\n/**\n *\n * reusable property\n *\n */\n\n$nav-width: 384px;\n$transition: 1s ease;","/**\n *\n * Color\n *\n */\n/**\n *\n * font\n *\n */\n@font-face {\n  font-family: \"customSet--sans\";\n  src: local(\"PingFang TC\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n@font-face {\n  font-family: \"customSet--serif\";\n  src: local(\"PT Serif\");\n  unicode-range: U+00-024F; }\n\n@font-face {\n  font-family: \"customSet--sans\";\n  font-weight: 200;\n  src: local(\"PingFangTC-light\"), local(\"Microsoft JhengHei\");\n  unicode-range: U+4E00-9FFF; }\n\n/**\n *\n * cubic-bezier\n *\n */\n/**\n *\n * reusable property\n *\n */\n/**\n *\n * font\n *\n */\n/**\n *\n * layout\n *\n */\n/**\n *\n * MISC\n *\n */\n/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0; }\n\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block; }\n\nbody {\n  line-height: 1; }\n\nol,\nul {\n  list-style: none; }\n\nblockquote,\nq {\n  quotes: none; }\n\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none; }\n\ntable {\n  border-collapse: collapse;\n  border-spacing: 0; }\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box; }\n\na:focus {\n  outline: none; }\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box; }\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0; }\n\nselect {\n  appearance: none; }\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset; }\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer; }\n\nhtml {\n  overflow-x: hidden;\n  font-family: customSet--sans;\n  font-size: 16px;\n  color: #202020; }\n\nbody {\n  position: relative;\n  overflow: hidden; }\n\nh1 {\n  font-size: 2.5rem;\n  line-height: 1.5em;\n  letter-spacing: 0.1em; }\n\np {\n  font-size: 1.2rem;\n  line-height: 1.5em; }\n\na {\n  text-decoration: none;\n  color: #202020;\n  user-select: none; }\n\n.navContentShow:nth-child(1) {\n  animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.1s forwards; }\n\n.navContentShow:nth-child(2) {\n  animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.2s forwards; }\n\n.navContentShow:nth-child(3) {\n  animation: navContentShow 1s cubic-bezier(0.14, 0.88, 0.86, 1.01) 0.3s forwards; }\n\n@keyframes navContentShow {\n  from {\n    transform: translate(0, 100%); }\n  to {\n    transform: translate(0, 0); } }\n\n.ani-infiniteScroll_wrapper {\n  width: 100%;\n  height: max-content;\n  transition: 0.1s ease;\n  overflow-x: scroll;\n  scrollbar-width: none; }\n  .ani-infiniteScroll_wrapper::-webkit-scrollbar {\n    opacity: 0; }\n\n.ani_innerFlyCard--left::after {\n  content: '';\n  display: block;\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: -100%;\n  background: white;\n  animation: ani_innerFlyCard--left 0.4s ease-in 0.1s forwards; }\n\n@keyframes ani_innerFlyCard--left {\n  from {\n    left: -101%; }\n  to {\n    left: 0; } }\n\n.ani_outerFlyCard--bottom {\n  overflow: hidden; }\n  .ani_outerFlyCard--bottom::before {\n    content: '';\n    display: block;\n    width: 100vw;\n    height: 100vh;\n    position: absolute;\n    top: 0;\n    left: 0;\n    background: white;\n    animation: fadeIn 0.7s ease-in-out 0.2s forwards;\n    z-index: 75; }\n  .ani_outerFlyCard--bottom::after {\n    content: '';\n    display: block;\n    width: 100vw;\n    height: 100vh;\n    position: absolute;\n    top: 101%;\n    left: 0;\n    background: #202020;\n    animation: ani_outerFlyCard--bottom 0.7s ease 0.2s forwards;\n    z-index: 77; }\n\n@keyframes fadeIn {\n  0% {\n    opacity: 1; }\n  65% {\n    opacity: 1; }\n  100% {\n    opacity: 0; } }\n\n@keyframes ani_outerFlyCard--bottom {\n  from {\n    top: 101%; }\n  to {\n    top: -101%; } }\n\n.ani-article_title {\n  animation: titleShow--slide 0.7s ease-in-out, titleShow--color 0.7s ease-in-out 1.1s; }\n\n.ani-article_content {\n  animation: contentFlyIn 1s ease 1.5s; }\n\n@keyframes titleShow--slide {\n  0% {\n    transform: translate(0, 100%);\n    color: #202020; }\n  75% {\n    color: #202020; }\n  100% {\n    transform: translate(0, 0);\n    color: #202020; } }\n\n@keyframes titleShow--color {\n  from {\n    color: #202020; }\n  to {\n    color: #f2f2f2; } }\n\n@keyframes titleShow_mobile {\n  from {\n    transform: translate(100%, 0);\n    opacity: 0; }\n  to {\n    transform: translate(0, 0);\n    opacity: 1; } }\n\n@keyframes contentFlyIn {\n  0% {\n    transform: translate(0, 100%);\n    opacity: 0; }\n  100% {\n    transform: translate(0);\n    opacity: 1; } }\n\n.nav {\n  display: none;\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  overflow: hidden;\n  background: white;\n  z-index: 11; }\n\n/**\n *\n * nav_contentWrapper\n *\n */\n.nav_contentWrapper {\n  width: 85%;\n  height: 67%;\n  position: absolute;\n  left: 128px;\n  bottom: 0; }\n  @media (max-width: 1024px) {\n    .nav_contentWrapper {\n      display: none; } }\n\n.nav_title {\n  height: 20%;\n  font-size: 1.8rem;\n  padding-bottom: 2rem; }\n\n.nav_flexWrapper {\n  width: 100%;\n  height: 80%;\n  display: flex; }\n  .nav_flexWrapper .nav_area {\n    flex: 0 0 33.3%;\n    padding-right: calc(8.3% + 32px);\n    padding-bottom: 1rem;\n    position: relative; }\n\n.navArea_description {\n  font-size: 0.8rem;\n  letter-spacing: 1px;\n  line-height: 1.6em;\n  color: #adadad; }\n\n.navArea_itemWrapper {\n  width: calc(100% + 12px);\n  height: 95%;\n  overflow: scroll;\n  scrollbar-width: none; }\n  .navArea_itemWrapper::-webkit-scrollbar {\n    opacity: 0; }\n\n.navArea_scrollHint {\n  position: absolute;\n  left: 75%;\n  bottom: 11%;\n  font-size: 0.8rem;\n  color: #d6d6d6; }\n\n.nav_item {\n  padding-bottom: 2.4rem; }\n\n.nav_contentNumbering {\n  font-family: customSet--serif;\n  font-size: 0.6rem;\n  letter-spacing: 1px;\n  line-height: 2.4rem; }\n\n.nav_content {\n  font-size: 1rem;\n  letter-spacing: 1px;\n  line-height: 1.2rem; }\n\n.navArea_contact {\n  position: absolute;\n  bottom: 7%;\n  font-family: customSet--serif;\n  font-weight: 200; }\n\n.contactItem {\n  font-size: 0.6rem;\n  color: #adadad;\n  line-height: 1.6em; }\n\na.contactItem {\n  padding-right: 1.2rem;\n  transition: color 0.3s ease; }\n  a.contactItem:hover {\n    color: #202020; }\n\n/**\n *\n * nav_contentWrapper--mobile\n *\n */\n@media (min-width: 1025px) {\n  .nav_contentWrapper--mobile {\n    display: none; } }\n\n.nav_mobileArea {\n  width: 100%;\n  height: 67%;\n  padding: 0 4rem 0 4rem;\n  position: absolute;\n  bottom: 0; }\n  @media (max-width: 550px) {\n    .nav_mobileArea {\n      padding: 0 1.5rem 0 1.5rem; } }\n\n.mobileAbout {\n  display: block; }\n\n.mobileTableContent {\n  display: none; }\n\n/**\n *\n * nav_header\n *\n */\n.navHeader_right {\n  display: flex;\n  height: 2.2rem;\n  align-items: center;\n  position: absolute;\n  top: 7.6%;\n  right: 4rem; }\n  @media (max-width: 550px) {\n    .navHeader_right {\n      top: 5%;\n      right: 1.5rem; } }\n\n.navHeaderRight_item {\n  display: inline-flex;\n  flex: 0 0 1fr;\n  width: 2rem;\n  height: 2rem;\n  margin-left: 1.6rem;\n  justify-content: center;\n  align-items: center;\n  font-size: 0.8rem;\n  cursor: pointer; }\n  .navHeaderRight_item:hover {\n    text-decoration: underline; }\n\n.nav_toTableContent,\n.nav_toAbout {\n  display: none; }\n  .nav_toTableContent--active,\n  .nav_toAbout--active {\n    text-decoration: underline; }\n  @media (max-width: 1024px) {\n    .nav_toTableContent,\n    .nav_toAbout {\n      display: inline-flex; } }\n\n.nav_closeIcon {\n  width: 2rem;\n  height: 2rem;\n  position: absolute;\n  top: 7.6%;\n  left: 4rem;\n  cursor: pointer; }\n  @media (max-width: 550px) {\n    .nav_closeIcon {\n      top: 5%;\n      left: 1.5rem; } }\n\n.closeIcon_line {\n  width: 2rem;\n  height: 1px;\n  border-bottom: 1px solid black;\n  position: absolute;\n  top: 50%;\n  transform-origin: center;\n  transform: translate(0, -100%); }\n  .closeIcon_line:nth-child(odd) {\n    transform: rotate(45deg); }\n  .closeIcon_line:nth-child(even) {\n    transform: rotate(-45deg); }\n\n.content {\n  display: block;\n  width: 100%;\n  height: 100%;\n  padding: 8em 4em;\n  position: relative;\n  background: white;\n  transition: 1s ease;\n  z-index: 1; }\n\n.header {\n  display: block;\n  width: 100%;\n  height: 33vh;\n  position: relative; }\n\n.header_navIcon {\n  position: absolute;\n  top: 33%;\n  left: 4rem;\n  transform: translate(0, -100%);\n  cursor: pointer; }\n  @media (max-width: 550px) {\n    .header_navIcon {\n      top: 29%;\n      left: 1.5rem; } }\n\n.navIcon_line:nth-child(1) {\n  width: 2rem;\n  padding-bottom: 1rem; }\n\n.navIcon_line:nth-child(2) {\n  width: 1.2rem;\n  padding-bottom: 1rem; }\n\n.navIcon_line {\n  transition: 0.2s ease;\n  border-bottom: 2px solid #202020; }\n  @media (max-width: 550px) {\n    .navIcon_line {\n      border-bottom: 1px solid #202020; } }\n\n.header_navIcon:hover > .navIcon_line:nth-child(2) {\n  width: 1rem; }\n\n.header_navIcon:hover > .navIcon_line:nth-child(1) {\n  width: 2.2rem; }\n\n.sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0; }\n\n.sideMenu_button p {\n  writing-mode: vertical-lr; }\n\n#indexSelection {\n  width: 100vw;\n  height: max-content;\n  position: relative;\n  overflow: hidden; }\n\n.indexSelection_row {\n  width: max-content;\n  white-space: nowrap;\n  margin-bottom: 24px;\n  user-select: none; }\n\n.selectionItem {\n  display: inline-block;\n  user-select: none;\n  cursor: pointer;\n  padding-left: 24px;\n  padding-right: 1rem;\n  user-select: none; }\n  @media (max-width: 550px) {\n    .selectionItem {\n      padding-left: 12px;\n      padding-right: 0.5rem; } }\n  .selectionItem_index {\n    display: inline-block;\n    padding: 0 0.6em 0.8em 0;\n    font-family: customSet--serif;\n    font-size: 0.6rem;\n    line-height: 100%;\n    letter-spacing: 1px;\n    vertical-align: text-top; }\n    @media (max-width: 550px) {\n      .selectionItem_index {\n        font-size: 0.4rem; } }\n  .selectionItem_title {\n    font-size: 2.8rem;\n    font-weight: 200;\n    color: #484848;\n    display: inline-block;\n    vertical-align: text-top; }\n    @media (max-width: 550px) {\n      .selectionItem_title {\n        font-size: 1.6rem; } }\n  .selectionItem_line {\n    display: inline-block;\n    width: 4rem;\n    height: 1.5rem;\n    margin-left: 24px;\n    border-bottom: 2px solid #202020;\n    vertical-align: text-top; }\n    @media (max-width: 550px) {\n      .selectionItem_line {\n        width: 2rem;\n        height: 0.8rem;\n        margin-left: 12px;\n        border-bottom: 1px solid #202020; } }\n\n.articles_title {\n  font-size: 2.8rem;\n  font-weight: 200;\n  color: #484848;\n  display: block;\n  position: fixed;\n  top: 50%;\n  left: 2rem;\n  font-size: 3.6rem;\n  line-height: 1.6em;\n  color: #202020;\n  z-index: 1;\n  overflow: hidden; }\n  .articles_title > span {\n    display: inline-block;\n    position: relative;\n    user-select: none;\n    color: #202020; }\n    @media (max-width: 550px) {\n      .articles_title > span {\n        max-width: 85%; } }\n  @media (max-width: 550px) {\n    .articles_title {\n      font-size: 1.6rem;\n      left: 1rem; } }\n\n.articles_title--mobile {\n  display: none; }\n  .articles_title--mobile > span {\n    display: inline-block;\n    position: relative;\n    user-select: none;\n    color: #202020;\n    opacity: 0; }\n  @media (max-width: 850px) {\n    .articles_title--mobile {\n      display: block;\n      position: absolute;\n      top: 8.7%;\n      right: 4rem; } }\n  @media (max-width: 550px) {\n    .articles_title--mobile {\n      font-size: 0.8rem;\n      top: 7%;\n      right: 1.5rem; } }\n\n.articles_titleClickArea {\n  width: 10rem;\n  height: 100%;\n  position: absolute;\n  z-index: 11; }\n\n.articles_content {\n  font-size: 2rem;\n  font-weight: 200;\n  line-height: 2em;\n  letter-spacing: 1px;\n  color: #484848;\n  display: block;\n  width: 75%;\n  height: 100%;\n  padding-right: 10%;\n  margin-left: 12rem;\n  position: absolute;\n  top: 0;\n  overflow-y: hidden;\n  z-index: 1;\n  transform: translate(0, 100%); }\n  @media (max-width: 1024px) {\n    .articles_content {\n      font-size: 1.6rem; } }\n  @media (max-width: 850px) {\n    .articles_content {\n      width: 100%;\n      height: 80vh;\n      padding-top: 0;\n      padding-left: 4rem;\n      padding-right: 4rem;\n      margin-left: 0;\n      top: auto;\n      bottom: 0; } }\n  @media (max-width: 550px) {\n    .articles_content {\n      font-size: 1.2rem;\n      padding-left: 1.5rem;\n      padding-right: 1.5rem; } }\n\n.articles_content--scroll {\n  display: block;\n  height: 100%;\n  padding-top: 12rem;\n  position: relative;\n  overflow: scroll;\n  scrollbar-width: none; }\n  .articles_content--scroll::-webkit-scrollbar {\n    opacity: 0; }\n  @media (max-width: 850px) {\n    .articles_content--scroll {\n      padding-top: 0; } }\n","/**\n *\n * font\n *\n */\n\n@mixin heroFont {\n    font-size: 2.8rem;\n    font-weight: 200;\n    color: $gray-6;\n}\n\n@mixin articleContentFont {\n    font-size: 2rem;\n    font-weight: 200;\n    line-height: 2em;\n    letter-spacing: 1px;\n    color: $gray-6;\n}\n\n\n\n/**\n *\n * layout\n *\n */\n\n @mixin  titleLayout_wrapper {\n    display: inline-block;\n    user-select: none;\n    cursor: pointer;\n }\n\n @mixin titleLayout_index {\n    display: inline-block;\n    padding: 0 0.6em 0.8em 0;\n    font-family: customSet--serif;\n    font-size: 0.6rem;\n    line-height: 100%;\n    letter-spacing: 1px;\n    vertical-align: text-top;\n    @include media('below-mobile') {\n       font-size: 0.4rem;\n    }\n }\n\n @mixin titleLayout_title {\n    @include heroFont;\n    display: inline-block;\n    vertical-align: text-top;\n    @include media('below-mobile') {\n      font-size: 1.6rem;\n   }\n }\n\n @mixin titleLayout_line {\n   display: inline-block;\n   width: 4rem;\n   height: 1.5rem;\n   margin-left: 24px;\n   border-bottom: 2px solid $black;\n   vertical-align: text-top;\n   @include media('below-mobile') {\n      width: 2rem;\n      height: 0.8rem;\n      margin-left: 12px;\n      border-bottom: 1px solid $black;\n   }\n }\n\n\n\n/**\n *\n * MISC\n *\n */\n\n @mixin hideScrollBar {\n    &::-webkit-scrollbar {\n        opacity: 0;\n    }\n    scrollbar-width: none;\n }\n\n","/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */\nhtml,\nbody,\ndiv,\nspan,\napplet,\nobject,\niframe,\nh1,\nh2,\nh3,\nh4,\nh5,\nh6,\np,\nblockquote,\npre,\na,\nabbr,\nacronym,\naddress,\nbig,\ncite,\ncode,\ndel,\ndfn,\nem,\nimg,\nins,\nkbd,\nq,\ns,\nsamp,\nsmall,\nstrike,\nstrong,\nsub,\nsup,\ntt,\nvar,\nb,\nu,\ni,\ncenter,\ndl,\ndt,\ndd,\nol,\nul,\nli,\nfieldset,\nform,\nlabel,\nlegend,\ntable,\ncaption,\ntbody,\ntfoot,\nthead,\ntr,\nth,\ntd,\narticle,\naside,\ncanvas,\ndetails,\nembed,\nfigure,\nfigcaption,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\noutput,\nruby,\nsection,\nsummary,\ntime,\nmark,\naudio,\nvideo {\n  border: 0;\n  font-size: 100%;\n  font: inherit;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0;\n}\narticle,\naside,\ndetails,\nfigcaption,\nfigure,\nfooter,\nheader,\nhgroup,\nmenu,\nnav,\nsection,\nmain {\n  display: block;\n}\nbody {\n  line-height: 1;\n}\nol,\nul {\n  list-style: none;\n}\nblockquote,\nq {\n  quotes: none;\n}\nblockquote:before,\nblockquote:after,\nq:before,\nq:after {\n  content: none;\n}\ntable {\n  border-collapse: collapse;\n  border-spacing: 0;\n}\n\n*,\n*::before,\n*::after {\n  box-sizing: border-box;\n}\n\na:focus {\n  outline: none;\n}\n\n/*form reset*/\ninput,\nlabel,\nselect,\nbutton,\ntextarea {\n  margin: 0;\n  border: 0;\n  padding: 0;\n  display: inline-block;\n  vertical-align: middle;\n  white-space: normal;\n  background: none;\n  line-height: 1;\n  text-align: left;\n  font-size: inherit;\n  font-family: inherit;\n  color: inherit;\n  box-sizing: border-box;\n}\n\nbutton,\ntextarea,\ninput,\nselect {\n  outline: 0;\n}\n\nselect {\n  appearance: none;\n}\n\ninput:-webkit-autofill {\n  -webkit-box-shadow: 0 0 0 1000px #fff inset;\n}\n\nbutton,\ninput[type=\"reset\"],\ninput[type=\"button\"],\ninput[type=\"submit\"] {\n  cursor: pointer;\n}\n","html {\n    overflow-x: hidden;\n    font-family: customSet--sans;\n    font-size: $base-font-size;\n    color: $black;\n}\n\nbody {\n    position: relative;\n    overflow: hidden;\n}\n\nh1 {\n    font-size: 2.5rem;\n    line-height: 1.5em;\n    letter-spacing: 0.1em;\n}\n\np {\n    font-size: 1.2rem;\n    line-height: 1.5em;\n}\n\na {\n    text-decoration: none;\n    color: $black;\n    user-select: none;\n}",".navContentShow {\n    &:nth-child(1) {\n        animation: navContentShow 1s $cubic_fastIn 0.1s forwards;\n    }\n    &:nth-child(2) {\n        animation: navContentShow 1s $cubic_fastIn 0.2s forwards;\n    }\n    &:nth-child(3) {\n        animation: navContentShow 1s $cubic_fastIn 0.3s forwards;\n    }\n}\n\n@keyframes navContentShow {\n    from {\n        transform: translate(0, 100%);\n    }\n    to {\n        transform: translate(0, 0);\n    }\n}",".ani-infiniteScroll_wrapper {\n    width: 100%;\n    height: max-content;\n    transition: 0.1s ease;\n    overflow-x: scroll;\n    @include hideScrollBar;\n}","@mixin innerFlyCard($orientation, $color) {\n    &::after {\n        display: block;\n        width: 100%;\n        height: 100%;\n        position: absolute;\n        left: -100%;\n        background: $color;\n        @if $orientation == 'to-right' {\n            \n        }\n    }\n}\n\n.ani_innerFlyCard--left {\n    // overflow: hidden;\n    &::after {\n        content:'';\n        display: block;\n        width: 100%;\n        height: 100%;\n        position: fixed;\n        top: 0;\n        left: -100%;\n        background: white;\n        animation: ani_innerFlyCard--left 0.4s ease-in 0.1s forwards;\n    }\n}\n\n@keyframes ani_innerFlyCard--left {\n    from {\n        left: -101%;\n    }\n    to {\n        left: 0;\n    }\n}\n",".ani_outerFlyCard--bottom {\n    overflow: hidden;\n    &::before {\n        content: '';\n        display: block;\n        width: 100vw;\n        height: 100vh;\n        position: absolute;\n        top: 0;\n        left: 0;\n        background: white;\n        animation: fadeIn 0.7s ease-in-out 0.2s forwards;\n        z-index: 75;\n    }\n\n    &::after {\n        content: '';\n        display: block;\n        width: 100vw;\n        height: 100vh;\n        position: absolute;\n        top: 101%;\n        left: 0;\n        background: $black;\n        animation: ani_outerFlyCard--bottom 0.7s ease 0.2s forwards;\n        z-index: 77;\n    }\n}\n\n@keyframes fadeIn {\n    0% { opacity: 1 }\n    65% { opacity: 1 }\n    100% {opacity: 0 }\n}\n\n@keyframes ani_outerFlyCard--bottom {\n    from {\n        top: 101%;\n    }\n    to {\n        top: -101%;\n    }\n}","@mixin titleAnimation {\n    animation: titleShow--slide 0.7s ease-in-out, titleShow--color 0.7s ease-in-out 1.1s;\n}\n\n@mixin contentAnimation {\n    animation: contentFlyIn 1s ease 1.5s;\n}\n\n@mixin titleAnimation--mobile {\n    animation: titleShow_mobile 0.5s ease 2.2s forwards; \n}\n\n.ani-article_title {\n    @include titleAnimation\n}\n.ani-article_content {\n    @include contentAnimation\n}\n\n@keyframes titleShow--slide {\n    0% {\n        transform: translate(0, 100%);\n        color: $black;\n    }\n    75% {\n        color: $black;\n    }\n    100% {\n        transform: translate(0, 0);\n        color: $black;\n    }\n}\n\n@keyframes titleShow--color {\n    from {\n        color: $black;\n    }\n    to {\n        color: $gray-0;\n    }\n}\n\n@keyframes titleShow_mobile {\n    from {\n        transform: translate(100%, 0);\n        opacity: 0;\n    }\n    to {\n        transform: translate(0, 0);\n        opacity: 1;\n    }\n}\n\n@keyframes contentFlyIn {\n    0% {\n        transform: translate(0, 100%);\n        opacity: 0;\n    }\n    100% {\n        transform: translate(0);\n        opacity: 1;\n    }\n}",".nav {\n  display: none;\n  width: 100%;\n  height: 100%;\n  position: fixed;\n  top: 0;\n  left: 0;\n  overflow: hidden;\n  background: white;\n  z-index: 11;\n}\n\n\n/**\n *\n * nav_contentWrapper\n *\n */\n\n.nav_contentWrapper {\n  width: 85%;\n  height: 67%;\n  position: absolute;\n  left: 128px;\n  bottom: 0;\n  @include media('below-desktop') {\n    display: none;\n  }\n}\n.nav_title {\n  height: 20%;\n  font-size: 1.8rem;\n  padding-bottom: 2rem;\n}\n\n.nav_flexWrapper {\n  width: 100%;\n  height: 80%;\n  display: flex;\n\n  .nav_area {\n    flex: 0 0 33.3%;\n    padding-right: calc(8.3% + 32px);\n    padding-bottom: 1rem;\n    position: relative;\n  }\n}\n\n.navArea_description {\n  font-size: 0.8rem;\n  letter-spacing: 1px;\n  line-height: 1.6em;\n  color: $gray-3;\n}\n\n.navArea_itemWrapper {\n  width: calc(100% + 12px);\n  height: 95%;\n  overflow: scroll;\n  @include hideScrollBar;\n}\n\n.navArea_scrollHint {\n  position: absolute;\n  left: 75%;\n  bottom: 11%;\n  font-size: 0.8rem;\n  color: $gray-2;\n}\n\n.nav_item {\n  padding-bottom: 2.4rem;\n}\n\n.nav_contentNumbering {\n  font-family: customSet--serif;\n  font-size: 0.6rem;\n  letter-spacing: 1px;\n  line-height: 2.4rem;\n}\n\n.nav_content {\n  font-size: 1rem;\n  letter-spacing: 1px;\n  line-height: 1.2rem;\n}\n\n.navArea_contact {\n  position: absolute;\n  bottom: 7%;\n  font-family: customSet--serif;\n  font-weight: 200;\n}\n\n.contactItem {\n  font-size: 0.6rem;\n  color: $gray-3;\n  line-height: 1.6em;\n}\n\na.contactItem {\n  padding-right: 1.2rem;\n  transition: color 0.3s ease;\n\n  &:hover {\n    color: $black;\n  }\n}\n\n\n/**\n *\n * nav_contentWrapper--mobile\n *\n */\n\n .nav_contentWrapper--mobile {\n   @include media('above-desktop') {\n     display: none;\n   }\n }\n .nav_mobileArea {\n   width: 100%;\n   height: 67%;\n   padding: 0 4rem 0 4rem;\n   position: absolute;\n   bottom: 0;\n   @include media('below-mobile') {\n    padding: 0 1.5rem 0 1.5rem;\n   }\n }\n\n .mobileAbout {\n   display: block;\n }\n .mobileTableContent {\n   display: none;\n }\n\n\n/**\n *\n * nav_header\n *\n */\n\n.navHeader_right {\n  display: flex;\n  height: 2.2rem;\n  align-items: center;\n  position: absolute;\n  top: 7.6%;\n  right: 4rem;\n  @include media('below-mobile') {\n    top: 5%;\n    right: 1.5rem;\n  }\n}\n\n.navHeaderRight_item {\n  display: inline-flex;\n  flex: 0 0 1fr;\n  width: 2rem;\n  height: 2rem;\n  margin-left: 1.6rem;\n  justify-content: center;\n  align-items: center;\n  font-size: 0.8rem;\n  cursor: pointer;\n  &:hover {\n    text-decoration: underline;\n  }\n}\n.nav_toTableContent,\n.nav_toAbout {\n  display: none;\n  &--active {\n    text-decoration: underline;\n  }\n  @include media('below-desktop') {\n    display: inline-flex;\n  }\n}\n\n.nav_closeIcon {\n  width: 2rem;\n  height: 2rem;\n  position: absolute;\n  top: 7.6%;\n  left: 4rem;\n  cursor: pointer;\n  @include media('below-mobile') {\n    top: 5%;\n    left: 1.5rem;\n  }\n}\n\n.closeIcon_line {\n  width: 2rem;\n  height: 1px;\n  border-bottom: 1px solid black;\n  position: absolute;\n  top: 50%;\n  transform-origin: center;\n  transform: translate(0, -100%);\n\n  &:nth-child(odd) {\n    transform: rotate(45deg);\n  }\n  &:nth-child(even) {\n    transform: rotate(-45deg);\n  }\n}\n\n","@mixin media($point) {\n\t@if $point == 'above-large' {\n\t  @media (min-width: 1401px) { @content; }\n\t}\n\t@if $point == 'below-large' {\n\t  @media (max-width: 1400px) { @content; }\n\t}\n\t@if $point == 'above-medium' {\n\t  @media (min-width: 1281px) { @content; }\n\t}\n\t@if $point == 'below-medium' {\n\t  @media (max-width: 1280px) { @content; }\n\t}\n\t@if $point == 'above-desktop' {\n\t  @media (min-width: 1025px)  { @content; }\n\t}\n\t@if $point == 'below-desktop' {\n\t  @media (max-width: 1024px)  { @content; }\n\t}\n\t@if $point == 'above-small' {\n\t  @media (min-width: 851px)  { @content; }\n\t}\n\t@if $point == 'below-small' {\n\t  @media (max-width: 850px)  { @content; }\n\t}\n\t@if $point == 'above-tablet' {\n\t  @media (min-width: 768px)  { @content; }\n\t}\n\t@if $point == 'below-tablet' {\n\t  @media (max-width: 767px)  { @content; }\n\t}\n\t@if $point == 'above-mobile' {\n\t  @media (min-width: 551px) { @content; }\n\t}\n\t@if $point == 'below-mobile' {\n\t  @media (max-width: 550px)  { @content; }\n\t}\n}\n",".content {\n    display: block;\n    width: 100%;\n    height: 100%;\n    padding: 8em 4em;\n    position: relative;\n    background: white;\n    transition: $transition;\n    z-index: 1;\n}",".header {\n    display: block;\n    width: 100%;\n    height: 33vh;\n    position: relative;\n}\n\n.header_navIcon {\n    position: absolute;\n    top: 33%;\n    left: 4rem;\n    transform: translate(0, -100%);\n    cursor: pointer;\n\n    @include media('below-mobile') {\n        top: 29%;\n        left: 1.5rem;\n    }\n}\n\n.navIcon_line:nth-child(1) {\n    width: 2rem;\n    padding-bottom: 1rem;\n}\n.navIcon_line:nth-child(2) {\n    width: 1.2rem;\n    padding-bottom: 1rem;\n}\n.navIcon_line {\n    transition: 0.2s ease;\n    border-bottom: 2px solid $black;\n    @include media('below-mobile') {\n        border-bottom: 1px solid $black;\n    }\n}\n\n.header_navIcon:hover {\n    & > .navIcon_line:nth-child(2) {\n        width: 1rem;\n    }\n    & > .navIcon_line:nth-child(1) {\n        width: 2.2rem;\n    }\n}",".sideMenu {\n  display: block;\n  height: 100%;\n  position: absolute;\n  top: 0;\n  left: 0;\n}\n\n.sideMenu_button {\n  & p {\n    writing-mode: vertical-lr;\n  }\n}\n","$item-spacing: 24px;\n\n#indexSelection {\n  width: 100vw;\n  height: max-content;\n  position: relative;\n  overflow: hidden;\n}\n\n.indexSelection_row {\n  width: max-content;\n  white-space: nowrap;\n  margin-bottom: $item-spacing;\n  user-select: none;\n}\n\n.selectionItem {\n  @include titleLayout_wrapper;\n  padding-left: $item-spacing;\n  padding-right: 1rem;\n  user-select: none;\n  @include media('below-mobile') {\n    padding-left: 12px;\n    padding-right: 0.5rem;\n  }\n\n  &_index {\n    @include titleLayout_index;\n  }\n  &_title {\n    @include titleLayout_title;\n  }\n  &_line {\n    @include titleLayout_line;\n  }\n}\n",".articles_title {\n    @include heroFont;\n    display: block;\n    position: fixed;\n    top: 50%;\n    left: 2rem;\n    font-size: 3.6rem;\n    line-height: 1.6em;\n    color: $black;\n    z-index: 1;\n    overflow: hidden;\n    & > span {\n        display: inline-block;\n        position: relative;\n        user-select: none;\n        color: $black;\n        // @include titleAnimation;\n        @include media('below-mobile') {\n            max-width: 85%;\n        }\n    }\n    @include media('below-mobile') {\n        font-size: 1.6rem;\n        left: 1rem;\n    }\n}\n.articles_title--mobile {\n    display: none;\n    & > span {\n        display: inline-block;\n        position: relative;\n        user-select: none;\n        color: $black;\n        opacity: 0;\n        // @include titleAnimation--mobile;\n    }\n    @include media('below-small') {\n        display: block;\n        position: absolute;\n        top: 8.7%;\n        right: 4rem;\n    }\n    @include media('below-mobile') {\n        font-size: 0.8rem;\n        top: 7%;\n        right: 1.5rem;\n    }\n}\n\n.articles_titleClickArea{\n    width: 10rem;\n    height: 100%;\n    position: absolute;\n    z-index: 11;\n}\n\n.articles_content {\n    @include articleContentFont;\n    display: block;\n    width: 75%;\n    height: 100%;\n    padding-right: 10%;\n    margin-left: 12rem;\n    position: absolute;\n    top: 0;\n    overflow-y: hidden;\n    z-index: 1;\n    transform: translate(0, 100%);\n\n    // @include contentAnimation;\n    @include media('below-desktop') {\n        font-size: 1.6rem;\n    }\n    @include media('below-small') {\n        width: 100%;\n        height: 80vh;\n        padding-top: 0;\n        padding-left: 4rem;\n        padding-right: 4rem;\n        margin-left: 0;\n        top: auto;\n        bottom: 0;\n    }\n    @include media('below-mobile') {\n        font-size: 1.2rem;\n        padding-left: 1.5rem;\n        padding-right: 1.5rem;\n    }\n}\n\n.articles_content--scroll {\n    display: block;\n    height: 100%;\n    padding-top: 12rem;\n    position: relative;\n    overflow: scroll;\n\n    @include hideScrollBar;\n    @include media('below-small') {\n        padding-top: 0;\n    }\n}"]}]);
-
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/runtime/api.js":
-/*!*****************************************************!*\
-  !*** ./node_modules/css-loader/dist/runtime/api.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/*
-  MIT License http://www.opensource.org/licenses/mit-license.php
-  Author Tobias Koppers @sokra
-*/
-// css base code, injected by the css-loader
-module.exports = function (useSourceMap) {
-  var list = []; // return the list of modules as css string
-
-  list.toString = function toString() {
-    return this.map(function (item) {
-      var content = cssWithMappingToString(item, useSourceMap);
-
-      if (item[2]) {
-        return '@media ' + item[2] + '{' + content + '}';
-      } else {
-        return content;
-      }
-    }).join('');
-  }; // import a list of modules into the list
-
-
-  list.i = function (modules, mediaQuery) {
-    if (typeof modules === 'string') {
-      modules = [[null, modules, '']];
-    }
-
-    var alreadyImportedModules = {};
-
-    for (var i = 0; i < this.length; i++) {
-      var id = this[i][0];
-
-      if (id != null) {
-        alreadyImportedModules[id] = true;
-      }
-    }
-
-    for (i = 0; i < modules.length; i++) {
-      var item = modules[i]; // skip already imported module
-      // this implementation is not 100% perfect for weird media query combinations
-      // when a module is imported multiple times with different media queries.
-      // I hope this will never occur (Hey this way we have smaller bundles)
-
-      if (item[0] == null || !alreadyImportedModules[item[0]]) {
-        if (mediaQuery && !item[2]) {
-          item[2] = mediaQuery;
-        } else if (mediaQuery) {
-          item[2] = '(' + item[2] + ') and (' + mediaQuery + ')';
-        }
-
-        list.push(item);
-      }
-    }
-  };
-
-  return list;
-};
-
-function cssWithMappingToString(item, useSourceMap) {
-  var content = item[1] || '';
-  var cssMapping = item[3];
-
-  if (!cssMapping) {
-    return content;
-  }
-
-  if (useSourceMap && typeof btoa === 'function') {
-    var sourceMapping = toComment(cssMapping);
-    var sourceURLs = cssMapping.sources.map(function (source) {
-      return '/*# sourceURL=' + cssMapping.sourceRoot + source + ' */';
-    });
-    return [content].concat(sourceURLs).concat([sourceMapping]).join('\n');
-  }
-
-  return [content].join('\n');
-} // Adapted from convert-source-map (MIT)
-
-
-function toComment(sourceMap) {
-  // eslint-disable-next-line no-undef
-  var base64 = btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap))));
-  var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
-  return '/*# ' + data + ' */';
-}
-
-/***/ }),
-
 /***/ "./node_modules/jquery/dist/jquery.js":
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
@@ -10797,515 +10686,6 @@ return jQuery;
 
 /***/ }),
 
-/***/ "./node_modules/style-loader/lib/addStyles.js":
-/*!****************************************************!*\
-  !*** ./node_modules/style-loader/lib/addStyles.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/*
-	MIT License http://www.opensource.org/licenses/mit-license.php
-	Author Tobias Koppers @sokra
-*/
-
-var stylesInDom = {};
-
-var	memoize = function (fn) {
-	var memo;
-
-	return function () {
-		if (typeof memo === "undefined") memo = fn.apply(this, arguments);
-		return memo;
-	};
-};
-
-var isOldIE = memoize(function () {
-	// Test for IE <= 9 as proposed by Browserhacks
-	// @see http://browserhacks.com/#hack-e71d8692f65334173fee715c222cb805
-	// Tests for existence of standard globals is to allow style-loader
-	// to operate correctly into non-standard environments
-	// @see https://github.com/webpack-contrib/style-loader/issues/177
-	return window && document && document.all && !window.atob;
-});
-
-var getTarget = function (target, parent) {
-  if (parent){
-    return parent.querySelector(target);
-  }
-  return document.querySelector(target);
-};
-
-var getElement = (function (fn) {
-	var memo = {};
-
-	return function(target, parent) {
-                // If passing function in options, then use it for resolve "head" element.
-                // Useful for Shadow Root style i.e
-                // {
-                //   insertInto: function () { return document.querySelector("#foo").shadowRoot }
-                // }
-                if (typeof target === 'function') {
-                        return target();
-                }
-                if (typeof memo[target] === "undefined") {
-			var styleTarget = getTarget.call(this, target, parent);
-			// Special case to return head of iframe instead of iframe itself
-			if (window.HTMLIFrameElement && styleTarget instanceof window.HTMLIFrameElement) {
-				try {
-					// This will throw an exception if access to iframe is blocked
-					// due to cross-origin restrictions
-					styleTarget = styleTarget.contentDocument.head;
-				} catch(e) {
-					styleTarget = null;
-				}
-			}
-			memo[target] = styleTarget;
-		}
-		return memo[target]
-	};
-})();
-
-var singleton = null;
-var	singletonCounter = 0;
-var	stylesInsertedAtTop = [];
-
-var	fixUrls = __webpack_require__(/*! ./urls */ "./node_modules/style-loader/lib/urls.js");
-
-module.exports = function(list, options) {
-	if (typeof DEBUG !== "undefined" && DEBUG) {
-		if (typeof document !== "object") throw new Error("The style-loader cannot be used in a non-browser environment");
-	}
-
-	options = options || {};
-
-	options.attrs = typeof options.attrs === "object" ? options.attrs : {};
-
-	// Force single-tag solution on IE6-9, which has a hard limit on the # of <style>
-	// tags it will allow on a page
-	if (!options.singleton && typeof options.singleton !== "boolean") options.singleton = isOldIE();
-
-	// By default, add <style> tags to the <head> element
-        if (!options.insertInto) options.insertInto = "head";
-
-	// By default, add <style> tags to the bottom of the target
-	if (!options.insertAt) options.insertAt = "bottom";
-
-	var styles = listToStyles(list, options);
-
-	addStylesToDom(styles, options);
-
-	return function update (newList) {
-		var mayRemove = [];
-
-		for (var i = 0; i < styles.length; i++) {
-			var item = styles[i];
-			var domStyle = stylesInDom[item.id];
-
-			domStyle.refs--;
-			mayRemove.push(domStyle);
-		}
-
-		if(newList) {
-			var newStyles = listToStyles(newList, options);
-			addStylesToDom(newStyles, options);
-		}
-
-		for (var i = 0; i < mayRemove.length; i++) {
-			var domStyle = mayRemove[i];
-
-			if(domStyle.refs === 0) {
-				for (var j = 0; j < domStyle.parts.length; j++) domStyle.parts[j]();
-
-				delete stylesInDom[domStyle.id];
-			}
-		}
-	};
-};
-
-function addStylesToDom (styles, options) {
-	for (var i = 0; i < styles.length; i++) {
-		var item = styles[i];
-		var domStyle = stylesInDom[item.id];
-
-		if(domStyle) {
-			domStyle.refs++;
-
-			for(var j = 0; j < domStyle.parts.length; j++) {
-				domStyle.parts[j](item.parts[j]);
-			}
-
-			for(; j < item.parts.length; j++) {
-				domStyle.parts.push(addStyle(item.parts[j], options));
-			}
-		} else {
-			var parts = [];
-
-			for(var j = 0; j < item.parts.length; j++) {
-				parts.push(addStyle(item.parts[j], options));
-			}
-
-			stylesInDom[item.id] = {id: item.id, refs: 1, parts: parts};
-		}
-	}
-}
-
-function listToStyles (list, options) {
-	var styles = [];
-	var newStyles = {};
-
-	for (var i = 0; i < list.length; i++) {
-		var item = list[i];
-		var id = options.base ? item[0] + options.base : item[0];
-		var css = item[1];
-		var media = item[2];
-		var sourceMap = item[3];
-		var part = {css: css, media: media, sourceMap: sourceMap};
-
-		if(!newStyles[id]) styles.push(newStyles[id] = {id: id, parts: [part]});
-		else newStyles[id].parts.push(part);
-	}
-
-	return styles;
-}
-
-function insertStyleElement (options, style) {
-	var target = getElement(options.insertInto)
-
-	if (!target) {
-		throw new Error("Couldn't find a style target. This probably means that the value for the 'insertInto' parameter is invalid.");
-	}
-
-	var lastStyleElementInsertedAtTop = stylesInsertedAtTop[stylesInsertedAtTop.length - 1];
-
-	if (options.insertAt === "top") {
-		if (!lastStyleElementInsertedAtTop) {
-			target.insertBefore(style, target.firstChild);
-		} else if (lastStyleElementInsertedAtTop.nextSibling) {
-			target.insertBefore(style, lastStyleElementInsertedAtTop.nextSibling);
-		} else {
-			target.appendChild(style);
-		}
-		stylesInsertedAtTop.push(style);
-	} else if (options.insertAt === "bottom") {
-		target.appendChild(style);
-	} else if (typeof options.insertAt === "object" && options.insertAt.before) {
-		var nextSibling = getElement(options.insertAt.before, target);
-		target.insertBefore(style, nextSibling);
-	} else {
-		throw new Error("[Style Loader]\n\n Invalid value for parameter 'insertAt' ('options.insertAt') found.\n Must be 'top', 'bottom', or Object.\n (https://github.com/webpack-contrib/style-loader#insertat)\n");
-	}
-}
-
-function removeStyleElement (style) {
-	if (style.parentNode === null) return false;
-	style.parentNode.removeChild(style);
-
-	var idx = stylesInsertedAtTop.indexOf(style);
-	if(idx >= 0) {
-		stylesInsertedAtTop.splice(idx, 1);
-	}
-}
-
-function createStyleElement (options) {
-	var style = document.createElement("style");
-
-	if(options.attrs.type === undefined) {
-		options.attrs.type = "text/css";
-	}
-
-	if(options.attrs.nonce === undefined) {
-		var nonce = getNonce();
-		if (nonce) {
-			options.attrs.nonce = nonce;
-		}
-	}
-
-	addAttrs(style, options.attrs);
-	insertStyleElement(options, style);
-
-	return style;
-}
-
-function createLinkElement (options) {
-	var link = document.createElement("link");
-
-	if(options.attrs.type === undefined) {
-		options.attrs.type = "text/css";
-	}
-	options.attrs.rel = "stylesheet";
-
-	addAttrs(link, options.attrs);
-	insertStyleElement(options, link);
-
-	return link;
-}
-
-function addAttrs (el, attrs) {
-	Object.keys(attrs).forEach(function (key) {
-		el.setAttribute(key, attrs[key]);
-	});
-}
-
-function getNonce() {
-	if (false) {}
-
-	return __webpack_require__.nc;
-}
-
-function addStyle (obj, options) {
-	var style, update, remove, result;
-
-	// If a transform function was defined, run it on the css
-	if (options.transform && obj.css) {
-	    result = typeof options.transform === 'function'
-		 ? options.transform(obj.css) 
-		 : options.transform.default(obj.css);
-
-	    if (result) {
-	    	// If transform returns a value, use that instead of the original css.
-	    	// This allows running runtime transformations on the css.
-	    	obj.css = result;
-	    } else {
-	    	// If the transform function returns a falsy value, don't add this css.
-	    	// This allows conditional loading of css
-	    	return function() {
-	    		// noop
-	    	};
-	    }
-	}
-
-	if (options.singleton) {
-		var styleIndex = singletonCounter++;
-
-		style = singleton || (singleton = createStyleElement(options));
-
-		update = applyToSingletonTag.bind(null, style, styleIndex, false);
-		remove = applyToSingletonTag.bind(null, style, styleIndex, true);
-
-	} else if (
-		obj.sourceMap &&
-		typeof URL === "function" &&
-		typeof URL.createObjectURL === "function" &&
-		typeof URL.revokeObjectURL === "function" &&
-		typeof Blob === "function" &&
-		typeof btoa === "function"
-	) {
-		style = createLinkElement(options);
-		update = updateLink.bind(null, style, options);
-		remove = function () {
-			removeStyleElement(style);
-
-			if(style.href) URL.revokeObjectURL(style.href);
-		};
-	} else {
-		style = createStyleElement(options);
-		update = applyToTag.bind(null, style);
-		remove = function () {
-			removeStyleElement(style);
-		};
-	}
-
-	update(obj);
-
-	return function updateStyle (newObj) {
-		if (newObj) {
-			if (
-				newObj.css === obj.css &&
-				newObj.media === obj.media &&
-				newObj.sourceMap === obj.sourceMap
-			) {
-				return;
-			}
-
-			update(obj = newObj);
-		} else {
-			remove();
-		}
-	};
-}
-
-var replaceText = (function () {
-	var textStore = [];
-
-	return function (index, replacement) {
-		textStore[index] = replacement;
-
-		return textStore.filter(Boolean).join('\n');
-	};
-})();
-
-function applyToSingletonTag (style, index, remove, obj) {
-	var css = remove ? "" : obj.css;
-
-	if (style.styleSheet) {
-		style.styleSheet.cssText = replaceText(index, css);
-	} else {
-		var cssNode = document.createTextNode(css);
-		var childNodes = style.childNodes;
-
-		if (childNodes[index]) style.removeChild(childNodes[index]);
-
-		if (childNodes.length) {
-			style.insertBefore(cssNode, childNodes[index]);
-		} else {
-			style.appendChild(cssNode);
-		}
-	}
-}
-
-function applyToTag (style, obj) {
-	var css = obj.css;
-	var media = obj.media;
-
-	if(media) {
-		style.setAttribute("media", media)
-	}
-
-	if(style.styleSheet) {
-		style.styleSheet.cssText = css;
-	} else {
-		while(style.firstChild) {
-			style.removeChild(style.firstChild);
-		}
-
-		style.appendChild(document.createTextNode(css));
-	}
-}
-
-function updateLink (link, options, obj) {
-	var css = obj.css;
-	var sourceMap = obj.sourceMap;
-
-	/*
-		If convertToAbsoluteUrls isn't defined, but sourcemaps are enabled
-		and there is no publicPath defined then lets turn convertToAbsoluteUrls
-		on by default.  Otherwise default to the convertToAbsoluteUrls option
-		directly
-	*/
-	var autoFixUrls = options.convertToAbsoluteUrls === undefined && sourceMap;
-
-	if (options.convertToAbsoluteUrls || autoFixUrls) {
-		css = fixUrls(css);
-	}
-
-	if (sourceMap) {
-		// http://stackoverflow.com/a/26603875
-		css += "\n/*# sourceMappingURL=data:application/json;base64," + btoa(unescape(encodeURIComponent(JSON.stringify(sourceMap)))) + " */";
-	}
-
-	var blob = new Blob([css], { type: "text/css" });
-
-	var oldSrc = link.href;
-
-	link.href = URL.createObjectURL(blob);
-
-	if(oldSrc) URL.revokeObjectURL(oldSrc);
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/style-loader/lib/urls.js":
-/*!***********************************************!*\
-  !*** ./node_modules/style-loader/lib/urls.js ***!
-  \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-/**
- * When source maps are enabled, `style-loader` uses a link element with a data-uri to
- * embed the css on the page. This breaks all relative urls because now they are relative to a
- * bundle instead of the current page.
- *
- * One solution is to only use full urls, but that may be impossible.
- *
- * Instead, this function "fixes" the relative urls to be absolute according to the current page location.
- *
- * A rudimentary test suite is located at `test/fixUrls.js` and can be run via the `npm test` command.
- *
- */
-
-module.exports = function (css) {
-  // get current location
-  var location = typeof window !== "undefined" && window.location;
-
-  if (!location) {
-    throw new Error("fixUrls requires window.location");
-  }
-
-	// blank or null?
-	if (!css || typeof css !== "string") {
-	  return css;
-  }
-
-  var baseUrl = location.protocol + "//" + location.host;
-  var currentDir = baseUrl + location.pathname.replace(/\/[^\/]*$/, "/");
-
-	// convert each url(...)
-	/*
-	This regular expression is just a way to recursively match brackets within
-	a string.
-
-	 /url\s*\(  = Match on the word "url" with any whitespace after it and then a parens
-	   (  = Start a capturing group
-	     (?:  = Start a non-capturing group
-	         [^)(]  = Match anything that isn't a parentheses
-	         |  = OR
-	         \(  = Match a start parentheses
-	             (?:  = Start another non-capturing groups
-	                 [^)(]+  = Match anything that isn't a parentheses
-	                 |  = OR
-	                 \(  = Match a start parentheses
-	                     [^)(]*  = Match anything that isn't a parentheses
-	                 \)  = Match a end parentheses
-	             )  = End Group
-              *\) = Match anything and then a close parens
-          )  = Close non-capturing group
-          *  = Match anything
-       )  = Close capturing group
-	 \)  = Match a close parens
-
-	 /gi  = Get all matches, not the first.  Be case insensitive.
-	 */
-	var fixedCss = css.replace(/url\s*\(((?:[^)(]|\((?:[^)(]+|\([^)(]*\))*\))*)\)/gi, function(fullMatch, origUrl) {
-		// strip quotes (if they exist)
-		var unquotedOrigUrl = origUrl
-			.trim()
-			.replace(/^"(.*)"$/, function(o, $1){ return $1; })
-			.replace(/^'(.*)'$/, function(o, $1){ return $1; });
-
-		// already a full url? no change
-		if (/^(#|data:|http:\/\/|https:\/\/|file:\/\/\/|\s*$)/i.test(unquotedOrigUrl)) {
-		  return fullMatch;
-		}
-
-		// convert the url to a full url
-		var newUrl;
-
-		if (unquotedOrigUrl.indexOf("//") === 0) {
-		  	//TODO: should we add protocol?
-			newUrl = unquotedOrigUrl;
-		} else if (unquotedOrigUrl.indexOf("/") === 0) {
-			// path should be relative to the base url
-			newUrl = baseUrl + unquotedOrigUrl; // already starts with '/'
-		} else {
-			// path should be relative to current directory
-			newUrl = currentDir + unquotedOrigUrl.replace(/^\.\//, ""); // Strip leading './'
-		}
-
-		// send back the fixed url(...)
-		return "url(" + JSON.stringify(newUrl) + ")";
-	});
-
-	// send back the fixed css
-	return fixedCss;
-};
-
-
-/***/ }),
-
 /***/ "./src/css/style.scss":
 /*!****************************!*\
   !*** ./src/css/style.scss ***!
@@ -11313,26 +10693,7 @@ module.exports = function (css) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-
-var content = __webpack_require__(/*! !../../node_modules/css-loader/dist/cjs.js??ref--6-1!../../node_modules/postcss-loader/src??ref--6-2!../../node_modules/sass-loader/lib/loader.js??ref--6-3!./style.scss */ "./node_modules/css-loader/dist/cjs.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/sass-loader/lib/loader.js?!./src/css/style.scss");
-
-if(typeof content === 'string') content = [[module.i, content, '']];
-
-var transform;
-var insertInto;
-
-
-
-var options = {"hmr":true}
-
-options.transform = transform
-options.insertInto = undefined;
-
-var update = __webpack_require__(/*! ../../node_modules/style-loader/lib/addStyles.js */ "./node_modules/style-loader/lib/addStyles.js")(content, options);
-
-if(content.locals) module.exports = content.locals;
-
-if(false) {}
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -11376,9 +10737,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "v_scrollUpdate", function() { return v_scrollUpdate; });
 function h_initInfiniteScroll(target, parent) {
   var originWidth = $(target).width();
+  console.log(originWidth);
   var clone = $(target).children().clone();
   $(clone).appendTo(target);
   var scrollWidth = $(target).width();
+  console.log(scrollWidth);
 
   if (originWidth < $(parent).width()) {
     originWidth = $(target).width();
@@ -11437,34 +10800,6 @@ function v_scrollUpdate(target) {
   } else if (scrollTop <= 0) {
     $(target.parent).scrollTop(scrollWidth - cloneWidth);
   }
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
-
-/***/ }),
-
-/***/ "./src/js/animations/skew.js":
-/*!***********************************!*\
-  !*** ./src/js/animations/skew.js ***!
-  \***********************************/
-/*! exports provided: mapInput, skew */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function($) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "mapInput", function() { return mapInput; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "skew", function() { return skew; });
-function mapInput(input) {
-  var minIn = 0;
-  var maxIn = 300;
-  var minOut = 10;
-  var maxOut = 300;
-  return (input - minIn) * (maxOut - minOut) / (maxIn - minIn) + minOut;
-}
-function skew(target, input) {
-  $(target).css({
-    'transform': "skewX(".concat(input, "deg)")
-  });
-  requestAnimationFrame(skew);
 }
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
@@ -11714,7 +11049,7 @@ $('.nav_toIndex').click(function () {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function($) {/* harmony import */ var _animations_infiniteScroll__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../animations/infiniteScroll */ "./src/js/animations/infiniteScroll.js");
-/* harmony import */ var _animations_skew__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../animations/skew */ "./src/js/animations/skew.js");
+/* harmony import */ var _functions_spa__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../functions/spa */ "./src/js/functions/spa.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
 
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
@@ -11731,24 +11066,25 @@ $(function () {
 
   var targets = $(".ani-infiniteScroll_target");
   var parents = $(".ani-infiniteScroll_wrapper");
-  var targetList = []; // init the targets
+  var targetList = [];
+  console.log(targets, targets[0].clientWidth); // init the targets
 
   for (var i = 0; i < targets.length; i++) {
     targetList.push(Object(_animations_infiniteScroll__WEBPACK_IMPORTED_MODULE_0__["h_initInfiniteScroll"])(targets[i], parents[i]));
   } // init the targets if landing on article pages
+  // $('.nav_toIndex').one('click', () => {
+  //   for (var i = 0; i < targets.length; i++) {
+  //     targetList[i] = initInfiniteScroll(targets[i], parents[i])
+  //   } 
+  // })
+  // reCal if size change
+  // $(window).resize(() => {
+  //   for (var i = 0; i < targets.length; i++) {
+  //     targetList[i] = initInfiniteScroll(targets[i], parents[i])
+  //   } 
+  // })
+  // Wheel event
 
-
-  $('.nav_toIndex').one('click', function () {
-    for (var i = 0; i < targets.length; i++) {
-      targetList[i] = Object(_animations_infiniteScroll__WEBPACK_IMPORTED_MODULE_0__["h_initInfiniteScroll"])(targets[i], parents[i]);
-    }
-  }); // reCal if size change
-
-  $(window).resize(function () {
-    for (var i = 0; i < targets.length; i++) {
-      targetList[i] = Object(_animations_infiniteScroll__WEBPACK_IMPORTED_MODULE_0__["h_initInfiniteScroll"])(targets[i], parents[i]);
-    }
-  }); // Wheel event
 
   $(window).on("wheel", function (e) {
     var _iteratorNormalCompletion = true;
@@ -11822,7 +11158,14 @@ $(function () {
     });
   }
 
-  $(selectionItem).hover(selectionMouseEnter, selectionMouseLeave);
+  $(selectionItem).hover(selectionMouseEnter, selectionMouseLeave); // request article
+
+  $('.selectionItem').click(function (e) {
+    var id = $('.selectionItem').data('id');
+    e.stopPropagation();
+    $('#article').show();
+    Object(_functions_spa__WEBPACK_IMPORTED_MODULE_1__["requestArticle"])(id);
+  });
 });
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
 
