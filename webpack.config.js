@@ -2,6 +2,7 @@ const path = require("path");
 const fs = require("fs");
 const webpack = require("webpack");
 const HtmlWebPackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const autoprefixer = require("autoprefixer");
 const CopyPlugin = require("copy-webpack-plugin");
 const port = 3070;
@@ -57,6 +58,19 @@ module.exports = {
     filename: "main.bundle.js",
     path: path.resolve(__dirname, "dist")
   },
+  optimization: {
+    // this is for extracting css
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
+  },
   module: {
     rules: [
       {
@@ -77,7 +91,13 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          "style-loader",
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: './dist',
+            },
+          },
+          // "style-loader",
           {
             loader: "css-loader",
             options: {
@@ -140,6 +160,10 @@ module.exports = {
     ]
   },
   plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
     new webpack.LoaderOptionsPlugin({
       options: {
         handlebarsLoader: {}
@@ -156,7 +180,8 @@ module.exports = {
       }
     }),
     new webpack.ProvidePlugin({
-      $: "jquery"
+      $: "jquery",
+      Hammer: 'hammerjs'
     })
   ].concat(htmlPlugins)
 };
