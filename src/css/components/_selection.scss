@@ -34,3 +34,13 @@ $item-spacing: 24px;
     @include titleLayout_line;
   }
 }
+
+
+.selectionHint {
+  display: block;
+  padding: 6rem 4rem 0 4rem;
+  font-size: 0.8rem;
+  font-weight: 200;
+  letter-spacing: 1px;
+  color: $gray-2;
+}
