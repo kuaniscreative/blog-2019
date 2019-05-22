@@ -58,6 +58,19 @@ module.exports = {
     filename: "main.bundle.js",
     path: path.resolve(__dirname, "dist")
   },
+  optimization: {
+    // this is for extracting css
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
+  },
   module: {
     rules: [
       {
@@ -78,8 +91,13 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          "style-loader",
+          {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: './dist',
+            },
+          },
+          // "style-loader",
           {
             loader: "css-loader",
             options: {
