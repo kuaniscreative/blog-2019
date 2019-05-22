@@ -20,10 +20,14 @@ $gray-0: #f2f2f2;
 
 $base-font-size: 16px;
 
+@mixin TC_uniCode {
+  unicode-range: U+4E00-9FFF, FF00-FFEF, 3100-312F;
+}
+
 @font-face {
   font-family: "customSet--sans";
-  src: local("PingFang TC"), local("Microsoft JhengHei");
-  unicode-range: U+4E00-9FFF;
+  src: local("PingFang TC"), local('Hiragino Sans GB'), local("Microsoft JhengHei");
+  @include TC_uniCode;
 }
 
 @font-face {
@@ -32,11 +36,43 @@ $base-font-size: 16px;
   unicode-range: U+00-024F;
 }
 
+// TC thin and light
 @font-face {
   font-family: "customSet--sans";
   font-weight: 200;
-  src: local("PingFangTC-light"), local("Microsoft JhengHei");
-  unicode-range: U+4E00-9FFF;
+  src: local("PingFangTC-Light"), local("Microsoft JhengHei");
+  @include TC_uniCode;
+}
+
+@font-face {
+  font-family: "customSet--sans";
+  font-weight: 300;
+  src: local("PingFangTC-Light"), local("Microsoft JhengHei");
+  @include TC_uniCode;
+}
+
+// TC regular 
+@font-face {
+  font-family: "customSet--sans";
+  font-weight: 400;
+  src: local("PingFangTC-Regular"), local("Microsoft JhengHei");
+  @include TC_uniCode;
+}
+
+// TC medium 
+@font-face {
+  font-family: "customSet--sans";
+  font-weight: 500;
+  src: local("PingFangTC-Medium"), local("Microsoft JhengHei");
+  @include TC_uniCode;
+}
+
+// TC semi-bold 
+@font-face {
+  font-family: "customSet--sans";
+  font-weight: 600;
+  src: local("PingFangTC-Semibold"), local("Microsoft JhengHei");
+  @include TC_uniCode;
 }
 
 
