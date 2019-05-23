@@ -1,46 +1,50 @@
 .header {
-    display: flex;
-    width: 100%;
-    height: $headerHeight;
-    position: relative;
-    align-items: center; 
+  display: flex;
+  width: 100%;
+  height: $headerHeight;
+  position: relative;
+  align-items: center;
+  @include media("below-mobile") {
+    background: white;
+    z-index: 7;
+  }
 }
 
 .header_navIcon {
-    display: block;
-    position: relative;
-    left: 4rem;
-    cursor: pointer;
+  display: block;
+  position: relative;
+  left: 4rem;
+  cursor: pointer;
 
-    @include media('below-mobile') {
-        left: 1.5rem;
-    }
+  @include media("below-mobile") {
+    left: 1.5rem;
+  }
 }
 
 .navIcon_line:nth-child(1) {
-    width: 2.1rem;
-    border-top: 2px solid $black;
-    padding-bottom: 1.1rem;
-    @include media('below-mobile') {
-        border-top: 1px solid $black;
-    }
+  width: 2.1rem;
+  border-top: 2px solid $black;
+  padding-bottom: 1.1rem;
+  @include media("below-mobile") {
+    border-top: 1px solid $black;
+  }
 }
 .navIcon_line:nth-child(2) {
-    width: 1.2rem;
-    border-bottom: 2px solid $black;
-    @include media('below-mobile') {
-        border-bottom: 1px solid $black;
-    }
+  width: 1.2rem;
+  border-bottom: 2px solid $black;
+  @include media("below-mobile") {
+    border-bottom: 1px solid $black;
+  }
 }
 .navIcon_line {
-    transition: 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .header_navIcon:hover {
-    & > .navIcon_line:nth-child(2) {
-        width: 1rem;
-    }
-    & > .navIcon_line:nth-child(1) {
-        width: 2.2rem;
-    }
+  & > .navIcon_line:nth-child(2) {
+    width: 1rem;
+  }
+  & > .navIcon_line:nth-child(1) {
+    width: 2.2rem;
+  }
 }
