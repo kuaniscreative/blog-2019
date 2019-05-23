@@ -10,7 +10,6 @@
   z-index: 11;
 }
 
-
 /**
  *
  * nav_contentWrapper
@@ -23,7 +22,7 @@
   position: absolute;
   left: 128px;
   bottom: 0;
-  @include media('below-desktop') {
+  @include media("below-desktop") {
     display: none;
   }
 }
@@ -90,6 +89,9 @@
   bottom: 7%;
   font-family: customSet--serif;
   font-weight: 200;
+  @media (max-width: 340px) {
+    bottom: 11%;
+  }
 }
 
 .contactItem {
@@ -107,36 +109,38 @@ a.contactItem {
   }
 }
 
-
 /**
  *
  * nav_contentWrapper--mobile
  *
  */
 
- .nav_contentWrapper--mobile {
-   @include media('above-desktop') {
-     display: none;
-   }
- }
- .nav_mobileArea {
-   width: 100%;
-   height: 67%;
-   padding: 0 4rem 0 4rem;
-   position: absolute;
-   bottom: 0;
-   @include media('below-mobile') {
+.nav_contentWrapper--mobile {
+  @include media("above-desktop") {
+    display: none;
+  }
+}
+.nav_mobileArea {
+  width: 100%;
+  height: 76%;
+  padding: 0 4rem 0 4rem;
+  position: absolute;
+  @include media("below-mobile") {
     padding: 0 1.5rem 0 1.5rem;
-   }
- }
+  }
+  .nav_title {
+    height: auto;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
+}
 
- .mobileAbout {
-   display: block;
- }
- .mobileTableContent {
-   display: none;
- }
-
+.mobileAbout {
+  display: block;
+}
+.mobileTableContent {
+  display: none;
+}
 
 /**
  *
@@ -144,12 +148,12 @@ a.contactItem {
  *
  */
 
- .nav_header {
-   display: flex;
-   width: 100%;
-   height: $headerHeight;
-   align-items: center;
- }
+.nav_header {
+  display: flex;
+  width: 100%;
+  height: $headerHeight;
+  align-items: center;
+}
 
 .navHeader_right {
   display: flex;
@@ -159,13 +163,17 @@ a.contactItem {
   align-items: center;
   position: relative;
   flex: 0 0 50%;
-  @include media('below-mobile') {
+  @include media("below-mobile") {
     padding-right: 1.5rem;
+    flex: 0 0 75%;
   }
 }
 
 .navHeader_left {
   flex: 0 0 50%;
+  @include media("below-mobile") {
+    flex: 0 0 25%;
+  }
 }
 
 .navHeaderRight_item {
@@ -188,7 +196,7 @@ a.contactItem {
   &--active {
     text-decoration: underline;
   }
-  @include media('below-desktop') {
+  @include media("below-desktop") {
     display: inline-flex;
   }
 }
@@ -199,7 +207,7 @@ a.contactItem {
   position: relative;
   left: 4rem;
   cursor: pointer;
-  @include media('below-mobile') {
+  @include media("below-mobile") {
     left: 1.5rem;
   }
 }
@@ -220,4 +228,3 @@ a.contactItem {
     transform: rotate(-45deg);
   }
 }
-
