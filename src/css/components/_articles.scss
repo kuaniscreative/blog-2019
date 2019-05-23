@@ -1,3 +1,17 @@
+#article {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    overflow: visible;
+    @include media('below-small') {
+        position: relative;
+        height: calc(100vh - 10rem);
+    }
+}
+
 .articles_title {
     @include heroFont;
     display: block;
@@ -73,7 +87,7 @@
     }
     @include media('below-small') {
         width: 100%;
-        height: 80vh;
+        height: 100%;
         padding-top: 0;
         padding-left: 4rem;
         padding-right: 4rem;
@@ -92,7 +106,6 @@
     display: block;
     height: 100%;
     padding-top: 12rem;
-    padding-bottom: 100%;
     position: relative;
     overflow: scroll;
 

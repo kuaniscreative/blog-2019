@@ -17,8 +17,8 @@ $gray-0: #f2f2f2;
  * cubic-bezier
  *
  */
-$cubic_fastIn: cubic-bezier(.14,.88,.86,1.01);
-$cubic_progressive: cubic-bezier(.09,1.01,.53,.94);
+$cubic_fastIn: cubic-bezier(0.14, 0.88, 0.86, 1.01);
+$cubic_progressive: cubic-bezier(0.09, 1.01, 0.53, 0.94);
 
 /**
  *
@@ -26,9 +26,10 @@ $cubic_progressive: cubic-bezier(.09,1.01,.53,.94);
  *
  */
 
- // header and footer
+// header and footer
 
- $headerHeight: 10rem;
+$headerHeight: 10rem;
+$headerHeight--mobile: 8rem;
 
 $nav-width: 384px;
 $transition: 1s ease;
