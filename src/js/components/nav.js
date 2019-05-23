@@ -127,12 +127,13 @@ $(".nav_ToAbout").click(() => {
 // nav to articles
 $('.nav_content a').click((e) => {
   $('#article').show();
+  $('.footer').hide();
   requestArticle($(e.target).data('id'));
 })
 
 // nav to index
 $('.nav_toIndex').click(() => {
-  
+  $('.footer').show();
   $('#article').hide();
   $('.nav').hide();
   $('#indexSelection').show();

@@ -141,6 +141,7 @@ $(function() {
     const id = $('.selectionItem').data('id');
     e.stopPropagation();
     $('#article').show();
+    $('.footer').hide();
     requestArticle(id);
   })
 });
