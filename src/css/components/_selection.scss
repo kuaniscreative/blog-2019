@@ -3,7 +3,9 @@ $item-spacing: 24px;
 #indexSelection {
   width: 100vw;
   height: max-content;
-  position: relative;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -44%);
   overflow: hidden;
 }
 
@@ -33,14 +35,4 @@ $item-spacing: 24px;
   &_line {
     @include titleLayout_line;
   }
-}
-
-
-.selectionHint {
-  display: block;
-  padding: 6rem 4rem 0 4rem;
-  font-size: 0.8rem;
-  font-weight: 200;
-  letter-spacing: 1px;
-  color: $gray-2;
 }
