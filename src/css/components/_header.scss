@@ -24,7 +24,7 @@
 .navIcon_line:nth-child(1) {
   width: 2.1rem;
   border-top: 2px solid $black;
-  padding-bottom: 1.1rem;
+  padding-bottom: 1rem;
   @include media("below-mobile") {
     border-top: 1px solid $black;
   }
@@ -42,9 +42,9 @@
 
 .header_navIcon:hover {
   & > .navIcon_line:nth-child(2) {
-    width: 1rem;
+    width: 0.8rem;
   }
   & > .navIcon_line:nth-child(1) {
-    width: 2.2rem;
+    width: 2.4rem;
   }
 }
