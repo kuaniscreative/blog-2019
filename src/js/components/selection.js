@@ -36,7 +36,6 @@ $(function() {
       .toArray()
       .entries()) {
       if (index % 2 === 0) {
-        console.log($(".nav").eq(0).css('display'))
         if ($(".nav").eq(0).css('display') === 'none'){
           e.preventDefault();
         }
