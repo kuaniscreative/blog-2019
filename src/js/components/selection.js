@@ -36,7 +36,8 @@ $(function() {
       .toArray()
       .entries()) {
       if (index % 2 === 0) {
-        if ($("#indexSelection").css('display') !== 'none'){
+        console.log($(".nav").eq(0).css('display'))
+        if ($(".nav").eq(0).css('display') === 'none'){
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
@@ -44,7 +45,7 @@ $(function() {
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       } else {
-        if ($("#indexSelection").css('display') !== 'none'){
+        if ($(".nav").eq(0).css('display') === 'none'){
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
@@ -68,7 +69,7 @@ $(function() {
       .toArray()
       .entries()) {
       if (index % 2 === 0) {
-        if ($("#indexSelection").css('display') !== 'none'){
+        if ($(".nav").eq(0).css('display') === 'none'){
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
@@ -76,7 +77,7 @@ $(function() {
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       } else {
-        if ($("#indexSelection").css('display') !== 'none'){
+        if ($(".nav").eq(0).css('display') === 'none'){
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
