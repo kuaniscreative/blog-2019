@@ -30,16 +30,25 @@ $(function() {
   });
 
   // Wheel event for index scroll
+
+  function preventIndexScrollDefault() {
+    const navDisplay = $(".nav").eq(0).css("display");
+    const articleDisplay = $("#article").css("display");
+    const indexDisplay = $('#indexSelection').css('display');
+
+    if ( navDisplay === 'none' && articleDisplay === 'none' && indexDisplay === 'block') {
+      console.log('wtf')
+      return true
+    }
+    return false
+  }
+
   $(window).on("wheel", e => {
     for (let [index, item] of $(targetList)
       .toArray()
       .entries()) {
       if (index % 2 === 0) {
-        if (
-          $(".nav")
-            .eq(0)
-            .css("display") === "none"
-        ) {
+        if (preventIndexScrollDefault()) {
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
@@ -47,11 +56,7 @@ $(function() {
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       } else {
-        if (
-          $(".nav")
-            .eq(0)
-            .css("display") === "none"
-        ) {
+        if (preventIndexScrollDefault()) {
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
@@ -73,11 +78,7 @@ $(function() {
       .toArray()
       .entries()) {
       if (index % 2 === 0) {
-        if (
-          $(".nav")
-            .eq(0)
-            .css("display") === "none"
-        ) {
+        if (preventIndexScrollDefault()) {
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();
@@ -85,11 +86,7 @@ $(function() {
         $(item.parent).scrollLeft(curPos);
         scrollUpdate(item);
       } else {
-        if (
-          $(".nav")
-            .eq(0)
-            .css("display") === "none"
-        ) {
+        if (preventIndexScrollDefault()) {
           e.preventDefault();
         }
         let curPos = $(item.parent).scrollLeft();

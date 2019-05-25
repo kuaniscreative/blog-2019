@@ -4,9 +4,9 @@
   height: $headerHeight;
   position: relative;
   align-items: center;
+  z-index: 7;
   @include media("below-mobile") {
     background: white;
-    z-index: 7;
   }
 }
 
