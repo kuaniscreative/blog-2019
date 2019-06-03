@@ -7,6 +7,13 @@ $item-spacing: 24px;
   top: 50%;
   transform: translate(0, -44%);
   overflow: hidden;
+  @include media('below-desktop') {
+    position: relative;
+    height: calc(100vh - 10rem);
+    bottom: 0;
+    top: auto;
+    transform: none;
+  }
 }
 
 .indexSelection_row {
@@ -34,5 +41,32 @@ $item-spacing: 24px;
   }
   &_line {
     @include titleLayout_line;
+  }
+}
+
+#indexSelection > .ani-infiniteScroll_wrapper {
+  @include media('below-desktop') {
+    display: none;
+  }
+}
+
+.indexSelection--mobile {
+  display: none;
+  width: calc(100% + 12px);
+  height: calc(100vh - 10rem);
+  padding: 0 4rem 0 4rem;
+  overflow: scroll;
+  @include media('below-desktop') {
+    display: block;
+  }
+  @include media('below-tablet') {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+
+.indexSelection_item--mobile {
+  padding-bottom: 4rem;
+  @include media('below-tablet') {
+    padding-bottom: 2.4rem;
   }
 }

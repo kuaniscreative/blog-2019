@@ -14,7 +14,10 @@
   font-weight: 200;
   letter-spacing: 1px;
   color: $gray-2;
-  @include media('below-mobile') {
+  @include media("below-mobile") {
     padding-left: 1.5rem;
-}
+  }
+  @include media("below-desktop") {
+    display: none;
+  }
 }

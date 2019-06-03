@@ -67,36 +67,6 @@ $(function() {
     }
   });
 
-  // Pan event for index scroll
-  const body = document.querySelector("body");
-  const mc = new Hammer.Manager(body, {
-    recognizers: [[Hammer.Pan, { direction: Hammer.DIRECTION_ALL }]]
-  });
-
-  mc.on("pan", e => {
-    for (let [index, item] of $(targetList)
-      .toArray()
-      .entries()) {
-      if (index % 2 === 0) {
-        if (preventIndexScrollDefault()) {
-          e.preventDefault();
-        }
-        let curPos = $(item.parent).scrollLeft();
-        curPos -= e.deltaY * 0.8;
-        $(item.parent).scrollLeft(curPos);
-        scrollUpdate(item);
-      } else {
-        if (preventIndexScrollDefault()) {
-          e.preventDefault();
-        }
-        let curPos = $(item.parent).scrollLeft();
-        curPos += e.deltaY * 0.8;
-        $(item.parent).scrollLeft(curPos);
-        scrollUpdate(item);
-      }
-    }
-  });
-
 
   // make it scroll when landing on index selection
   const cubicBezier = "cubic-bezier(.14,.88,.86,1.01)";
