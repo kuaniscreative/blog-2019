@@ -1,4 +1,5 @@
 import { articleAnimationShow } from '../components/articles';
+import { equal } from 'assert';
 
 export const requestArticle = param => {
   $.ajax({
@@ -13,6 +14,9 @@ export const requestArticle = param => {
         display: "none"
       });
       $("#indexSelection").css({
+        display: "none"
+      });
+      $(".indexSelection--mobile").eq(0).css({
         display: "none"
       });
       $(".articles_title span").html(res.title);

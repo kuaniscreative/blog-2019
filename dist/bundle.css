@@ -254,6 +254,9 @@ html {
 body {
   position: relative;
   overflow: hidden; }
+  @media (max-width: 1024px) {
+    body {
+      overflow: visible; } }
 
 h1 {
   font-size: 2.5rem;
@@ -713,8 +716,9 @@ a.contactItem {
   position: relative;
   align-items: center;
   z-index: 7; }
-  @media (max-width: 550px) {
+  @media (max-width: 1024px) {
     .header {
+      position: fixed;
       background: white; } }
 
 .header_navIcon {
@@ -796,6 +800,7 @@ a.contactItem {
   overflow: hidden; }
   @media (max-width: 1024px) {
     #indexSelection {
+      display: none;
       position: relative;
       height: calc(100vh - 10rem);
       bottom: 0;
@@ -869,9 +874,9 @@ a.contactItem {
 .indexSelection--mobile {
   display: none;
   width: calc(100% + 12px);
-  height: calc(100vh - 10rem);
   padding: 0 4rem 0 4rem;
-  overflow: scroll; }
+  position: relative;
+  top: 10rem; }
   @media (max-width: 1024px) {
     .indexSelection--mobile {
       display: block; } }
@@ -884,6 +889,8 @@ a.contactItem {
   @media (max-width: 767px) {
     .indexSelection_item--mobile {
       padding-bottom: 2.4rem; } }
+  .indexSelection_item--mobile:last-child {
+    padding-bottom: 7.2rem; }
 
 #article {
   display: block;

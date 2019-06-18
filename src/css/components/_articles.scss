@@ -6,6 +6,9 @@
     left: 0;
     height: 100vh;
     overflow: visible;
+    @include media('below-desktop') {
+        top: 10rem;
+    }
     @include media('below-small') {
         position: relative;
         height: calc(100vh - 10rem);
