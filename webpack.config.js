@@ -181,7 +181,6 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       $: "jquery",
-      Hammer: 'hammerjs'
     })
   ].concat(htmlPlugins)
 };
