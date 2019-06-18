@@ -12,7 +12,7 @@ function navContentToggle() {
 // nav animation
 $(openNavBtn).click(e => {
   window.shouldPreventWheel = false;
-  // index
+  // index desktop
   if ($("#indexSelection").css('display') !== 'none') {
     $("#indexSelection")
       .removeClass("ani_innerFlyCard--left")
@@ -42,6 +42,41 @@ $(openNavBtn).click(e => {
           });
       });
   }
+
+
+  // index mobile
+  if ($(".indexSelection--mobile").eq(0).css('display') !== 'none') {
+    console.log('yes');
+    $(".indexSelection--mobile").eq(0)
+      .removeClass("ani_innerFlyCard--left")
+      .addClass("ani_innerFlyCard--left")
+      .one("animationend", e => {
+        e.stopPropagation();
+        $(".indexSelection--mobile").eq(0).css("opacity", 0);
+        $("body")
+          .removeClass("ani_outerFlyCard--bottom")
+          .addClass("ani_outerFlyCard--bottom");
+        $(nav).css({
+          display: "block"
+        });
+        navContentToggle();
+        $(".ani_outerFlyCard--bottom")
+          .eq(0)
+          .one("animationend", () => {
+            $(".indexSelection--mobile").eq(0).css("opacity", 1);
+            $(".indexSelection--mobile").eq(0).toggleClass("ani_innerFlyCard--left");
+            $("body").toggleClass("ani_outerFlyCard--bottom");
+            $(".navContentShow").each((i, val) => {
+              $(val).one("animationend", (e) => {
+                e.stopPropagation();
+                $(val).toggleClass("navContentShow");
+              });
+            });
+          });
+      });
+  }
+  
+  
   // articles
   if ($("#article").css('display') !== 'none') {
     $(".articles_title")
