@@ -8,6 +8,11 @@ html {
 body {
     position: relative;
     overflow: hidden;
+
+    @include media('below-desktop') {
+        overflow: visible;
+    }
+
 }
 
 h1 {

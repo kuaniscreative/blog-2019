@@ -5,7 +5,8 @@
   position: relative;
   align-items: center;
   z-index: 7;
-  @include media("below-mobile") {
+  @include media('below-desktop') {
+    position: fixed;
     background: white;
   }
 }

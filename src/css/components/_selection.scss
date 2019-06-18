@@ -8,6 +8,7 @@ $item-spacing: 24px;
   transform: translate(0, -44%);
   overflow: hidden;
   @include media('below-desktop') {
+    display: none;
     position: relative;
     height: calc(100vh - 10rem);
     bottom: 0;
@@ -53,9 +54,9 @@ $item-spacing: 24px;
 .indexSelection--mobile {
   display: none;
   width: calc(100% + 12px);
-  height: calc(100vh - 10rem);
   padding: 0 4rem 0 4rem;
-  overflow: scroll;
+  position: relative;
+  top: 10rem;
   @include media('below-desktop') {
     display: block;
   }
@@ -68,5 +69,9 @@ $item-spacing: 24px;
   padding-bottom: 4rem;
   @include media('below-tablet') {
     padding-bottom: 2.4rem;
+  }
+
+  &:last-child {
+    padding-bottom: 7.2rem;
   }
 }
