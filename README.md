@@ -35,5 +35,4 @@ The design reference to the portfolio of [Lionel Durimel](https://durimel.io/nel
 
 **npm version**: v6.7.0
 
-**Hosting**: [Google Firebase](https://firebase.google.com/)
 
