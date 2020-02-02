@@ -2,7 +2,7 @@
 
 Perhaps I've got a brilliant mind **:see_no_evil:**
 
-[checkout the site](https://blog-d740c.firebaseapp.com/)
+[checkout the site](https://blog.thisiskuan.co.uk/)
 
 Also, this is a use case of my webpack-hbs template.
 
