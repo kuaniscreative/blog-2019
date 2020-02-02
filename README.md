@@ -2,6 +2,8 @@
 
 Perhaps I've got a brilliant mind **:see_no_evil:**
 
+[checkout the site](https://blog-d740c.firebaseapp.com/)
+
 Also, this is a use case of my webpack-hbs template.
 
 **Notice**: This project is not being maintained at the moment. Quite buggy. 
